@@ -1,0 +1,7 @@
+{% for tag in site.tags %}
+  <span class="tag-cloud-{{ tag | last | size | times: 10 | divided_by: site.tags.size }}">
+  	 <!--  {{ tag | last | size | times: 100 | divided_by: site.tags.size }} % -->
+  	<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag | first | slugize] }}-ref">{{ tag | first }}</a>
+  </span>
+{% endfor %}
+
