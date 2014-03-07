@@ -10,7 +10,7 @@ tags: [development,spa,single page app,javascript,ember]
 Single Pages Apps (SPAs) are the current flavour of the month. They have seemingly appeared from nowhere, but now it seems like every developer is talking about them. Wikipedia describes this pattern as follows:
 
 >A single-page application (SPA), also known as single-page interface (SPI), is a web application or web site that fits on a single web page with the goal of providing a more fluid user experience akin to a desktop application.
->In a SPA, either all necessary code – HTML, JavaScript, and CSS – is retrieved with a single page load, or the appropriate resources are dynamically loaded and added to the page as necessary, usually in response to user actions. </blockquote>
+>In a SPA, either all necessary code – HTML, JavaScript, and CSS – is retrieved with a single page load, or the appropriate resources are dynamically loaded and added to the page as necessary, usually in response to user actions.
 
 In my experience they offer some advantages over traditional apps:
 
