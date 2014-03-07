@@ -9,7 +9,7 @@ tags: [belkin,automation,review]
 
 I recently purchased a Belkin WeMo light switch. I've been eyeing these off for a while. The general premise is pretty cool. It is a IP enabled light switch, with Iphone/Android control.    
 
-Install was pretty easy. It was simply a matter of cutting a hole in the gyprock (plaster board), and running some wires to my existing switch. Belkin provided some twist-on electrical connectors, which made the job very easy. Note that this *will not* use any sort of standard Australian wall plate LOL so it is not going to look like your Clipsal switches. It does fit into a standard plasterboard C-Clip, so that is nice.
+Install was pretty easy. It was simply a matter of cutting a hole in the gyprock (plaster board), and running some wires to my existing switch. Belkin provided some twist-on electrical connectors, which made the job very easy. Note that this *will not* use any sort of standard Australian wall plate - so it is not going to look like your Clipsal switches. It does fit into a standard plasterboard C-Clip, so that is nice.
 
 Once running, it was fairly easy to setup. After installing the WeMo app, I connected my phone to a new Wifi access point provided by the WeMo switch. The WeMo app then prompted me to enter my existing WiFi network details. From there, the switch connected to my home network and performed a firmware update, and we were in business. 
 
@@ -29,7 +29,7 @@ The second issue I have had is that I setting up [IFTTT](https://ifttt.com) inte
 
 Integration
 -----------
-As a software developer, I was keen to attempt to integrate with the WeMo switch. Unfortunately Belkin don?t provide a public API! I was hoping there would be a REST or SOAP service I could work with. That means our options for integration are limited to third party services supported by the WeMo LOL which includes IFTTT (mentioned above).
+As a software developer, I was keen to attempt to integrate with the WeMo switch. Unfortunately Belkin don?t provide a public API! I was hoping there would be a REST or SOAP service I could work with. That means our options for integration are limited to third party services supported by the WeMo - which includes IFTTT (mentioned above).
 
 For my integration test, I integrated my home alarm system with the switch. When my alarm is armed at night time, the WeMo Switch turns on my outside light.
 In more detail, when I arm my alarm, an email is sent saying "Alarm Armed at (time)". I added a Google script to my Gmail account to check if it is after sunset, and if it is, send a second email saying "Alarm Armed (Night)".
