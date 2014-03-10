@@ -11,7 +11,9 @@ I've recently switched from Blogger to Github pages, and I'm using the very cool
 
 One feature missing from Jekyll is Word Clouds. I will show you how to add one.
 
-**Create a Jekyll Helper**
+<!--more-->
+Create a Jekyll Helper
+----------------------
 
 To do the grunt work, we need to create a Jekyll helper. In your \_includes/JB folder, create a new file called "tag_cloud".
 
@@ -26,6 +28,7 @@ Copy and paste this into the file:
 	  </span>
 	{% endfor %}
 {% endraw %}
+
 There is nothing too clever here. We just iterate through all the tags on your site, then output a span with a link in it. To give different weighting for each number, we:
 1. Get the percentage the tag makes up of the total 
 2. Round down to the nearest 10 (eg, 43% becomes 4)
@@ -33,7 +36,8 @@ There is nothing too clever here. We just iterate through all the tags on your s
 
 That oddly named function - slugize - converts the human readable form of the URL into a shortened URL.
 
-**Add the styles to your CSS file**
+Add the styles to your CSS file
+-------------------------------
 
 Go to your CSS file (check your themes folder, in my case it was styles.css). Append the following to the bottom of the file:
 
@@ -56,7 +60,8 @@ Go to your CSS file (check your themes folder, in my case it was styles.css). Ap
 
 Feel free to tweak these styles to change the look and feel of your tag cloud.
 
-**Now update your template**
+Now update your template
+------------------------
 
 Now you can add the tag cloud to your page. Open your default.html template file. Place the following where you want the tag cloud to appear:
 {% raw %}
