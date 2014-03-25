@@ -8,7 +8,19 @@
       <p class="text-primary">{{ page.date | date_to_long_string }}</p>
     </div>
     <div class="content">
-      {{ content }}
+      {% unless page.shoppinglist == null %}
+      <div class="shoppinglist-wrapper">
+       <div class="shoppinglist paper">
+        <h3>Materials List</h3>
+        <ul style="list-style-type:none;padding-left:0px;">
+          {% assign shopping_list = page.shoppinglist %}
+          {% include JB/shopping_list %}
+        </ul>
+      </div>
+    </div>
+    {% endunless %}  
+
+    {{ content }}
     </div>
 
   {% unless page.categories == empty %}

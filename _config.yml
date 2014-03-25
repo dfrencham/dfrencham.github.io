@@ -8,8 +8,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Danny Dot Net
-tagline: Interesting things from an average developer
+title : DIY Developer
+tagline: I develop software. I like power tools.
 author :
   name : Danny Frencham
   email : dannypf+blog@gmail.com

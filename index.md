@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Danny Frencham's Blog
-tagline: software development and other stuff.
+tagline: software development on weekdays, power tools on weekends.
 ---
 {% include JB/setup %}
 
 <h2>{{ site.posts.first.title }}</h2>
-<p class="text-primary">posted: {{ site.posts.first.date | date_to_string }}</p>
+<p class="text-primary">{{ site.posts.first.date | date_to_string }}</p>
 {% if site.posts.first.content contains '<!--more-->' %}
 {{ site.posts.first.content | split:'<!--more-->' | first }}
 {% else %}

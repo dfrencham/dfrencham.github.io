@@ -1,0 +1,15 @@
+{% comment %}<!--
+The shopping_list include is a listing helper.
+-->{% endcomment %}
+
+
+{% for shopping in shopping_list %}
+  <li style="padding-left:0px;">
+  <span class="glyphicon glyphicon-star"></span>
+  {% unless shopping[1] == empty %}
+    {{ shopping[1] }} x
+  {% endunless %}
+  {{ shopping[0] }}
+  </li>    	
+{% endfor %}
+{% assign shopping_list = nil %}
