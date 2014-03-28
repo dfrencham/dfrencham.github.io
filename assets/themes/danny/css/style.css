@@ -230,3 +230,10 @@ padding: 10px;
   text-align: center;
   margin-bottom: 10px;
 }
+
+/* windows phone fix */
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
