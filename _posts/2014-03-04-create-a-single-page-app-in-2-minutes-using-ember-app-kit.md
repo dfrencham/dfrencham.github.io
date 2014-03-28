@@ -26,6 +26,9 @@ along with some disadvantages:
 
 The high responsiveness alone makes SPAs worth of investigating. Responsive web apps == happy users!
 
+Now I'm going to show you how to build one.
+<!--more-->
+
 Ok, I'm sold. What now?
 -----------------------
 So, where do we start? The SPA (and javascript) community is fast moving place. I have lost track of the number of new templates and libraries in use... Knockout, Angular, Durandal, Ember, Bootstrap, JQuery, etc, etc, etc. You can attempt to roll your own SPA from the ground up, or you can use a ready made project template - such as the [Ember App Kit](https://github.com/stefanpenner/ember-app-kit).

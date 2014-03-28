@@ -12,7 +12,7 @@ I'm a typical developer. I often can't resist the urge to try different platform
 Ghost is a ground up blogging platform, being developed under the premise that other platforms (such as word press) are becoming overly complex. 
 
 Before I go into too much detail, I should point out that Ghost is beta (maybe even alpha software). 
-
+<!--more-->
 The good parts
 --------------
 Ghost offers some interesting features, such as:

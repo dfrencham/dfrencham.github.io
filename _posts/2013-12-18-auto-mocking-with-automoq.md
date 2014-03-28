@@ -11,7 +11,9 @@ AutoMoq is a nice little package I came across today. The AutoMoq home page desc
 
 <blockquote>AutoMoq is an &quot;auto-mocking&quot; container that creates objects for you. Just tell it what class to create and it will create it.</blockquote>
 
-Why is this useful? Consider the following scenario. We have a BananaCakeFactory class, that relies on a Banana Repository. Here is the constructor:
+Why is this useful? Consider the following scenario. We have a BananaCakeFactory class, that relies on a Banana Repository. 
+<!--more-->
+Here is the constructor:
 
 {% raw %}<script type="syntaxhighlighter" class="brush: csharp"><![CDATA[public BananaCakeFactory(IBananaRepo bananaRepo);]]></script>{% endraw %}
 

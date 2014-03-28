@@ -12,6 +12,7 @@ I recently purchased a Belkin WeMo light switch. I've been eyeing these off for 
 Install was pretty easy. It was simply a matter of cutting a hole in the gyprock (plaster board), and running some wires to my existing switch. Belkin provided some twist-on electrical connectors, which made the job very easy. Note that this *will not* use any sort of standard Australian wall plate - so it is not going to look like your Clipsal switches. It does fit into a standard plasterboard C-Clip, so that is nice.
 
 Once running, it was fairly easy to setup. After installing the WeMo app, I connected my phone to a new Wifi access point provided by the WeMo switch. The WeMo app then prompted me to enter my existing WiFi network details. From there, the switch connected to my home network and performed a firmware update, and we were in business. 
+<!--more-->
 
 Controlling the switch worked on my home network, or remotely - and it responded fast. There is an audible click from the switch when triggered remotely.  
 

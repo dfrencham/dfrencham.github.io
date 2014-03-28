@@ -8,6 +8,7 @@ tags: [development,blogging,syntax highligher]
 {% include JB/setup %}
 As a technical blogger, one of my first questions was: <blockquote>how do I add syntax highlighting to my blog?</blockquote> I discovered  [Syntax Highlighter](http://alexgorbatchev.com/SyntaxHighlighter/). 
 Syntax Highlighter is a fantastic tool. It looks good, it is easy to set up, and it supports a large number of languages.
+<!--more-->
 
 I am going to walk you through setting up Syntax Highlighter on the Blogger platform. The first thing you need to do, is go to your blog template, and choose "Edit HTML".
 
@@ -45,7 +46,7 @@ Note that the brush type needs to match one of the brushes you added in the .js 
 
 Why do we use that odd CDATA syntax? It turns out that embedding code in code (such as this page) is harder than you might think. The browser will try to interpret the code. We can change all the code characters to character codes - but that alters the original code and quickly gets tiresome.
 
-Using &lt;script&gt; tags allows syntax highlighter to find your code sample. &lt;![CDATA[ ]]&gt; is a special tag that prevents XML/HTML parsers (such as your browser) from trying to parse that code block.
+Using &lt;script&gt; tags allows syntax highlighter to find your code sample. CDATA is a special tag that prevents XML/HTML parsers (such as your browser) from trying to parse that code block.
 
 If you do use Syntax Highlighter, make sure you provide a link to the <a href="http://alexgorbatchev.com/SyntaxHighlighter/">author's site</a>, as he provides it free of charge.
 

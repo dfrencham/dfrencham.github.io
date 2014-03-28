@@ -4,6 +4,7 @@ title: "Create a tag cloud using Jekyll"
 description: ""
 category: tech 
 tags: [development,blogging,jekyll]
+shoppinglist: [[beer,3],[pretzels,'2']]
 ---
 {% include JB/setup %}
 

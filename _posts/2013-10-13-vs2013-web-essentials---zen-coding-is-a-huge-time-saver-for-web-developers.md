@@ -10,6 +10,7 @@ tags: [development,html,visual studio,javascript]
 As a web developer, I have regularly found myself needing to type a large amount of HTML layout code. Your page starts to grow, and your eyes begin to glaze over as you type DIV after DIV.
 
 Enter <a href="https://code.google.com/p/zen-coding/">Zen Coding</a>. In a nutshell, ZenCoding is a set of editor extensions, allowing a developer to use shorthand for common tasks. Microsoft have incorporated these extensions into <a href="http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361">Web Essentials</a> for Visual Studio 2013.
+<!--more-->
 
 I can't overstate how awesome this feature is. For example, if I type:
 

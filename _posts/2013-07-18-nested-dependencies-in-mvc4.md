@@ -12,6 +12,7 @@ Given how complex the average MVC4 application can become, it is likely that you
 &nbsp;A common scenario may be that your controller needs a Lookup Manager, and that manager needs a cached query passed in.
 
 In this scenario, the Unity.Mvc4 nuGet package comes into play.
+<!--more-->
 
 Here is our home controller:
 

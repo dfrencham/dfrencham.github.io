@@ -65,7 +65,7 @@
   color: #FFF; }
 
 body {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
 }
 .main-box {
   padding: 40px 15px;
@@ -170,3 +170,63 @@ a.tag-anchor {
    margin-left: -42px;
    margin-top: -4px;
 }*/
+
+.title-inner {
+  max-width: 1000px;
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+.titlewrap {
+  background: #000 url('/assets/images/titlebar.jpg') no-repeat center bottom;
+  height: 200px;
+  /*max-width: 1161px;*/
+  text-align: center;
+}
+.titlewrapwrap {
+  margin-top: -20px;
+  background-color:#000000;
+}
+.title-header-text {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  text-shadow: 2px 2px #000000;
+}
+.title-tagline-text {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: -10px 0px 0px 0px;
+  text-shadow: 2px 2px #000000;
+}
+/*.silly-logo {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}*/
+
+.fleft{
+float:left;
+width:50%;
+overflow:hidden;
+padding: 10px;
+}
+.fright{
+float:left;
+width:50%;
+overflow:hidden;
+padding: 10px;
+} 
+
+.post-image {
+  text-align: center;
+  margin-bottom: 10px;
+}

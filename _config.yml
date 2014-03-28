@@ -8,7 +8,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : DIY Developer
+title : DIYDeveloper.io
 tagline: I develop software. I like power tools.
 author :
   name : Danny Frencham

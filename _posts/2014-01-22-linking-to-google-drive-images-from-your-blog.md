@@ -14,6 +14,7 @@ tags: [development,blogging,javascript]
 3.Share the item (use the same option as above). Copy the "Link to Share" link.
 4.Paste the link in the linkifier below
 5.Copy the link produced, and insert it into your blog via any of your usual methods
+<!--more-->
 {% raw %}
 <h2>How it works</h2>
 A link with this format: <i>https://drive.google.com/file/d/\[id number\]/edit?usp=sharing</i> is transformed using a regular expression, to this format: 

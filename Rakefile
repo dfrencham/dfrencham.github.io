@@ -40,6 +40,12 @@ module JB
   end #Path
 end #JB
 
+desc "Change code page"
+task :fix do
+    puts "Changing the codepage"
+    system "chcp 65001"
+end  # task :fixwin
+
 # Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
