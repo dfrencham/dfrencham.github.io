@@ -237,3 +237,45 @@ padding: 10px;
 @-ms-viewport{width:device-width}
 @-o-viewport{width:device-width}
 @viewport{width:device-width}
+
+.step-main {
+  padding-top: 5px;
+  vertical-align: top;
+}
+
+.step-image {
+  display: inline-block;
+}
+
+.step-text {
+  display: inline-block;
+}
+
+.step-num {
+  float: left; 
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 4px 4px 4px;
+  margin-top: 0px;
+  vertical-align: top;
+}
+
+ul.howto {
+  list-style-type: none;
+  padding: 0px;
+  /*width: 500px;*/
+}
+ul.howto h4 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+ul.howto li {
+  padding: 10px;
+  overflow: auto;
+}
+ul.howto li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
