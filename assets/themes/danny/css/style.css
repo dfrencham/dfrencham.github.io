@@ -176,6 +176,7 @@ a.tag-anchor {
   text-align: left;
   padding-left: 100px;
   padding-top: 50px;
+  margin: 0 auto;
 }
 .titlewrap {
   background: #000 url('/assets/images/titlebar.jpg') no-repeat center bottom;
