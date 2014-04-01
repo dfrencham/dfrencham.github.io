@@ -6,6 +6,10 @@
   <div class="span12">
     <div class="date">
       <p class="text-primary">{{ page.date | date_to_long_string }}</p>
+      <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=http://diydeveloper.io{{ page.url | uri_escape}}&text={{ page.title | uri_escape }}&via=dfrencham"><i class="fa fa-twitter"></i></a>
+      <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=http://diydeveloper.io{{ page.url| uri_escape }}&t={{ page.title | uri_escape}}"><i class="fa fa-facebook"></i></a>
+      <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/share?url=http://diydeveloper.io{{ page.url | uri_escape}}"><i class="fa fa-google-plus"></i></a>
+      <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=http://diydeveloper.io{{ page.url | uri_escape}}"><i class="fa fa-linkedin"></i></a>
     </div>
     <div class="content">
       {% unless page.shoppinglist == null %}
