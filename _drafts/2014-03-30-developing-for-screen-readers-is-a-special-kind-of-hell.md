@@ -58,13 +58,31 @@ You can use (x) accessibility feature if
 - the screen reader implements that particular feature
 - the screen reader feels like reading it (screen readers seem to get into odd states and not work properly after working perfectly a few minutes prior)
 
-There is no way to directly tell a screen reader to "just go ahead and read this" with Javascript. The closest you can get is to dynamically insert objects into the DOM with role=alert set. That gave me the following result (with NVDA):
+There is no way to directly tell a screen reader to "just go ahead and read this" with Javascript. The closest you can get is to dynamically insert objects into the DOM with role=alert set, and hide the new object (via a hackish method, such as -left:9999px, 0 height, etc). That gave me the following result (with NVDA):
 
-- Firefox read it twice
-- Chrome read it some times, but not consistantly
-- IE ignored it completely, unsurprisingly
+- (Firefox) read it twice
+- (Chrome) read it some times, but not consistantly
+- (IE9) ignored it completely, unsurprisingly
 
 Guh.
+
+Ok, lets fire up another screen reader (JAWS)
+
+- (Firefox and Chrome) read it properly
+- (IE8) ignored it 
+
+So, that all works well.... unless you happen to use NVDA or Internet Explorer.
+
+### How can we fix it? ###
+
+
+
+*Browser developers* should:
+1. Provide a mechanism for developers to trigger accessibility events directly
+2. Use a common API s
+
+
+
 
 All this could be avoided if Browser devs simply gave us a way to raise accessibility events directly via Javascript. 
 
