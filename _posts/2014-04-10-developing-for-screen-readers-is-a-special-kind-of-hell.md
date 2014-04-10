@@ -30,7 +30,7 @@ Most websites are not structured properly (those H1, H2, H3 in the wrong places,
 
 Blind users often have to switch between multiple screen readers or browsers on the same website. Imagine how annoying that must be.
 
-Scott Hanselman has an excellent interview with a blind technologist - Katherine Moss. <a href="https://www.google.com.au/url?sa=t&rct=j&q=&esrc=s&source=web&cd=6&cad=rja&uact=8&ved=0CG4QFjAF&url=http%3A%2F%2Fhanselminutes.com%2F413%2Fim-a-blind-software-technician-ask-me-anything-with-katherine-moss&ei=E3REU9L3K6q8iAfTgIFg&usg=AFQjCNHWaUfzcgUjAvwsQu8ammqJUaZAkA&sig2=8liQ-dcoOhcfkfh-Xj90Hw">Listen to it here</a>. Katherine gives a good account of what the internet is like for the visually impaired.
+Scott Hanselman has an excellent interview with a blind technologist - Katherine Moss. <a href="http://hanselminutes.com/413/im-a-blind-software-technician-ask-me-anything-with-katherine-moss">Listen to it here</a>. Katherine gives a good account of what the internet is like for the visually impaired.
 
 ### How a screen reader works ###
 
@@ -78,7 +78,7 @@ There is no way to *directly* raise an event to the browsers accessibility API. 
 {% raw %}
 <script type="syntaxhighlighter" class="brush:css"><![CDATA[
 //screen reader only, hide from everyone else
-	.sr-only {
+    .sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -98,9 +98,9 @@ There is no way to *directly* raise an event to the browsers accessibility API. 
 &lt;script&gt;
 function readMessage(msg)
 {
-	$('#screen-reader-text').empty();
-	$('#screen-reader-text').append("<span role='alert'>" + msg + "</a>");
-	&lt;/script&gt;
+    $('#screen-reader-text').empty();
+    $('#screen-reader-text').append("<span role='alert'>" + msg + "</a>");
+    &lt;/script&gt;
 }
 
 readMessage("Something happened");
@@ -146,5 +146,4 @@ How about extending some trust to developers, and giving us the option to direct
 * [Mozilla Accessibility Architecture](https://developer.mozilla.org/en-US/docs/Mozilla/Accessibility/Accessibility_architecture)
 * [Jaws Screen Reader](http://www.freedomscientific.com/products/fs/jaws-product-page.asp)
 * [NVDA Screen Reader](http://www.nvaccess.org/)
-
-
+* [Scott Hanselman interviews Katherine Moss](http://hanselminutes.com/413/im-a-blind-software-technician-ask-me-anything-with-katherine-moss)
