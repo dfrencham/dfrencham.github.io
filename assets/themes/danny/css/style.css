@@ -280,3 +280,15 @@ ul.howto li img {
   float: left;
   margin: 0 15px 0 0;
 }
+
+/* fix syntax highlighter */
+.syntaxhighlighter { 
+   overflow-y: hidden !important; 
+   overflow-x: auto !important; 
+}
+
+div.content,div.date,div.page-header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 750px;
+}
