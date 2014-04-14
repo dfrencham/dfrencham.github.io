@@ -5,37 +5,42 @@ layout: page
 
 <div>
 <div class="fleft">
-<h3>{{ site.categories["tech"].first.title }}</h3>
-<p class="text-primary">{{ site.categories["tech"].first.date | date_to_string }} 
+{% for techpost in site.categories["tech"] limit: 2 %}
+<h3>{{ techpost.title }}</h3>
+<p class="text-primary">{{ techpost.date | date_to_string }} 
 	<span class="label label-success">Tech</span></p>
-{% if site.categories["tech"].first.content contains '<!--more-->' %}
-{{ site.categories["tech"].first.content | split:'<!--more-->' | first }}
+{% if techpost.content contains '<!--more-->' %}
+{{ techpost.content | split:'<!--more-->' | first }}
 {% else %}
-{{ site.categories["tech"].first.content | truncatewords:200 | strip_html }}
+{{ techpost.content | truncatewords:200 | strip_html }}
 {% endif %}
-<a href="{{ BASE_PATH }}{{ site.categories["tech"].first.url }}" class="btn btn-default">
+<a href="{{ BASE_PATH }}{{ techpost.url }}" class="btn btn-default">
   Read More <span class="glyphicon glyphicon-arrow-right"></span>
 </a>
+{% endfor %}
 </div>
 
 <div class="fright">
-<h3>{{ site.categories["diy"].first.title }}</h3>
-<p class="text-primary">{{ site.categories["diy"].first.date | date_to_string }}
+{% for diypost in site.categories["diy"] limit: 2 %}
+<h3>{{ diypost.title }}</h3>
+<p class="text-primary">{{ diypost.date | date_to_string }}
 <span class="label label-danger">DIY</span></p>
-{% if site.categories["diy"].first.content contains '<!--more-->' %}
-{{ site.categories["diy"].first.content | split:'<!--more-->' | first }}
+{% if diypost.content contains '<!--more-->' %}
+{{ diypost.content | split:'<!--more-->' | first }}
 {% else %}
-{{ site.categories["diy"].first.content | truncatewords:200 | strip_html }}
+{{ diypost.content | truncatewords:200 | strip_html }}
 {% endif %}
-<a href="{{ BASE_PATH }}{{ site.categories["diy"].first.url }}" class="btn btn-default">
+<a href="{{ BASE_PATH }}{{ diypost.url }}" class="btn btn-default">
   Read More <span class="glyphicon glyphicon-arrow-right"></span>
 </a>
+{% endfor %}
 </div>
 </div>
 <p style="clear:both;" />
 <hr style="margin-top:5px;border-top: dashed 1px; border-color:#808080;">
-## Recent Posts
+## All Posts
 
+<div class="recentposts">
 <ul class="posts">
   {% for post in site.posts %}
     <li> 
@@ -52,6 +57,7 @@ layout: page
     </li>
   {% endfor %}
 </ul>
+</div>
 
 <hr style="margin-top:5px;border-top: dashed 1px; border-color:#808080;">
 ## About

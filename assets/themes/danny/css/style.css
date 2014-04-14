@@ -292,3 +292,9 @@ div.content,div.date,div.page-header {
   margin-right: auto;
   max-width: 750px;
 }
+
+div.recentposts {
+  -webkit-column-count:2; /* Chrome, Safari, Opera */
+  -moz-column-count:2; /* Firefox */
+  column-count:2;
+}
