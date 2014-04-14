@@ -298,3 +298,33 @@ div.recentposts {
   -moz-column-count:2; /* Firefox */
   column-count:2;
 }
+
+.bs-callout {
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #eee;
+}
+
+.bs-callout-info {
+  background-color: #f4f8fa;
+  border-color: #5bc0de;
+}
+
+.bs-callout p {
+  font-size: 17.5px;
+}
+
+.bs-callout footer {
+display: block;
+font-size: 90%;
+line-height: 1.42857143;
+color: #999;
+}
+
+.bs-callout footer:before {
+content: '\2014 \00A0';
+}
+
+.fancybox-title {
+    padding: 0 0 10px 0;
+}

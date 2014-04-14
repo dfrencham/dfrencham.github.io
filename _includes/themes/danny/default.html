@@ -149,8 +149,15 @@
     
     <script type='text/javascript'>
      $(document).ready(function() {
-        $(".fancybox").fancybox();
-       // alert("hello");
+        $(".fancybox").fancybox({
+        helpers : {
+            title: {
+                type: 'inside',
+                position: 'top'
+            }
+        },
+        nextEffect: 'fade',
+        prevEffect: 'fade'});
       });
 
     // code highlight

@@ -8,7 +8,7 @@ tags : [aria,accessibility,screen reader,JAWS,NVDA]
 
 Picture the scenario.... your manager asks you add support for assistive technologies to your shiny new SPA (Single-Page-App is a development pattern that can be roughly described as a highly responsive javascript explosion). Your client wants to implement the W3C-AA Accessibility Standard.
 
-You are going to pull out your IDE, make a few tweaks to the app, and the screen reader will happily read your web application out to appriciative users.
+You are going to pull out your IDE, make a few tweaks to the app, and the screen reader will happily read your web application out to appreciative users.
 
 After adding a few ARIA tags, you fire up a screen reader....
 
@@ -67,7 +67,7 @@ Things get worse as we mix in more javascript.
 
 Screen readers come from those quaint old times when javascript was only used for the occasional dialog and pages were generally static. In recent years, we have seen the rise of AJAX, JQuery, and the Single Page App pattern. 
 
-Consider the following: Your nice new single page app is dynamically loading a widget. You want to inform the user when that widget is ready. In theory, aria-live attributes should take care of it. In practise, browser support is patchy.
+Consider the following: Your nice new single page app is dynamically loading a widget. You want to inform the user when that widget is ready. In theory, aria-live attributes should take care of it. In practice, browser support is patchy.
 
 You would think that there is a method to have a screen reader read a given piece of text via a javascript call.
 
