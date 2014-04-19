@@ -4,8 +4,8 @@ The shopping_list include is a listing helper.
 
 
 {% for shopping in shopping_list %}
-  <li style="padding-left:0px;">
-  <span class="glyphicon glyphicon-star"></span>
+  <li style="padding-left:12px;">
+  <span class="glyphicon glyphicon-unchecked"></span>
   {% unless shopping[1] == empty %}
     {{ shopping[1] }} x
   {% endunless %}

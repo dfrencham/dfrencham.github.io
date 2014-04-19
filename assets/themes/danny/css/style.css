@@ -1,3 +1,8 @@
+/* Global overrides */
+h3 {
+  font-weight: bold;
+}
+
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
@@ -153,6 +158,9 @@ a.tag-anchor {
   padding:10px;
   float:right;
 }
+.shoppinglist h3 {
+  padding-left: 8px;
+}
 /*textarea {
   display: block;
   width: 94%;
@@ -272,6 +280,12 @@ ul.howto h4 {
   font-size: 32px;
   font-weight: bold;
 }
+ul.howto span.bigtext {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  padding-left: 5px;
+  vertical-align: bottom;
+}
 ul.howto li {
   padding: 10px;
   overflow: auto;
@@ -327,4 +341,8 @@ content: '\2014 \00A0';
 
 .fancybox-title {
     padding: 0 0 10px 0;
+}
+.warning-icon {
+  color:red;
+  font-size:32px;
 }
