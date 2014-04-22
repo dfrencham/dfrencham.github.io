@@ -40,21 +40,36 @@ layout: page
 <hr style="margin-top:5px;border-top: dashed 1px; border-color:#808080;">
 ## All Posts
 
+{% assign diy = 0 %}
+{% assign tech = 0 %}
+
 <div class="recentposts">
 <ul class="posts">
   {% for post in site.posts %}
+  {% if post.categories contains 'diy' %}
+    {% assign diy = diy | plus:1 %}
+  {% endif %}
+  {% if post.categories contains 'tech' %}
+    {% assign tech = tech | plus:1 %}
+  {% endif %}
+  {% if post.categories contains 'tech' and tech > 2 %}
     <li> 
     	<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> 
     	<div style="padding-left:10px;padding-bottom:10px;">
     		<span>{{ post.date | date_to_string }}</span>
-    		{% if post.categories contains 'tech' %}
-			<span class="label label-success">Tech</span>
-	    	{% endif %}
-	    	{% if post.categories contains 'diy' %}
-				<span class="label label-danger">DIY</span>
-	    	{% endif %}
+			  <span class="label label-success">Tech</span>
     	</div>
     </li>
+  {% endif %}
+  {% if post.categories contains 'diy' and diy > 2 %}
+    <li> 
+      <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> 
+      <div style="padding-left:10px;padding-bottom:10px;">
+        <span>{{ post.date | date_to_string }}</span>
+        <span class="label label-danger">DIY</span>
+      </div>
+    </li>
+  {% endif %}
   {% endfor %}
 </ul>
 </div>
@@ -63,3 +78,4 @@ layout: page
 ## About
 
 Danny Frencham is a 30-something software developer, based in Brisbane Australia. Danny works primarily in the .Net space, and is currently writing Single-Page-Apps for large enterprise clients. On weekends, you can find him attempting DIY projects (badly), or integrating things in odd ways (ever seen a RaspberryPi reading a home power meter with a webcam and OCR?).
+
