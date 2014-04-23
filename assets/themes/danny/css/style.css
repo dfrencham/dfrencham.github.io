@@ -1,6 +1,26 @@
 /* Global overrides */
-h3 {
+h3,h2,h1 {
   font-weight: bold;
+  font-family: 'Oswald', 'serif';
+}
+
+h3 { 
+  font-weight: 400; 
+}
+
+h2 {
+  font-weight: 700; 
+}
+
+h1 {
+  font-weight: 800; 
+}
+
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 /* Custom container */
@@ -69,9 +89,6 @@ h3 {
   border: 1px solid #4c964d;
   color: #FFF; }
 
-body {
-  /*padding-top: 50px;*/
-}
 .main-box {
   padding: 40px 15px;
   text-align: center;
@@ -180,9 +197,8 @@ a.tag-anchor {
 }*/
 
 .title-inner {
-  max-width: 1000px;
+  max-width: 1050px;
   text-align: left;
-  padding-left: 100px;
   padding-top: 50px;
   margin: 0 auto;
 }
@@ -197,7 +213,7 @@ a.tag-anchor {
   background-color:#000000;
 }
 .title-header-text {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Special Elite','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 64px;
   font-weight: bold;
   color: #FFFFFF;
@@ -345,4 +361,8 @@ content: '\2014 \00A0';
 .warning-icon {
   color:red;
   font-size:32px;
+}
+.padding20 {
+  padding-left: 50px;
+  padding-right: 50px;
 }

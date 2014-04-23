@@ -27,6 +27,9 @@
     <!-- font awesome -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+    <!-- font google -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Gruppo|Special+Elite' rel='stylesheet' type='text/css'>
+
   </head>
 
   <body>
@@ -47,6 +50,7 @@
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
+            <li><a href="{{ BASE_PATH }}/atom.xml">Feed</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
