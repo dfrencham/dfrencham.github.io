@@ -6,7 +6,7 @@ layout: page
 <div>
 <div class="fleft">
 {% for techpost in site.categories["tech"] limit: 2 %}
-<h3>{{ techpost.title }}</h3>
+<h3 class="post-title"><a href="{{techpost.url}}">{{ techpost.title }}</a></h3>
 <p class="text-primary">{{ techpost.date | date_to_string }} 
 	<span class="label label-success">Tech</span></p>
 {% if techpost.content contains '<!--more-->' %}
@@ -22,7 +22,7 @@ layout: page
 
 <div class="fright">
 {% for diypost in site.categories["diy"] limit: 2 %}
-<h3>{{ diypost.title }}</h3>
+<h3 class="post-title"><a href="{{diypost.url}}" class="post-title">{{ diypost.title }}</a></h3>
 <p class="text-primary">{{ diypost.date | date_to_string }}
 <span class="label label-danger">DIY</span></p>
 {% if diypost.content contains '<!--more-->' %}
