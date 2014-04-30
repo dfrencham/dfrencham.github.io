@@ -23,21 +23,21 @@ Go to [IFTTT](http://ifttt.com) and sign up. Before starting, you are going to n
 IFTTT organises all of your tasks into recipes. We are going to create a new recipe. 
 
 1. The **IF** part of If-This-Then-That refers to a trigger condition. In our case, it is a new blog post appearing in our blog's ATOM feed. Choose the "Feed" channel. 
-<img class="img-responsive img-rounded post-image" src="{{ site.url }}/assets/images/ifft_02.png" alt="Feed Channel" />
+<img class="img-responsive img-rounded post-image-inline " src="{{ site.url }}/assets/images/ifft_02.png" alt="Feed Channel" />
 
 2. Choose "New Feed Item" as the trigger.
-<img class="img-responsive img-rounded post-image" src="{{ site.url }}/assets/images/ifft_03.png" alt="Choosing the trigger" />
+<img class="img-responsive img-rounded post-image-inline " src="{{ site.url }}/assets/images/ifft_03.png" alt="Choosing the trigger" />
 
-3. Enter your blog Feed URL. <img class="img-responsive img-rounded post-image" src="{{ site.url }}/assets/images/ifft_04.png" alt="Trigger Details" />
+3. Enter your blog Feed URL. <img class="img-responsive img-rounded post-image-inline " src="{{ site.url }}/assets/images/ifft_04.png" alt="Trigger Details" />
 
 4. Set "Twitter" - "Post new Tweet" as the action. This is the **That** part of If-This-Then-That.
-<img class="img-responsive img-rounded post-image" src="{{ site.url }}/assets/images/ifft_05.png" alt="Set an action" />
+<img class="img-responsive img-rounded post-image-inline " src="{{ site.url }}/assets/images/ifft_05.png" alt="Set an action" />
 
 5. Add some descriptive text. You can reference the title and URL using variables, as pictured.
-<img class="img-responsive img-rounded post-image" src="{{ site.url }}/assets/images/ifft_06.png" alt="Add the title and URL" />
+<img class="img-responsive img-rounded post-image-inline " src="{{ site.url }}/assets/images/ifft_06.png" alt="Add the title and URL" />
 
 6. Confirm your new recipe, and you are good to go. Add a new blog post as a test.
-<img class="img-responsive img-rounded post-image" src="{{ site.url }}/assets/images/ifft_07.png" alt="Confirm it" />
+<img class="img-responsive img-rounded post-image-inline " src="{{ site.url }}/assets/images/ifft_07.png" alt="Confirm it" />
 
 You can add a recipe for Facebook following the exact same process. IFTTT really is a great service. Here are some other things I do with it:
 

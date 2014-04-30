@@ -33,7 +33,7 @@ body {
   color: #333;
 }
 
-.post-image {
+.post-image-inline {
   border: 1px #A8A8A8 solid;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -312,6 +312,9 @@ ul.howto h4 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 32px;
   font-weight: bold;
+  display: inline;
+  float:left;
+  margin-right:20px;
 }
 ul.howto span.bigtext {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -322,6 +325,7 @@ ul.howto span.bigtext {
 ul.howto li {
   padding: 10px;
   overflow: auto;
+  border-bottom: 1px dashed grey;
 }
 ul.howto li img {
   float: left;
