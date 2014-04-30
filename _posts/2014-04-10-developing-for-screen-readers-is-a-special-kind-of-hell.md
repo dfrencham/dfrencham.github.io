@@ -3,7 +3,7 @@ layout: post
 title: "Developing for Screen Readers is a special kind of hell"
 tagline: "...but it can be fixed"
 category : tech
-tags : [aria,accessibility,screen reader,JAWS,NVDA]
+tags : [aria,accessibility,screen reader,op-ed]
 ---
 
 Picture the scenario.... your manager asks you add support for assistive technologies to your shiny new SPA (Single-Page-App is a development pattern that can be roughly described as a highly responsive javascript explosion). Your client wants to implement the W3C-AA Accessibility Standard.

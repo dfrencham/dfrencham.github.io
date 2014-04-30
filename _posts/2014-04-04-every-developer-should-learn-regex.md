@@ -1,7 +1,7 @@
 ---
 layout: post
 category : tech
-tags : [regex,regular expressions]
+tags : [regex,development]
 ---
 {% include JB/setup %}
 

@@ -120,7 +120,7 @@ a.tag-anchor {
 }
 
 /* tag cloud */
-.tag-cloud-0 { font-size: 1em; }
+.tag-cloud-0 { font-size: 0.75em; }
 .tag-cloud-1 { font-size: 1.5em; }
 .tag-cloud-2 { font-size: 1.5em; font-weight: bold; }
 .tag-cloud-3 { font-size: 2em; }

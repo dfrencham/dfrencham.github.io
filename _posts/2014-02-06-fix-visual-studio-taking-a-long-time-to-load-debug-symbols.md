@@ -3,7 +3,7 @@ layout: post
 title: "Fix Visual Studio taking a long time to load debug symbols"
 description: ""
 category: tech
-tags: [development,visual studio,argh]
+tags: [development,visual studio,argh,C#]
 ---
 {% include JB/setup %}
 

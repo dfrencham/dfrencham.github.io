@@ -3,7 +3,7 @@ layout: post
 title: "Create a Single Page App in 2 Minutes using Ember App Kit"
 description: ""
 category: tech
-tags: [development,spa,single page app,javascript,ember]
+tags: [development,single page app,javascript,ember]
 ---
 {% include JB/setup %}
 

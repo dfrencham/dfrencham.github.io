@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Build a base for your shed"
-tags : [shed,base,floor,diy]
+tags : [shed,diy]
 shoppinglist: [[Sleepers,'2'],['Gravel',''],['Roadbase',''],['Sand',''],['Pavers',''],['Hex head batten screws',''],['(small) L-brackets','']]
 ---
 {% include JB/setup %}

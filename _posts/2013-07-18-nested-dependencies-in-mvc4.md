@@ -3,7 +3,7 @@ layout: post
 title: "Nested Dependencies in MVC4"
 description: ""
 category: tech 
-tags: [MVC4,development]
+tags: [MVC4,development,C#,dotnet]
 ---
 {% include JB/setup %}
 

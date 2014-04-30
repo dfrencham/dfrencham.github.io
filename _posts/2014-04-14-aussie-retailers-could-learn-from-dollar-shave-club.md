@@ -2,7 +2,7 @@
 layout: post
 title: "Aussie retailers could learn a thing or two from dollar shave club"
 category : tech
-tags : [review,retailers,razor,shave,dollar shave]
+tags : [review,retailers,op-ed]
 ---
 
 A couple of weeks ago, something interesting popped up on my Facebook feed. It was a company called "Dollar Shave Club" offering razors direct to my door for $4 a month. How can a company afford to do that? Would the razors suck worse than Aldi razors? 
