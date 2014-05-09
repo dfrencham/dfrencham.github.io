@@ -387,3 +387,36 @@ content: '\2014 \00A0';
   padding-left: 50px;
   padding-right: 50px;
 }
+.talk-actor1 {
+ color: blue;
+}
+.talk-actor2 {
+ color: green;
+}
+.talk-actor3 {
+ color: red;
+}
+.talk-actor1 div,.talk-actor2 div,.talk-actor3 div {
+  width: 150px;
+  font-weight: bold; 
+  float:left;
+}
+.talk-actor1 div::after,.talk-actor2 div::after,.talk-actor3 div::after
+{ 
+  content:">";
+  font-weight: bold; 
+}
+.talk-actor1 p,.talk-actor2 p,.talk-actor3 p {
+  margin-left: 150px;
+  margin-bottom:0px;
+}
+.talk-box {
+  margin: 1em;
+  border: 1px dashed grey;
+  padding: 5px;
+}
+.inline {
+  display: inline-block;
+  display: inline;
+  margin: 7px;
+}
