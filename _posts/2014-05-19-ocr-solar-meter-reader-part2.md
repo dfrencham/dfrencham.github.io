@@ -133,7 +133,7 @@ Did you know the Raspberry Pi has a hardware Watchdog Timer? Overview:
 
 >A watchdog timer is a special kind of timer commonly found on embedded systems that is used to detect when the running software is hung up on some task. The watchdog timer is basically a countdown timer that counts from some initial value down to zero. When zero is reached, the watchdog timer understands that the system is hung up and resets it.
 
-The quote above is from [Ricardo's Workbench](http://blog.ricardoarturocabral.com/2013/01/auto-reboot-hung-raspberry-pi-using-on.html). He explains how to run it on your Pi. So, now my reboots itself if it hangs.
+The quote above is from [Ricardo's Workbench](http://blog.ricardoarturocabral.com/2013/01/auto-reboot-hung-raspberry-pi-using-on.html). He explains how to run it on your Pi. So, now my Pi reboots itself if it hangs.
 
 Very nice.
 
