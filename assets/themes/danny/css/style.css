@@ -1,7 +1,14 @@
 /* Global overrides */
-h3,h2,h1 {
+h4,h3,h2,h1 {
   font-weight: bold;
   font-family: 'Oswald', 'serif';
+}
+
+h4 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 16pt;
+  color: darkred;
 }
 
 h3 { 
@@ -427,4 +434,8 @@ content: '\2014 \00A0';
 .textwrap-right {
   float: right;
   margin: 10px;
+}
+.nana {
+  margin-right: 0px;
+  margin-left: 0px;
 }

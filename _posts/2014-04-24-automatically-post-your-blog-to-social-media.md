@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Automatically post your blog to social media"
-tags : [social media,ifttt,automation,facebook,twitter]
+tags : [social media,ifttt,automation]
 ---
 {% include JB/setup %}
 

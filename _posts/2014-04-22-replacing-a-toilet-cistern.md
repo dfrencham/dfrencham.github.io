@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Replacing a toilet cistern"
-tags : [toilet,plumbing,diy,argh]
+tags : [plumbing,diy,argh]
 shoppinglist: [[Toilet Cistern,''],[Small metal strip,'']]
 ---
 {% include JB/setup %}

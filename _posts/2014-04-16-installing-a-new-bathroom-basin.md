@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Installing a new bathroom basin"
-tags : [basin,plumbing,diy]
+tags : [plumbing,diy]
 shoppinglist: [[Basin,''],[Bathroom silicon caulk,''],[dishwashing soap,''],[Paddlepop Stick,'']]
 ---
 {% include JB/setup %}

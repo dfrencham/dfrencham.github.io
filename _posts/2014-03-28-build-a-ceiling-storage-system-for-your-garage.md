@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Build a ceiling storage system for your garage"
-tags : [storage,garage,diy]
+tags : [storage,diy]
 shoppinglist: [[(A) Pine 89x19mm wide,'4'],[(B) Pine 70x35mm,2],[Plastic storage tubs,6],[Wood Glue,1],[Screws Phillips Head, Countersunk,'']]
 ---
 {% include JB/setup %}
