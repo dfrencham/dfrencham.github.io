@@ -12,6 +12,8 @@ After a long wait, the ChromeCast has finally launched in Australia. The Austral
 
 <!--more-->
 
+<div class="bg-warning"><h2>Updated</h2>This post has been updated since my original review. The original issues I had were resolved <a href="/tech/2014/06/12/check-your-multicast-settings/">as detailed here</a>.</div>
+
 ##Meet the ChromeCast##
 
 The ChromeCast has the following specs:
@@ -89,6 +91,8 @@ For a complete list of apps [look here](http://www.reddit.com/r/chromecast/wiki/
 
 I can't help but think if an Apple Engineer had tried to release an Apple product with a similar limitation - zombie Steve Jobs would have crucified them.
 
+<div class="bg-warning"><h2>Update!</h2>The Android Photos/movies/Google+ app has had an update. You can now cast your home movies. Thanks Google.</div>
+
 ###PC###
 
 Casting from the PC is a little different. I had to install the ChromeCast app in Chrome. From there, I can flick any browser tab to my TV. There is about 1 second of lag - not terrible. Movies can be played this way, but the quality seems lower than using the "Cast" button on the YouTube site. 
@@ -155,6 +159,8 @@ Lets compare the Apple TV:
 
 The ChromeCast is a great device. If we got the same price as the US ($35) it would be a no brainer. Even at $50, it is hard to go past. If it had something similar to AirPlay, and didn't lose connection to my phone regularly, it would be 5/5.
 
-As it stands, I rate the ChromeCast 3.5 bananas.
+<p style="text-decoration:line-through;">As it stands, I rate the ChromeCast 3.5 bananas.</p>
 
-<img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b2.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b3.png" alt="nanananana" />
+<div class="bg-warning"><h2>Updated</h2>My main issues were patchy connectivity, and troublesome setup. Since resolving these issues (and letting me cast my home movies) - I've raised my rating to 4.5 bananas.</div>
+<br />
+<img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b2.png" alt="nanananana" />
