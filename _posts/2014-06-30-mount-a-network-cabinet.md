@@ -25,7 +25,7 @@ To mount a rack, here are the tools you will need:
 You will also need timber screws or timber bolts - with enough strength to hold the rack to the wall.
 
 
-###Building the new base###
+###Installing the cabinet###
 
 <ul class="howto">
 <li>
