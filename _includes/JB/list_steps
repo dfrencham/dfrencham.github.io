@@ -1,0 +1,17 @@
+{% comment %}<!--
+The list_steps include is a instruction list helper.
+-->{% endcomment %}
+
+<ul class="howto">
+
+{% for step in page.list_steps %}
+  <li>
+	<a class="fancybox" rel="group" href="{{ site.url }}/assets/images/{{step[0]}}.jpg" title="{{step[1]}}">
+		<img src="{{ site.url }}/assets/images/sm_{{step[0]}}.jpg" class="img-thumbnail" alt="{{step[1]}}" />
+	</a>
+	<h4>{{ forloop.index }}</h4>
+	{{step[2]}}
+</li>
+{% endfor %}
+</ul>
+{% assign list_steps = nil %}

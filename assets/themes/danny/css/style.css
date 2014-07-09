@@ -128,11 +128,11 @@ a.tag-anchor {
 
 /* tag cloud */
 .tag-cloud-0 { font-size: 0.75em; }
-.tag-cloud-1 { font-size: 1.5em; }
-.tag-cloud-2 { font-size: 1.5em; font-weight: bold; }
-.tag-cloud-3 { font-size: 2em; }
-.tag-cloud-4 { font-size: 2em; font-weight: bold; }
-.tag-cloud-5 { font-size: 2.5em; }
+.tag-cloud-1 { font-size: 1em; }
+.tag-cloud-2 { font-size: 1.25em; font-weight: bold; }
+.tag-cloud-3 { font-size: 1.5em; }
+.tag-cloud-4 { font-size: 1.5em; font-weight: bold; }
+.tag-cloud-5 { font-size: 2.0em; }
 .tag-cloud-6 { font-size: 2.5em; font-weight: bold; }
 .tag-cloud-7 { font-size: 2.75em; }
 .tag-cloud-8 { font-size: 2.75em; font-weight: bold; }
@@ -438,4 +438,11 @@ content: '\2014 \00A0';
 .nana {
   margin-right: 0px;
   margin-left: 0px;
+}
+#toollist h4 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  float: none;
+  display: block;
 }
