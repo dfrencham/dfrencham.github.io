@@ -2,7 +2,6 @@
 The shopping_list include is a listing helper.
 -->{% endcomment %}
 
-
 {% for shopping in shopping_list %}
   <li style="padding-left:12px;">
   <span class="glyphicon glyphicon-unchecked"></span>

@@ -7,8 +7,11 @@ layout: page
 <div class="fleft">
 {% for techpost in site.categories["tech"] limit: 2 %}
 <h3 class="post-title"><a href="{{techpost.url}}">{{ techpost.title }}</a></h3>
-<p class="text-primary">{{ techpost.date | date_to_string }} 
+<p class="text-primary">{{ techpost.date | date_to_string }}
 	<span class="label label-success">Tech</span></p>
+{% if techpost.skip_title != null %}
+{{ techpost.description }}
+{% endif %}
 {% if techpost.content contains '<!--more-->' %}
 {{ techpost.content | split:'<!--more-->' | first }}
 {% else %}
@@ -53,8 +56,8 @@ layout: page
     {% assign tech = tech | plus:1 %}
   {% endif %}
   {% if post.categories contains 'tech' and tech > 2 %}
-    <li> 
-    	<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> 
+    <li>
+    	<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
     	<div style="padding-left:10px;padding-bottom:10px;">
     		<span>{{ post.date | date_to_string }}</span>
 			  <span class="label label-success">Tech</span>
@@ -62,8 +65,8 @@ layout: page
     </li>
   {% endif %}
   {% if post.categories contains 'diy' and diy > 2 %}
-    <li> 
-      <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> 
+    <li>
+      <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
       <div style="padding-left:10px;padding-bottom:10px;">
         <span>{{ post.date | date_to_string }}</span>
         <span class="label label-danger">DIY</span>
@@ -78,4 +81,3 @@ layout: page
 ## About
 
 Danny Frencham is a 30-something software developer, based in Brisbane Australia. Danny works primarily in the .Net space, and is currently writing Single-Page-Apps for large enterprise clients. On weekends, you can find him attempting DIY projects (badly), or integrating things in odd ways (ever seen a RaspberryPi reading a home power meter with a webcam and OCR?).
-
