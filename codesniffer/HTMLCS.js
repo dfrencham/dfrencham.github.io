@@ -1,4 +1,4 @@
-/*! HTML_CodeSniffer - v2.0.1 - 2014-08-04 16:30:07 */
+/*! HTML_CodeSniffer - v2.0.1 - 2014-08-07 09:20:53 */
 var HTMLCS_Section508_Sniffs_A = {
     register: function() {
         return [ "img", "input", "area", "object", "applet", "bgsound", "audio" ];
@@ -4280,7 +4280,7 @@ var HTMLCSAuditor = new function() {
         document.body.appendChild(b);
         var c = {};
         var d = document.body.getElementsByClassName("HTMLCS-issue-details");
-        var e = '<h1>Accessibility Issue List</h1><div class="summary">' + "<strong>Location</strong>: " + window.location.href + "<br /><strong>Date</strong>:" + m() + "</div>";
+        var e = '<h1>Accessibility Issue List</h1><div class="summary">' + "<strong>Location</strong>: " + window.location.href + "<br /><strong>Date</strong>:  " + m() + "</div>";
         for (var f = 0; f < d.length; f++) {
             var g = d[f];
             var h = g.getElementsByClassName("HTMLCS-issue-title")[0].innerHTML;
