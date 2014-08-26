@@ -74,6 +74,44 @@ body {
   background-color:#000000;
 }
 
+/* general styles */
+
+.clear {
+  clear: both;
+}
+
+.pad10 {
+  padding: 10px;
+}
+
+.box-danger {
+  margin: 20px 0;
+  background-color: #f2dede;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #d9534f;
+}
+
+.box-danger > h4:before {
+  content: "Danger";
+  color: #d9534f;
+}
+
+.box-tip {
+  margin: 20px 0;
+  background-color: #d9edf7;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #3071a9;
+}
+
+.box-tip > h4:before {
+  content: "Tip";
+  color: #3071a9;
+}
+
 @media (min-width: 800px)
 {
   .padding20 {
