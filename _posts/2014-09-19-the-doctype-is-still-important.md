@@ -21,7 +21,7 @@ While bringing the CSS to modern standards, I used the CSS "before" attribute, a
 
 The style was quite simple:
 
-```
+```css
 .spiffy-form input.required-field:before {
     content: "*";
     font-weight: bold;
