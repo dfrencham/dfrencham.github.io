@@ -84,6 +84,10 @@ body {
   padding: 10px;
 }
 
+.round {
+  border-radius: 15px;
+}
+
 .box-danger {
   margin: 20px 0;
   background-color: #f2dede;
