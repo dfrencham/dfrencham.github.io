@@ -6,7 +6,7 @@ tags : [ikea,reno]
 ---
 {% include JB/setup %}
 
-Look at your tired old kitchen? Do you need to replace it? Look at all those happy people with new Ikea kitchens on the Internet.
+Look at your tired old kitchen. Do you need to replace it? Look at all those happy people with new Ikea kitchens on the Internet.
 
 <!--more-->
 
