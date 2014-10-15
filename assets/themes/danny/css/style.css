@@ -422,6 +422,16 @@ ul.howto li img {
 .syntaxhighlighter {
    overflow-y: hidden !important;
    overflow-x: auto !important;
+   font-size: 14px !important;
+   width: 100% !important;
+}
+
+.syntaxderphighlighter {
+  width: 100% !important;
+  margin: 1em 0 1em 0 !important;
+  position: relative !important;
+  overflow: auto !important;
+
 }
 
 div.content,div.date,div.page-header {
@@ -524,6 +534,12 @@ content: '\2014 \00A0';
   font-size: 16pt;
   font-weight: 700;
 }
+.messagebox {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 
 /* Family vs tech styles */
 .fancyHeading {
