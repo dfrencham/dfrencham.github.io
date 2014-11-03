@@ -76,8 +76,19 @@ layout: page
   {% endfor %}
 </ul>
 </div>
-
 <hr style="margin-top:5px;border-top: dashed 1px; border-color:#808080;">
-## About
+<div class="row">
+	<div class="col-md-6 col-xs-12">
+		<h2>Tags</h2>
+	<!-- start tag cloud -->
+	<div>
+		{% include JB/tag_cloud %}
+	</div>
+	<!-- end tag cloud -->
+	</div>
 
+	<div class="col-md-6 col-xs-12">
+		<h2>About</h2>
 Danny Frencham is a 30-something software developer, based in Brisbane Australia. Danny works primarily in the .Net space, and is currently writing Single-Page-Apps for large enterprise clients. On weekends, you can find him attempting DIY projects (badly), or integrating things in odd ways (ever seen a RaspberryPi reading a home power meter with a webcam and OCR?).
+	</div>
+</div>

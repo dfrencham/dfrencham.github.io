@@ -39,7 +39,7 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <!--<div class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -57,64 +57,31 @@
             {% include JB/pages_list %}
             <li><a href="{{ BASE_PATH }}/atom.xml">Feed</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div> -->
+    <div class="title-box">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="title-header-text"><a href="/">DIY Developer</a></div>
+          <div class="title-tagline-text">software and power tools, yay!</div>
+        </div>
+        <div class="col-md-2"></div>
       </div>
     </div>
-    <div class="titlewrapwrap">
+    <!--<div class="titlewrapwrap">
         <div class="titlewrap">
           <div class="title-inner">
             <div class="title-header-text">DIY Developer</div>
             <div class="title-tagline-text">software development on weekdays, power tools on weekends.</div>
           </div>
         </div>
-    </div>
+    </div>-->
     <div class="container">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-12">
           {{ content }}
-        </div>
-        <div class="col-md-3">
-          <div align="center">
-            <img src="/assets/images/logo_sm_200.png" alt="Cheesy logo image" />
-            <!-- Place this tag where you want the widget to render. -->
-            <div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/100427219819027610598" data-rel="author"></div>
-
-            <!-- Place this tag after the last widget tag. -->
-            <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/platform.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
-          </div>
-          <div>
-            <h2 class='title'>Tag Cloud</h2>
-            <!-- start tag cloud -->
-            <div class="leftpad20">
-              {% include JB/tag_cloud %}
-            </div>
-            <!-- end tag cloud -->
-            <div class='clear'></div>
-          </div>
-          <div>
-            <h2 class='title'>Twitter</h2>
-              <div class=''>
-              <a class="twitter-timeline" href="https://twitter.com/dfrencham" data-widget-id="410268461357469696" height="300px">Tweets by @dfrencham</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-              </div>
-              <div class='clear'></div>
-          </div>
-          <div class=''>
-            <h2>Good Reads</h2>
-            <ul>
-            <li><a href='http://www.Kickstarter.com'>Kickstarter</a></li>
-            <li><a href='http://www.reddit.com'>Reddit</a></li>
-            <li><a href='http://www.hanselman.com/'>Scott Hanselman's Blog</a></li>
-            <li><a href='http://weblogs.asp.net/scottgu/‎'>Scotty Gu's Blog</a></li>
-            </ul>
-            <div class='clear'></div>
-          </div>
         </div>
       </div>
       <div class="row">
@@ -129,6 +96,14 @@
     </div><!-- /.container -->
   <div class="fancybbox">
   </div>
+  <!-- Place this tag after the last widget tag. -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
