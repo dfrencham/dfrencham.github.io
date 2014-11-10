@@ -22,10 +22,10 @@ While bringing the CSS to modern standards, I used the CSS "before" attribute, a
 The style was quite simple:
 
 ```
-  .spiffy-form input.required-field:before {
-      content: "*";
-      font-weight: bold;
-  }
+.spiffy-form input.required-field:before {
+    content: "*";
+    font-weight: bold;
+}
 ```
 
 In Firefox, I had a nice star displayed.
