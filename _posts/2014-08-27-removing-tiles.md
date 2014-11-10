@@ -76,13 +76,13 @@ I used a 20mm spade bit, and enlisted the help of my mate Jared. It turns out th
 
 ### Tool 2: Angle Grinder with Wire Brush
 
-If you believe Stack Exchange, this tool is all rainbows and fairies - ripping up thinset without any issue. At my house it just produced massive showers of sparks every time it hit thin set. This is not good. Sparks mean the brush is being ground away. I destroyed 90% of the brush within 5 minutes. This is the Windows Vista of tools... full of promises, but only brings disappointment. 
+If you believe Stack Exchange, this tool is all rainbows and fairies - ripping up thinset without any issue. At my house it just produced massive showers of sparks every time it hit thin set. This is not good. Sparks mean the brush is being ground away. I destroyed 90% of the brush within 5 minutes. This is the Windows Vista of tools... full of promises, but only brings disappointment.
 
 **Verdict: Epic fail**
 
 ### Tool 3: Trolley Mounted Demolition Hammer
 
-I decided to bring in the big guns. I hired a Trolley Jack Hammer from Kennards with a 'Tile Smasher' attachment. Kennards call it a "vinal lifter", but the tool actually has "Tile Smasher" written on it. This jack hammer was great. I put it on the maximum height setting and started smashing through. You can't rush this machine, or you wil just have to go back and have a second go. Slow and steady, guide it along. I found that I frequently had to lift the trolley up off the ground to get enough angle - which is less bad than you may think, as this thing has a built in shock absorber!
+I decided to bring in the big guns. I hired a Trolley Jack Hammer from Kennards with a 'Tile Smasher' attachment. Kennards call it a "vinyl lifter", but the tool actually has "Tile Smasher" written on it. This jack hammer was great. I put it on the maximum height setting and started smashing through. You can't rush this machine, or you wil just have to go back and have a second go. Slow and steady, guide it along. I found that I frequently had to lift the trolley up off the ground to get enough angle - which is less bad than you may think, as this thing has a built in shock absorber!
 
 Again, heat is the enemy. Make sure you let the attachment cool down. I worked 15 minutes at a time, then spent 5 minutes clearing debris while the tile smasher cooled down. Some websites suggest cooling it in water. I'm sure it is expensive, so better to be cautious.
 
