@@ -30,7 +30,7 @@ h1 {
 }
 
 .title-box {
-  background: #000 url('/assets/images/header-small.jpg') no-repeat left bottom;
+  background: #000 url('/assets/images/header-small.jpg') no-repeat center bottom;
   width: 100%;
   height: 200px;
 }
@@ -133,7 +133,7 @@ body {
 @media (min-width: 800px)
 {
   .title-box {
-    background: #000 url('/assets/images/header.jpg') no-repeat left bottom;
+    background: #000 url('/assets/images/header.jpg') no-repeat center bottom;
     width: 100%;
     height: 400px;
   }
