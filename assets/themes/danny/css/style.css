@@ -94,6 +94,10 @@ body {
   clear: both;
 }
 
+.blog-img {
+  padding-bottom: 10px;
+}
+
 .pad10 {
   padding: 10px;
 }
