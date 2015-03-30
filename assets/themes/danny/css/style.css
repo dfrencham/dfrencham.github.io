@@ -1,7 +1,7 @@
 /* Global overrides */
 h4,h3,h2,h1 {
   font-weight: bold;
-  font-family: 'Oswald', 'serif';
+  font-family: 'Oswald', 'serif', arial;
 }
 
 h4 {
