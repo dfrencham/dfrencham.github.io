@@ -46,7 +46,7 @@ Here is how it actually works (this example uses a javascript triggered change):
 
 1. A page item is updated
 2. As a result, the DOM is updated
-3. The DOM change *might* raise an event to the Browser's accessibility API, as long as: 
+3. The DOM change *might* raise an event to the Browser's accessibility API, as long as:
 - does the browser support the associated accessibility API? (such as an Aria tag on the item)
 - does the change involve something we care about? (for example, ignore hidden objects)
 - should we randomly ignore it? The same type of DOM change that raised an event may not actually raise the event again, which is very frustrating.
@@ -65,7 +65,7 @@ There are a whole lot of events that can stop a screen reader from reading somet
 
 Things get worse as we mix in more javascript.
 
-Screen readers come from those quaint old times when javascript was only used for the occasional dialog and pages were generally static. In recent years, we have seen the rise of AJAX, JQuery, and the Single Page App pattern. 
+Screen readers come from those quaint old times when javascript was only used for the occasional dialog and pages were generally static. In recent years, we have seen the rise of AJAX, JQuery, and the Single Page App pattern.
 
 Consider the following: Your nice new single page app is dynamically loading a widget. You want to inform the user when that widget is ready. In theory, aria-live attributes should take care of it. In practice, browser support is patchy.
 
@@ -75,8 +75,7 @@ Nope.
 
 There is no way to *directly* raise an event to the browsers accessibility API. Instead, you have to do something like this:
 
-{% raw %}
-<script type="syntaxhighlighter" class="brush:css"><![CDATA[
+<pre class="line-numbers"><code class="language-css">
 //screen reader only, hide from everyone else
     .sr-only {
     position: absolute;
@@ -88,12 +87,12 @@ There is no way to *directly* raise an event to the browsers accessibility API. 
     clip: rect(0,0,0,0);
     border: 0;
 }
-]]></script>
+</code></pre>
 
-<script type="syntaxhighlighter" class="brush:javascript"><![CDATA[
-<div class="sr-only" id="screen-reader-text">
- <span role='alert' aria-live='assertive'>Accessibility Helper</span>
-</div>
+<pre class="line-numbers"><code class="language-markup">
+&lt;div class="sr-only" id="screen-reader-text"&gt;
+ &lt;span role='alert' aria-live='assertive'&gt;Accessibility Helper&lt;/span&gt;
+&lt;/div&gt;
 
 &lt;script&gt;
 function readMessage(msg)
@@ -106,8 +105,7 @@ function readMessage(msg)
 readMessage("Something happened");
 readMessage("Something else happened");
 &lt;/script&gt;
-]]></script>
-{% endraw %}
+</code></pre>
 
 The code above initialises an aria-live area (which is hidden off screen via CSS). We then clear it and re-insert a SPAN element to hopefully trigger an event the accessibility API will catch.
 
@@ -119,12 +117,10 @@ In some instances, it makes sense for a developer to **directly** interact with 
 
 Extend the BOM (Browser Object Model), and expose the accessibility API, allowing developers this additional path:
 
-{% raw %}
-<script type="syntaxhighlighter" class="brush:javascript"><![CDATA[
+<pre class="line-numbers"><code class="language-javascript">
     // don't actually try this, because it won't work
     browser.accessibility.readtext("Your phone number has been updated");
-]]></script>
-{% endraw %}
+</code></pre>
 
 It could work like this:
 
@@ -140,7 +136,7 @@ That is nice in theory, but the problem is that as technology and patterns chang
 
 Many developers will find hacky work-arounds. Many won't bother. Either way, Accessibility will suffer.
 
-How about extending some trust to developers, and giving us the option to directly message the Accessibility API when we need to? that way we can provide the best possible experience to our users - which is what application development is all about. 
+How about extending some trust to developers, and giving us the option to directly message the Accessibility API when we need to? that way we can provide the best possible experience to our users - which is what application development is all about.
 
 ###References###
 * [Mozilla Accessibility Architecture](https://developer.mozilla.org/en-US/docs/Mozilla/Accessibility/Accessibility_architecture)

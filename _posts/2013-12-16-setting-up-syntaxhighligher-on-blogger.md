@@ -6,7 +6,7 @@ category: tech
 tags: [development,blogging,syntax highligher]
 ---
 {% include JB/setup %}
-As a technical blogger, one of my first questions was: <blockquote>how do I add syntax highlighting to my blog?</blockquote> I discovered  [Syntax Highlighter](http://alexgorbatchev.com/SyntaxHighlighter/). 
+As a technical blogger, one of my first questions was: <blockquote>how do I add syntax highlighting to my blog?</blockquote> I discovered  [Syntax Highlighter](http://alexgorbatchev.com/SyntaxHighlighter/).
 Syntax Highlighter is a fantastic tool. It looks good, it is easy to set up, and it supports a large number of languages.
 <!--more-->
 
@@ -14,35 +14,43 @@ I am going to walk you through setting up Syntax Highlighter on the Blogger plat
 
 We are going to use the CDN (shared hosting) version of the scripts. Paste this code block in the HEAD section:
 
-{% raw %}<script class="brush: xml" type="syntaxhighlighter"><![CDATA[
-<link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
-<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
-<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript" />
-<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js' type='text/javascript'/>
-<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'/>
-<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'/>
-<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js' type='text/javascript'/>]]></script>{% endraw %}
+<pre class="line-numbers"><code class="language-markup">
+&lt;link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css"
+    rel="stylesheet" type="text/css" /&gt;
+&lt;link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css"
+    rel="stylesheet" type="text/css" /&gt;
+&lt;script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js"
+    type="text/javascript" /&gt;
+&lt;script src="http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js"
+    type="text/javascript"/&gt;
+&lt;script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js"
+    type="text/javascript"/&gt;
+&lt;script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js"
+    type="text/javascript"/&gt;
+&lt;script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js"
+    type="text/javascript"/&gt;&lt;/script&gt;
+</code></pre>
 
 This gives us the Syntax Highligher styles, core scripts, and support for HTML/C#/Javascript. If you need additional languages, simply copy the last line, and change the .js to one of the <a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/brushes/">available brushes</a>.
 
 Next, go to the bottom of the page, above the  tag. Add the following:
 
-{% raw %}<script class="brush: xml" type="syntaxhighlighter"><![CDATA[
+<pre class="line-numbers"><code class="language-markup">
 &lt;script type='text/javascript'&gt;
     // code highlight
     SyntaxHighlighter.config.bloggerMode = true;
     SyntaxHighlighter.all()
-&lt;/script&gt;]]></script>{% endraw %}
+&lt;/script&gt;</code></pre>
 
 This causes Syntax Highlighter parse your code samples. Syntax highligher is now configured. So, how do we post code samples?
 
 There are a number of ways, but I have found this is the most reliable way:
 
-{% raw %}<pre class="brush: xml;">&lt;script type="syntaxhighlighter" class="brush: xml"&gt;&lt;![CDATA[ 
- // Your code goes here! 
-]]&gt;&lt;/script&gt;
-</pre>{% endraw %}
-Note that the brush type needs to match one of the brushes you added in the .js imports further up. 
+<pre class="line-numbers"><code class="language-markup">
+&lt;script type="syntaxhighlighter" class="brush: xml"&gt;&lt;![CDATA[
+ // Your code goes here!
+]]&gt;&lt;/script&gt;</code></pre>
+Note that the brush type needs to match one of the brushes you added in the .js imports further up.
 
 Why do we use that odd CDATA syntax? It turns out that embedding code in code (such as this page) is harder than you might think. The browser will try to interpret the code. We can change all the code characters to character codes - but that alters the original code and quickly gets tiresome.
 

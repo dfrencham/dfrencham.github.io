@@ -22,7 +22,7 @@ list_steps: [["n402","Borked phone","Find a comfy spot and a level surface."],
 ---
 {% include JB/setup %}
 
-The Nexus4 is a great phone. Unfortunately it is a little bit fragile. I fell asleep with my N4 in my pocket... woke up, and the back had a crack. My wife dropped her N4 and the screen shattered. 
+The Nexus4 is a great phone. Unfortunately it is a little bit fragile. I fell asleep with my N4 in my pocket... woke up, and the back had a crack. My wife dropped her N4 and the screen shattered.
 
 I'm going to walk you through how to fix it.
 
@@ -67,7 +67,7 @@ You need a good set of small size screw drivers, including a phillips (cross) he
 <li>
 <a class="fancybox" rel="group" href="{{ site.url }}/assets/images/n4tools02.jpg" title="Torx. Even the name sounds cool."><img src="{{ site.url }}/assets/images/sm_n4tools02.jpg" style="width:200px;height:150px;" class="img-thumbnail" alt="Torx screw driver." /></a>
 <h4>Torx Screw Driver</h4>
-A Torx is like a phillips head that doesn't slip and strip the screw head. 
+A Torx is like a phillips head that doesn't slip and strip the screw head.
 </li>
 <li>
 <a class="fancybox" rel="group" href="{{ site.url }}/assets/images/n4tools03.jpg" title="Who doesn't like magnets."><img src="{{ site.url }}/assets/images/sm_n4tools03.jpg" style="width:200px;height:150px;" class="img-thumbnail" alt="Magnetic pickup tool." /></a>
@@ -78,4 +78,3 @@ The screws are pretty small, so a magnetic pickup tool is a good idea. You will 
 
 ###Step By Step Guide###
 {% include JB/list_steps %}
-

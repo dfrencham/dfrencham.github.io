@@ -16,13 +16,13 @@ New additions in C# 6 are focused on making developers more productive - getting
 
 Most C# devs will be familiar with this sort of code:
 
-{% raw %}<script type="syntaxhighlighter" class="brush: csharp"><![CDATA[
+<pre class="line-numbers"><code class="language-csharp">
 if (businessThing != null) && (businessThing.OtherThing != null) {
   if (businessThing.OtherThing.NestedThing != null) {
     businessThing.OtherThing.NestedThing.DoThings();
   }
 }
-]]></script>{% endraw %}
+</code></pre>
 
 A common repetitive task is to check that an object is not null, and if it is not null, do somthing with one of the objects properties.
 
@@ -34,9 +34,7 @@ This is the null propation operator. It does a null check of a property, and if 
 
 Our ugly block of code above, becomes this:
 
-{% raw %}<script type="syntaxhighlighter" class="brush: csharp"><![CDATA[
-businessThing?.OtherThing?.NestedThing.DoThings();
-]]></script>{% endraw %}
+<pre class="line-numbers"><code class="language-csharp">businessThing?.OtherThing?.NestedThing.DoThings();</code></pre>
 
 It really improves readability, as well as making your code more consise.
 
@@ -44,7 +42,7 @@ It really improves readability, as well as making your code more consise.
 
 This tells us the name of a variable. Here's a use case:
 
-{% raw %}<script type="syntaxhighlighter" class="brush: csharp"><![CDATA[
+<pre class="line-numbers"><code class="language-csharp">
 public void PrintFavourites(string animal, string food) {
   // using nameof
   if (animal == null)
@@ -56,7 +54,7 @@ public void PrintFavourites(string animal, string food) {
 
   // do stuff
 }  
-]]></script>{% endraw %}
+</code></pre>
 
 Cool huh?
 
@@ -70,9 +68,7 @@ Auto properties are great, but up until now we can't auto initialise them, which
 
 C#6 brings us auto property initialisers, allowing declaration and initialisation in a single line:
 
-{% raw %}<script type="syntaxhighlighter" class="brush: csharp"><![CDATA[
-public string Bob { get; } = "Dave";
-]]></script>{% endraw %}
+<pre class="line-numbers"><code class="language-csharp">public string Bob { get; } = "Dave";</code></pre>
 
 Bam. Done.
 

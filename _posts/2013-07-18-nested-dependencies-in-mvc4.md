@@ -2,7 +2,7 @@
 layout: post
 title: "Nested Dependencies in MVC4"
 description: ""
-category: tech 
+category: tech
 tags: [MVC4,development,C#,dotnet]
 ---
 {% include JB/setup %}
@@ -16,12 +16,11 @@ In this scenario, the Unity.Mvc4 nuGet package comes into play.
 
 Here is our home controller:
 
-{% raw %}
-<script type="syntaxhighlighter" class="brush:csharp"><![CDATA[
+<pre class="line-numbers"><code class="language-csharp">
 // Home controller
 public class HomeController : AsyncController
 {
-    private ILookupManager&lt;StatusLookup&gt; statusLookup; 
+    private ILookupManager&lt;StatusLookup&gt; statusLookup;
 
 	// constructor with lookup dependency
 	public HomeController(ILookupManager&lt;StatusLookup&gt; statusLookup)
@@ -29,14 +28,13 @@ public class HomeController : AsyncController
 		this.statusLookup = statusLookup;
 	}
 }
-]]></script>
-{% endraw %}
+</code></pre>
+
 Notice that the constructor requires the StatusLookup.
 
 Here is the Status Manager implementation. Observe that it is a generic class, expecting a StatusLookup object. The constructor requires a query passed in (of type IQuery).
 
-{% raw %}
-<script type="syntaxhighlighter" class="brush:csharp"><![CDATA[
+<pre class="line-numbers"><code class="language-csharp">
 //LookupManager.cs
 public class LookupManager&lt;T&gt; : ILookupManager&lt;T&gt; where T : ILookupField
 {
@@ -54,13 +52,11 @@ public class LookupManager&lt;T&gt; : ILookupManager&lt;T&gt; where T : ILookupF
 		return _query.Get();
 	}
 }
-]]></script>
-{% endraw %}
+</code></pre>
 
 This is where life gets easy. After installing the Unity.Mvc4 nuGet package, our MVC project gains a "boostrapper" class.&nbsp;This provides us with a simple mechanism to get any dependency into any class in our MVC app. It works by utilising the Unity&nbsp;Dependency Injection container.
 
-{% raw %}
-<script type="syntaxhighlighter" class="brush:csharp"><![CDATA[
+<pre class="line-numbers"><code class="language-csharp">
 // Boostrapper.cs
 // Added by the Unity.Mvc4 NuGet package
 private static IUnityContainer BuildUnityContainer()
@@ -69,15 +65,14 @@ private static IUnityContainer BuildUnityContainer()
 
 	// initialise Status lookup
 	container.RegisterType&lt;IQuery&lt;StatusLookup&gt;, QueryStatusLookup&gt;();
-	
+
 	// make Status lookup available to mvc4 controllers
 	container.RegisterType&lt;ILookupManager&lt;StatusLookup&gt;, LookupManager&lt;StatusLookup&gt;&gt;();
-	
+
 	RegisterTypes(container);
 	return container;
 }
-]]></script>
-{% endraw %}
+</code></pre>
 
 If we have a look at the BuildUnityContainer() method, there are two calls to container.RegisterType(). The first is to provide the IQuery dependency to StatusLookup. The second is to provide the StatusLookup dependency to our HomeController.
 

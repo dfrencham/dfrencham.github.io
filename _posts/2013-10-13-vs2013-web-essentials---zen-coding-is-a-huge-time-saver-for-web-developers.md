@@ -14,68 +14,68 @@ Enter <a href="https://code.google.com/p/zen-coding/">Zen Coding</a>. In a nutsh
 
 I can't overstate how awesome this feature is. For example, if I type:
 
-{% raw %}<script class="brush: xml" type="syntaxhighlighter"><![CDATA[
+<pre class="language-markup"><code class="language-markup">
 div
-]]></script>{% endraw %}
+</code></pre>
 
 ...and then hit the tab key, I get:
 
-{% raw %}<script class="brush: xml" type="syntaxhighlighter"><![CDATA[
-<div>
-</div>
-]]></script>{% endraw %}
+<pre class="language-markup"><code class="language-markup">
+&lt;div&gt;
+&lt;/div&gt;
+</code></pre>
 
 A div has been added for me. But what if I need to add a CSS Id?
 
-{% raw %}<script class="brush: xml" type="syntaxhighlighter"><![CDATA[
+<pre class="language-markup"><code class="language-markup">
 div#mainContent
 
 // tab...
-<div id="mainContent">
-  </div>
-]]></script>{% endraw %}
+&lt;div id="mainContent"&gt;
+&lt;/div&gt;
+</code></pre>
 
 We can add a CSS class too:
 
-{% raw %}<script class="brush: xml" type="syntaxhighlighter"><![CDATA[
+<pre class="language-markup"><code class="language-markup">
 div#mainContent.redbox
 
 // tab...
-<div id="mainContent" class="redbox">
-</div>
-]]></script>{% endraw %}
+&lt;div id="mainContent" class="redbox"&gt;
+&lt;/div&gt;
+</code></pre>
 
 Maybe we need some test data to check our layout? Zen even supports Lorem Ipsum!
 
-{% raw %}<script class="brush: xml" type="syntaxhighlighter"><![CDATA[
+<pre class="language-markup"><code class="language-markup">
 div>lorem
 
 // tab...
-<div>
+&lt;div&gt;
     Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-</div>
-]]></script>{% endraw %}
+&lt;/div&gt;
+</code></pre>
 
 This part is cool. What if we want 3 table rows, each with 2 columns? (yes, I know, you all use pure CSS now - not tables)..
 
-{% raw %}<script class="brush: xml" type="syntaxhighlighter"><![CDATA[
+<pre class="language-markup"><code class="language-markup">
 table>tr*3>td*2
 
 // tab...
-<table>
-<tr>
-        <td></td>
-        <td></td>
-    </tr>
-<tr>
-        <td></td>
-        <td></td>
-    </tr>
-<tr>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
-]]></script>{% endraw %}
+&lt;table&gt;
+&lt;tr&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;tr&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;tr&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
 
 If you find it isn't working after installing Web Extensions, make sure you are using the release copy of Visual Studio 2013 (the latest version of Web Extensions doesn't work with VS2013 pre-release). Let me know if you find more handy short cuts.<br />

@@ -79,8 +79,7 @@ Easy as that.
 Here is the code we need to make it all work.
 
 ### spa1_shell.js (Main Router)
-{% raw %}
-<script type="syntaxhighlighter" class="brush:css"><![CDATA[
+<pre class="line-numbers"><code class="language-css">
 define(function(require) {
   "use strict";
 
@@ -103,13 +102,11 @@ define(function(require) {
           .buildNavigationModel()
             .activate();
       }
-]]></script>
-{% endraw %}
+</code></pre>
 
 ### spa1_page1.js (Child Router)
 
-{% raw %}
-<script type="syntaxhighlighter" class="brush:css"><![CDATA[
+<pre class="line-numbers"><code class="language-css">
 define(['plugins/router', 'knockout'], function (router, ko) {
 
   var childRouter = router.createChildRouter()
@@ -123,13 +120,11 @@ define(['plugins/router', 'knockout'], function (router, ko) {
     router: childRouter, //the property on the view model should be called router
     continueClick: continueClick // we still want to capture this event
   };
-]]></script>
-{% endraw %}
+</code></pre>
 
 ### spa1_page1.html (Second SPA host)
 
-{% raw %}
-<script type="syntaxhighlighter" class="brush:css"><![CDATA[
+<pre class="line-numbers"><code class="language-css">
 <div class="underlined">
   <h2>Heading</h2>
 </div>
@@ -144,5 +139,4 @@ define(['plugins/router', 'knockout'], function (router, ko) {
 
 <button type="button" role="button" class="btn btn-primary" title="Save and Continue" data-bind="click: continueClick">Save and Continue</button>
 
-]]></script>
-{% endraw %}
+</code></pre>

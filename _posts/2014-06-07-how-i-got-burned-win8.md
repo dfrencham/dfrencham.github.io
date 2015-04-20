@@ -20,7 +20,7 @@ My re-install plan was simple:
 
 - use the Windows 8 ISO to make a bootable USB installer
 - remove old hard drive and place in USB3 enclosure
-- install SSD 
+- install SSD
 - install Windows 8 on SSD from USB stick
 - restore data from USB3 enclosure
 
@@ -46,16 +46,16 @@ The next step was to try creating the partitions manually. It didn't work, but h
 	LIST DISK 	(identify your SSD disk number (from 0 to n disks))
 	SELECT DISK <n>  (where <n> is your SSD disk number)
 	CLEAN
-	CREATE PARTITION PRIMARY 
+	CREATE PARTITION PRIMARY
 	ACTIVE
-	FORMAT FS=NTFS QUICK 
+	FORMAT FS=NTFS QUICK
 	ASSIGN
 
 	# now reboot
 
 I fired up the installer again.
 
-<div class="bg-danger has-error" style="padding:5px; margin-bottom:10px;"><span class="glyphicon glyphicon-remove form-control-feedback" style="margin-right:10px;"></span>We couldn't create a new partition or locate an existing one.</div> 
+<div class="bg-danger has-error" style="padding:5px; margin-bottom:10px;"><span class="glyphicon glyphicon-remove form-control-feedback" style="margin-right:10px;"></span>We couldn't create a new partition or locate an existing one.</div>
 
 Argh!
 
@@ -67,11 +67,11 @@ I did a bit of research and discovered that Windows 8 won't install off a USB st
 
 Is this really such an uncommon scenario? Windows 7 will install off of anything. I could whack a DVD against the screen of my laptop and Windows 7 will magically end up installed. Even geriatric old Windows XP would happily install from USB.
 
-What on earth have Microsoft done to break the Windows 8 installer so badly? 
+What on earth have Microsoft done to break the Windows 8 installer so badly?
 
 Windows 8.1 [appears to be fixed](http://windows.microsoft.com/en-AU/windows-8/create-reset-refresh-media), but that's no help because *a Windows 8 key is not valid to install Windows 8.1*. On what planet did Microsoft think this would be a good idea?
 
-I suspect there is probably some obscure technical reason, but wow. 
+I suspect there is probably some obscure technical reason, but wow.
 
 So, what is the solution?
 
@@ -132,7 +132,7 @@ At 1am, that seemed about as fun as setting myself on fire, so I searched for an
 7. Reboot Windows now.
 8. Run the activation utility afterwards, enter your product key to activate Windows.
 
-As soon as I followed those instructions, I could activate! 
+As soon as I followed those instructions, I could activate!
 
 ##Summary##
 
@@ -143,7 +143,7 @@ The areas that need improvement are
 1. Your installer needs to work with a USB stick plugged in.
 2. Windows 8 and 8.1 keys should be cross compatible with each other.
 3. Even if I own the upgrade edition, there needs to be a method of doing a clean install. Sure, you may need a validation step (enter your old product key, or insert old boot media for example), but make it straight forward. Keep in mind that many users do not get installation media when they buy a pc. When they do, it is often loaded up with crap-ware. A fresh install will give the best possible experience.
-4. Please have a look at your product activation. I shouldn't have to edit a registry entry to activate a product I have legally purchased. 
+4. Please have a look at your product activation. I shouldn't have to edit a registry entry to activate a product I have legally purchased.
 5. If I have a Windows 8 licence, let me download a Windows 8.1 iso with all the latest security patches. This would have saved me hours.
 
 If installing and activating is too difficult, many users will run a pirate copy instead - or worse, defect to a competitor. My coworker Json is Windows guy from way back (he even remembers all the old Win32 system calls). He switched to a MacBook Pro. Since changing, the only issue he has is that the machine refuses to boot if it feels he isn't smug enough. Json was making fun of my installation woes yesterday. You don't give Json any more ammunition, do you? (no, you don't).
