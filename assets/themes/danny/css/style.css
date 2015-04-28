@@ -708,3 +708,19 @@ border-radius: 15px;
   padding-right: 10px;
   font-weight: bold;
 }
+
+/*** Bootstrap overrides ***/
+/* override stupid bootstrap pre-tag stuff */
+pre {
+  padding: 0px !important;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
