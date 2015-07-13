@@ -50,19 +50,22 @@ If you run the plane the other way (off the end of the door), you greatly increa
 </div>
 {% endraw %}
 
-<img class="img-responsive blog-img " src="/assets/images/diy/plane-door-3.jpg" alt="marking the door" />
+<img class="img-responsive blog-img " src="/assets/images/diy/plane-door-3.jpg" alt="plane goes this way" />
 
 ### Step 4. Admire your handywork, rehang door ###
 
 Have a look at your door. Ensure you have taken off the right amount of material. I found that I needed to give the newly planed surface a quick sand with some 150 grit sandpaper to smooth it over a little (I probably need to sharpen my plane more often).
 
+<img class="img-responsive blog-img " src="/assets/images/diy/plane-door-4.jpg" alt="nicely doored" />
+
 Once you are satisfied, refit the door. Check that it now opens correctly. If not, take it down and go plane some more.
 
-<img class="img-responsive blog-img " src="/assets/images/diy/plane-door-4.jpg" alt="marking the door" />
+Update: @MaximRouiller informed me that I did not have a picture of the rehung door. Here it is...
 
+<img class="img-responsive blog-img " src="/assets/images/diy/plane-door-5.jpg" alt="rehung door" />
 
 ### Step 5. Paint ###
 
 The final thing to do is repaint the planed edge of the door. Doors are usually painted with a high gloss enamel. If you want to match the paint, get a piece of paint that your plane has taken off, and have it matched at your local paint / hardware store.
 
-Now you know fix a scraping door.
+Now you know how to fix a scraping door.
