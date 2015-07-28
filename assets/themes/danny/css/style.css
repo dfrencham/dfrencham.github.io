@@ -149,16 +149,10 @@ body {
 
 @media (min-width: 800px)
 {
-  /*.title-box {
-    background: #000 url('/assets/images/header.jpg') no-repeat center bottom;
-    background-attachment: fixed;
-    width: 100%;
-    height: 400px;
-  }*/
   .title-box {
     top: 250px;
-    left: 22%;
-    right: 22%;
+    left: 20%;
+    right: 20%;
   }
 
   header {
@@ -209,19 +203,6 @@ body {
   .title-header-text > a {
     text-decoration: none;
     color: #FFFFFF;
-  }
-  .title-tagline-text {
-  /*  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 28px;
-    color: #FFFFFF;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 30px;
-    margin-top: -10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    text-shadow: 2px 2px #000000;*/
   }
   .titlewrap {
     background: #000 url('/assets/images/titlebar.jpg') no-repeat left bottom;
