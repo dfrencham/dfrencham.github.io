@@ -731,3 +731,24 @@ h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 25px;
   margin-bottom: 10px;
 }
+
+ul.fa-good {
+   list-style-type: none;
+}
+
+ul.fa-good li:before {
+  font-family: 'FontAwesome';
+  content: '\f00c';
+  margin:0 5px 0 -15px;
+  color: darkgreen;
+}
+
+ul.fa-bad {
+   list-style-type: none;
+}
+ul.fa-bad li:before {
+  font-family: 'FontAwesome';
+  content: '\f00d';
+  margin:0 5px 0 -15px;
+  color: #f00;
+}
