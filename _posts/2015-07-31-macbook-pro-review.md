@@ -6,7 +6,7 @@ tags : [reviews]
 ---
 {% include JB/setup %}
 
-Here is my review of the Macbook Pro 13&ldquo - with ForceTouch.
+Here is my review of the Macbook Pro 13&ldquo; - with ForceTouch.
 
 <!--more-->
 
