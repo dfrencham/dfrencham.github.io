@@ -92,11 +92,11 @@ The only fault the screen has, is that it isn't a touch screen. A touch screen w
 
 ### Force Touch ###
 
-Force Touch is a nifty feature you may have heard about. Apple have removed the moving 'click' assembly from their track pads, and replaced it with a simulated 'click'. They achieved this using small motors generating 'haptic feedback' - the same tech offered in some smart phones.
+Force Touch is a nifty feature you may have heard about. Apple have removed the moving 'click' assembly from their track pads, and replaced it with a simulated 'click'. They achieved this using small motors capable of generating haptic feedback - the same tech offered in some smart phones.
 
 <img class="img-responsive blog-img " src="/assets/images/dev/mbp2.jpg" alt="track pad">
 
-I was initially skeptical. In day-to-day use, I can't tell the difference between force touch and a 'real' track pad. What makes it even better is that the track pad can sense the amount of force being used. The strength of the track pad click is configurable - which is nice. Additionally, force touch gives as a secondary 'deep click'. If you hold your finger on the pad after clicking, and push a little harder - you feel a deeper click (which apple call a Force Touch).
+I was initially skeptical but in day-to-day use, I can't tell the difference between force touch and a 'real' track pad. No big deal right? the draw card is that the track pad can sense the amount of force being used. Apple have used this to enable the strength of the track pad click to be configurable - which is nice. Additionally, they have provided an extra type of input. If you hold your finger on the pad after clicking, and push a little harder - you feel a deeper click (which apple call a Force Touch).
 
 The Force Touch option is context sensitive. In finder it will preview the file you have selected. If you force touch a docked app, it will reveal the window. Although these short cuts are nice, the big draw card will be pressure sensitivity. Being able to sketch in Photoshop with a stylus is a a killer feature for art/design type people.
 
@@ -142,7 +142,7 @@ The app store is virtually identical to what you have in IOS. It takes most of t
 
 ## The 2 month update ##
 
-I neglected to post this review for 2 months. Mostly because I thought the last thing the internet needs is another person gushing about Apple Hardware. On the upside, I can now give an update of how the MBP has performed in 2 months.
+I neglected to post this review for 2 months. Mostly because I thought the last thing the internet needs is another person gushing about Apple Hardware. On the upside, I can now give an update of how the MBP has performed after 2 months.
 
 The issues I've encountered are:
 
@@ -153,6 +153,6 @@ That's it. 2 months after completely changing hardware and operating systems, th
 
 ## Overall ##
 
-This laptop is the best purchase I have ever made. I have absolutely no regrets.
+This laptop is the best purchase I have ever made. I have absolutely no regrets. I rate this 5/5 bananas.
 
 <img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" /><img class="inline nana" src="{{ site.url }}/assets/images/b1.png" alt="nanananana" />
