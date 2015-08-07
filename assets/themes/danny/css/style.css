@@ -1,7 +1,7 @@
 /* Global overrides */
 h4,h3,h2,h1 {
   font-weight: bold;
-  font-family: 'Oswald', 'serif', arial;
+  font-family: 'Open Sans', 'serif', arial;
 }
 
 h4 {
@@ -48,11 +48,20 @@ header {
 
 /* main page styles */
 body {
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans',Helvetica,Arial,sans-serif;
   line-height: 1.5;
   font-size: 16px;
   font-weight: 300;
   overflow-x: hidden;
+}
+
+code, pre {
+	font-family: Menlo, Consolas, Monaco, 'Andale Mono', 'Lucida Console', monospace !important;
+  font-size: 13px !important;
+}
+
+pre[class*="language-"] {
+    background: hsl(220,13%,18%) !important;
 }
 
 .title-inner {
@@ -64,13 +73,11 @@ body {
 
 .title-header-text {
   font-family: 'Special Elite','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   color: #FFFFFF;
-  /*margin-left: auto;
-  margin-right: auto;
-  width: 400px;*/
   text-shadow: 2px 2px #000000;
+  padding-left: 20px;
 }
 
 .title-header-text > a {
@@ -194,7 +201,7 @@ body {
   }
   .title-header-text {
     font-family: 'Special Elite','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 64px;
+    font-size: 60px;
     font-weight: bold;
     color: #FFFFFF;
     text-shadow: 2px 2px #000000;

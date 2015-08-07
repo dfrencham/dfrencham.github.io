@@ -68,7 +68,7 @@ While using power tools, make sure you wear a respirator or class 2 dust mask, a
 
 The first tool I tried was my rotary hammer drill. For those who haven't seen one, it is the bigger, meaner brother of a hammer drill. A regular hammer drill can hammer while drilling and uses normal size drill bits. A rotary hammer drill can hammer while drilling, as well as hammering without spinning. This means you can put chisel attachments in it, and go to town.
 
-<div class="bg-info pad10">Heat is the enemy of the rotary hammer drill. I have managed to set two Aldi Hammer Drills on fire by working too long without letting the drill cool down. I have an Ozito now, which so far has survived the abuse I have thrown at it.</div>
+<div class="box-tip pad10"> <h4></h4> Heat is the enemy of the rotary hammer drill. I have managed to set two Aldi Hammer Drills on fire by working too long without letting the drill cool down. I have an Ozito now, which so far has survived the abuse I have thrown at it. The tip here is to let the drill cool down periodically.</div>
 
 I used a 20mm spade bit, and enlisted the help of my mate Jared. It turns out that removing 75sqm of tiles with a rotary hammer drill takes a very, very long time. We only got one third or less of the area done (in 1 day), and managed to snap the spade bit. I also discovered I had a second type of thinset that was a bastard mix of mortar and tar. Tiles bedded on that stuff did not lift and had to be smashed apart with the hammer drill.
 
@@ -136,3 +136,6 @@ This may seem excessive, but if you don't follow these steps, you will have dust
 This has taken a lot longer than I planned. It has taken 3 or 4 full days and a lot of running around. My house is dusty, and my family is living on concrete floors. Before you go down this path **really** think about whether you have enough time and patience.
 
 Would I still have done it, knowing what I know now? yes. Would I do it again in another house? probably not.
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=dide00-20&marketplace=amazon&region=US&placement=B000WA57KG&asins=B000WA57KG&linkId=5G7JBPVMM4ZDZDV5&show_border=true&link_opens_in_new_window=true">
+</iframe>
