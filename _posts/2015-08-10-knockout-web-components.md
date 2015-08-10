@@ -6,7 +6,7 @@ tags : [javascript,knockout]
 ---
 {% include JB/setup %}
 
-Web Components are the Next-Big-Thing&trade;, the second-coming, etc etc etc. Yeah, so we've all been hearing about web components. How can we use them in a nestable, compatible way? Remember KnockoutJS?
+Web Components are the Next-Big-Thing&trade;, the second-coming, etc etc etc. Yeah, so we've all been hearing about web components. How can we use them in a nestable, compatible way? 
 
 <!--more-->
 
