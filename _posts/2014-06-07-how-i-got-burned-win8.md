@@ -40,18 +40,21 @@ I figured I'd done something wrong, so I restarted the whole process (twice!) on
 
 The next step was to try creating the partitions manually. It didn't work, but here is the process:
 
-	# Boot up the command prompt (boot off DVD/USB, press shift-f10 when you get past the welcome screen) run these commands:
+<pre><code class="language-powershell">
 
-	DISKPART
-	LIST DISK 	(identify your SSD disk number (from 0 to n disks))
-	SELECT DISK <n>  (where <n> is your SSD disk number)
-	CLEAN
-	CREATE PARTITION PRIMARY
-	ACTIVE
-	FORMAT FS=NTFS QUICK
-	ASSIGN
+// Boot up the command prompt (boot off DVD/USB, press shift-f10 when you get past the welcome screen) run these commands:
 
-	# now reboot
+DISKPART
+LIST DISK 	(identify your SSD disk number (from 0 to n disks))
+SELECT DISK &lt;n&gt;  (where &lt;n&gt; is your SSD disk number)
+CLEAN
+CREATE PARTITION PRIMARY
+ACTIVE
+FORMAT FS=NTFS QUICK
+ASSIGN
+
+// now reboot
+</code></pre>
 
 I fired up the installer again.
 
@@ -83,18 +86,20 @@ Yes, you read that correctly. You have to copy the installation files onto the S
 
 To do this, start the repair option in the installer, and head back to the command prompt. Then do this:
 
-	//Boot up the command prompt (boot off DVD/USB, press shift-f10 when you get past the welcome screen) and do this:
+<pre><code class="language-powershell">
+//Boot up the command prompt (boot off DVD/USB, press shift-f10 when you get past the welcome screen) and do this:
 
-	// use DIR commands to figure out which drive is your USB drive, and which is your SSD
-	DIR /A C:
-	DIR /A D:
-	DIR /A E:
+// use DIR commands to figure out which drive is your USB drive, and which is your SSD
+DIR /A C:
+DIR /A D:
+DIR /A E:
 
-	// copy USB drive files to your SSD
-	// in my case the command was XCOPY /E /H /R E:\ C:\
-	XCOPY /E /H /R <source> <target>
+// copy USB drive files to your SSD
+// in my case the command was XCOPY /E /H /R E:\ C:\
+XCOPY /E /H /R &lt;source&gt; &lt;target&gt;
 
-	// now take the USB drive out and reboot. You should be in a working window 8 setup!
+// now take the USB drive out and reboot. You should be in a working window 8 setup!
+</code></pre>
 
 Problem solved, Windows 8 installed. [Here is a page](http://forum.notebookreview.com/samsung/697841-guide-how-install-windows-7-8-via-usb-np700z.html) with lots of solutions (including the above) for problems you may face installing Windows from a USB stick. Check them out.
 
