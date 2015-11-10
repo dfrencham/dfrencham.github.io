@@ -93,7 +93,7 @@ layout: page
 	</div>
 	<div class="col-xs-12 col-sm-6">
 
-	<h3>Programming</h3>
+	<h3>Code It</h3>
 	{% for tag in site.tags %}
 		{% if tag[0] contains 'programming' %}
 	  <ul>
