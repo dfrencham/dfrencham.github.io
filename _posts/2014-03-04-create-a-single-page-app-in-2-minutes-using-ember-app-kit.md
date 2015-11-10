@@ -3,7 +3,7 @@ layout: post
 title: "Create a Single Page App in 2 Minutes using Ember App Kit"
 description: ""
 category: tech
-tags: [development,single page app,javascript,ember]
+tags: [programming,single page app,javascript,ember]
 ---
 {% include JB/setup %}
 
@@ -20,7 +20,7 @@ In my experience they offer some advantages over traditional apps:
 
 along with some disadvantages:
 
-* Usually implemented with javascript (with all baggage it brings, such as horrendous function passing syntax everywhere) 
+* Usually implemented with javascript (with all baggage it brings, such as horrendous function passing syntax everywhere)
 * Can be harder to debug - you can end up in dependency hell
 * Common tasks such as continuous integration is harder than with more mature patterns such as MVC (example: making javascript unit tests play nice with TFS).
 
@@ -46,21 +46,21 @@ Esentially, this kit gives us an out-of-the-box ready to go application. You can
 Let's get started
 -----------------
 
-1. Go to Ember App Kit's git hub page and either (https://github.com/stefanpenner/ember-app-kit/archive/master.zip">Download the template (and unzip it to a folder) or clone the repo. 
-2. Install Node JS if you don't already have it. Ember App Kit uses Grunt to automate various tasks, and grunt uses Node. 
+1. Go to Ember App Kit's git hub page and either (https://github.com/stefanpenner/ember-app-kit/archive/master.zip">Download the template (and unzip it to a folder) or clone the repo.
+2. Install Node JS if you don't already have it. Ember App Kit uses Grunt to automate various tasks, and grunt uses Node.
 3. Once you have Node, open a command window and do a global install of Grunt using the following command:
-`npm install -g grunt-cli` 
+`npm install -g grunt-cli`
 4. Now install Bower. Bower is a client side package manager:
-`npm install -g bower` 
+`npm install -g bower`
 5. Still in the commend window, change to your new folder from step one. Install your npm dependencies:
-`npm install` 
+`npm install`
 6. Install your Bower dependencies:
 `bower install`
 
 Now run the app
 ---------------
 
-The following command will run your app in debug mode <b>and</b> watch for file changes (restarting the app as needed): 
+The following command will run your app in debug mode <b>and</b> watch for file changes (restarting the app as needed):
 `grunt server`
 
 ...and this is the result:
@@ -79,4 +79,3 @@ References
 * [Ember Sherpas - Introduction to Ember App Kit](http://embersherpa.com/articles/introduction-to-ember-app-kit/)
 * [EmberJS](http://emberjs.com/)
 * [GruntJS](http://gruntjs.com/)
-

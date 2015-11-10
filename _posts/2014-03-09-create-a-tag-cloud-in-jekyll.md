@@ -2,8 +2,8 @@
 layout: post
 title: "Create a tag cloud using Jekyll"
 description: ""
-category: tech 
-tags: [development,blogging,jekyll]
+category: tech
+tags: [programming,blogging,jekyll]
 ---
 {% include JB/setup %}
 
@@ -30,7 +30,7 @@ Copy and paste this into the file:
 {% endraw %}
 
 There is nothing too clever here. We just iterate through all the tags on your site, then output a span with a link in it. To give different weighting for each number, we:
-1. Get the percentage the tag makes up of the total 
+1. Get the percentage the tag makes up of the total
 2. Round down to the nearest 10 (eg, 43% becomes 4)
 3. Append that number to the style name. In this case, 43% becomes 4 becomes "tag-cloud-4"
 

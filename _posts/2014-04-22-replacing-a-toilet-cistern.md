@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Replacing a toilet cistern"
-tags : [plumbing,diy,argh]
+tags : [plumbing,fix-it,argh]
 shoppinglist: [[Toilet Cistern,''],[Small metal strip,'']]
 ---
 {% include JB/setup %}
@@ -27,7 +27,7 @@ I decided to try and fix it. Multiple people advised me that this was a bad idea
 
 I glued the lid back together with epoxy. I sanded it. It fell apart. I re-glued it with building glue. I made the mistake of not using expoxy filler and tried to compensate with extra paint (expoxy enamel).
 
-**Do not try to fill gaps with extra paint.** 
+**Do not try to fill gaps with extra paint.**
 
 It doesn't work. You end up with a layer of thick ugly paint, which may be liquid paint underneath. The finish will be terrible. You will need to sand it. I ended up with this abomination:
 
@@ -46,7 +46,7 @@ If you are buying a Cistern, measure up the mounting holes for your old cistern 
 ###Tools###
 
  - 2 x Shifter spanner (to remove the water line)
- - Power drill/driver 
+ - Power drill/driver
 
 ###Steps###
 
@@ -56,7 +56,7 @@ If you are buying a Cistern, measure up the mounting holes for your old cistern 
 <a class="fancybox" rel="group" href="{{ site.url }}/assets/images/toilet02.jpg"><img src="{{ site.url }}/assets/images/sm_toilet02.jpg" class="img-thumbnail" alt="sizing up the enemy" /></a>
 <h4>1</h4>
 The before shot. Turn off the water line next to the toilet. Unscrew the seat (this is usually a couple of thumb screws underneath the hinge at the back). Flush the toilet to clear out the excess water.
-<p />Use the shifter spanner to undo the water line. There should be a braided line with a screw on connector. You can use the 2 shifter spanners to undo that connector. Use one to hold the connector, and the other to unscrew the fitting. 
+<p />Use the shifter spanner to undo the water line. There should be a braided line with a screw on connector. You can use the 2 shifter spanners to undo that connector. Use one to hold the connector, and the other to unscrew the fitting.
 </li>
 
 <li>

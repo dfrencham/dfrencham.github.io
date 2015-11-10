@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "3 Awesome New C# Features"
-tags : [tech,dotnet,development]
+tags : [dotnet,programming]
 ---
 {% include JB/setup %}
 

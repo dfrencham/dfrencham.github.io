@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Digital Death - Saving your family's digital life"
-tags : [demolition,diy]
+tags : [family]
 ---
 {% include JB/setup %}
 

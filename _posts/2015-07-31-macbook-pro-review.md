@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Review - Macbook Pro 13&ldquo; (with ForceTouch)"
-tags : [reviews]
+tags : [review]
 ---
 {% include JB/setup %}
 

@@ -3,7 +3,7 @@ layout: post
 title: "Get Angular Running in 5 minutes "
 description: ""
 category: tech
-tags: [development,single page app,javascript]
+tags: [programming,single page app,javascript]
 ---
 {% include JB/setup %}
 
@@ -24,7 +24,7 @@ We are going to use the [Angular Seed](https://github.com/angular/angular-seed) 
 
 Fire up a command window, then run the following commands:
 
-	cd\git   (change this to the folder you intend to use) 
+	cd\git   (change this to the folder you intend to use)
 	git clone https://github.com/angular/angular-seed.git
 	cd angular-seed
 	cinst nodejs.install

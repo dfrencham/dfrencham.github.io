@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Finding a javascript performance gremlin"
-tags : [javascript]
+tags : [javascript,programming]
 ---
 {% include JB/setup %}
 

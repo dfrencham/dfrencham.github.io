@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Fix Dry Wall Surface"
-tags : [plastering,diy]
+tags : [plastering,fix-it]
 ---
 {% include JB/setup %}
 

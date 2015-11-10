@@ -2,7 +2,7 @@
 layout: post
 category: diy
 title: "How to plane a door"
-tags: [door]
+tags: [door,fix-it]
 ---
 {% include JB/setup %}
 

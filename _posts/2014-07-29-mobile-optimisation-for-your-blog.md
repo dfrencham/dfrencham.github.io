@@ -3,7 +3,7 @@ layout: post
 title: "Quick mobile optimisation for your blog"
 description: ""
 category: tech
-tags: [development,css]
+tags: [programming,css]
 ---
 {% include JB/setup %}
 

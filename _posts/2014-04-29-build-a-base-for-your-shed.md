@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Build a base for your shed"
-tags : [shed,diy]
+tags : [shed,build-it]
 shoppinglist: [[Sleepers,'2'],['Gravel',''],['Roadbase',''],['Sand',''],['Pavers',''],['Hex head batten screws',''],['(small) L-brackets','']]
 ---
 {% include JB/setup %}
@@ -13,16 +13,16 @@ When I moved into my house I inherited a very sad looking shed. It was jammed in
 
 ###One Sad Shed###
 
-I literally picked up and carried the shed to a new spot, and left it there, looking a little sad. 
+I literally picked up and carried the shed to a new spot, and left it there, looking a little sad.
 
 <a class="fancybox" rel="group" href="{{ site.url }}/assets/images/shed01.jpg" title="What can a shed do to get a little love?"><img class="img-responsive img-thumbnail" src="{{ site.url }}/assets/images/sm_shed01.jpg" alt="Sad shed" /></a><br />
 
-I felt bad for the poor little guy, so I cut the rust out of the sides, and pop riveted in some new panels. I even cut out a section of the roof, and put in a skylight using laserlight panels and a metric ton of silicon. 
+I felt bad for the poor little guy, so I cut the rust out of the sides, and pop riveted in some new panels. I even cut out a section of the roof, and put in a skylight using laserlight panels and a metric ton of silicon.
 The shed looked a lot happier, but still needed a solid base. To build my base I needed the items on my shopping list, and the following tools:
 
 - drill/driver
 - circular saw
-- shovel 
+- shovel
 - level
 - mallet
 
@@ -80,6 +80,6 @@ You could google it, and some nice chap on google will tell you that you can use
 
 If you really want to cut a paver properly you need a **BLOODY BIG ANGLE GRINDER**. Because I don't need much excuse to buy power tools, I took off to Bunnings and got myself an Ozito 9" angle grinder and a diamond tipped blade. Yes, Ozito may not be the top brand, but Bunnings are happy to swap them when they break (unlike Aldi who get *very* suspicious when you have not one but two rotary hammer drils catch fire).
 
-A 9" grinder with a diamond blade is literally a death machine. If you do try one, be aware that if you come in contact with the blade you will not just scratch yourself, you will probably take half the limb off. I won't go near mine without safety glasses, a face shield, and steel cap boots. On the plus side, you feel tough and manly when you are holding a **9" ANGLE GRINDER**. You can slice through pavers like butter, cut bricks with ease, and it won't take long before you look at the neighbours cat... back at the **9" ANGLE GRINDER** then back at the annoying cat. 
+A 9" grinder with a diamond blade is literally a death machine. If you do try one, be aware that if you come in contact with the blade you will not just scratch yourself, you will probably take half the limb off. I won't go near mine without safety glasses, a face shield, and steel cap boots. On the plus side, you feel tough and manly when you are holding a **9" ANGLE GRINDER**. You can slice through pavers like butter, cut bricks with ease, and it won't take long before you look at the neighbours cat... back at the **9" ANGLE GRINDER** then back at the annoying cat.
 
 Stupid cat.

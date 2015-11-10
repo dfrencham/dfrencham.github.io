@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Replace an old dome skylight"
-tags : [demolition,diy]
+tags : [fix-it]
 ---
 {% include JB/setup %}
 

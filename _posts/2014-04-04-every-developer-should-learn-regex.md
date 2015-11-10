@@ -1,7 +1,7 @@
 ---
 layout: post
 category : tech
-tags : [regex,development]
+tags : [regex,programming]
 ---
 {% include JB/setup %}
 
@@ -13,7 +13,7 @@ When combined with a good text editor, <a class="fancybox" href="http://imgs.xkc
 
 Developers from the \*nix world are usually familier with regex - they have the sed/awk commands at their fingertips for a very long time. Those with perl experience are all usually regex gurus as well. Perl seems to be a scripting language built on the premise that regex needed a friendly "wrapper", and they tend to use regex to the point of insanity ("hey look at what I can do in a single expression!"). There's no hell quite like mantaining another developers uncommended perl code.
 
-Microsoft stack developers, (on the other hand), generally only learn about regex when they are watching a coworker doing some find replace in a file. The initial reaction is always great. 
+Microsoft stack developers, (on the other hand), generally only learn about regex when they are watching a coworker doing some find replace in a file. The initial reaction is always great.
 
 	Developer1> *triggers the regex*
 	Developer2> *eyes go wide*
@@ -21,7 +21,7 @@ Microsoft stack developers, (on the other hand), generally only learn about rege
 	Developer1> "What?"
 	Developer2> "You know, that..! Replace all those lines at once!"
 
-Developer2 then spends the next hour researching regex and badgering Developer1 for more information. 
+Developer2 then spends the next hour researching regex and badgering Developer1 for more information.
 
 Back when I was Developer2 regex support used to be pretty rare in most text editors/IDEs. These days pretty much any editor (other than Notepad.exe) probably supports it right out of the box. Here are some details on the common editors:
 
@@ -66,7 +66,7 @@ Here is our match expression:
 Here is our replace rule:
 
 	INSERT INTO ContactDetails (CardNumber,FirstName,LastName,Address,Occupation) Values ($1,'$2','$3','$4','$5')\r\n
-	
+
 Here is the result:
 
 	INSERT INTO ContactDetails (CardNumber,FirstName,LastName,Address,Occupation) Values (34930,'Bob','Jones','23 Developer St','Baker')
@@ -90,5 +90,3 @@ These links should give you a good starting point to learn regex:
 - [Perl Regex Tutorial](http://perldoc.perl.org/perlretut.html)
 
 If you know a developer who doesn't know regex - teach them! Spread the love. It's too cool a skill to let other developers miss out on.
-
-

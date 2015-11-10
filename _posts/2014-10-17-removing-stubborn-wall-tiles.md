@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Remove wall tiles the lazy way"
-tags : [demolition,diy]
+tags : [demolition]
 ---
 {% include JB/setup %}
 

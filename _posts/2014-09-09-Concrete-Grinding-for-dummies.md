@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Concrete Floor Grinding for Dummies"
-tags : [diy,flooring]
+tags : [demolition,flooring]
 ---
 {% include JB/setup %}
 

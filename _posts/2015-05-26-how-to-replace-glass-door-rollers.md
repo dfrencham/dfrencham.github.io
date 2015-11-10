@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "How to replace glass door rollers"
-tags : [door,window]
+tags : [door,window,fix-it]
 ---
 {% include JB/setup %}
 

@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "My first few hours with Visual Studio Code"
-tags : [tech,csharp,javascript,css]
+tags : [tech,csharp,javascript,css,programming]
 ---
 {% include JB/setup %}
 

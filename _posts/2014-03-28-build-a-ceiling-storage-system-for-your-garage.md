@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Build a ceiling storage system for your garage"
-tags : [storage,diy]
+tags : [storage,build-it]
 shoppinglist: [[(A) Pine 89x19mm wide,'4'],[(B) Pine 70x35mm,2],[Plastic storage tubs,6],[Wood Glue,1],[Screws Phillips Head, Countersunk,'']]
 ---
 {% include JB/setup %}
@@ -15,7 +15,7 @@ I'm going to show you how to build a ceiling storage system for your garage. Thi
 
 Materials
 ---------
-First, select the storage tubs you want to use. They need to be sturdy enough that you can fill them to the brim whilst supporting them from both sides. Some cheap tubs have too much flex - so as soon as you put things in them, the sides will bend and the tub would fall out of the rail. 
+First, select the storage tubs you want to use. They need to be sturdy enough that you can fill them to the brim whilst supporting them from both sides. Some cheap tubs have too much flex - so as soon as you put things in them, the sides will bend and the tub would fall out of the rail.
 
 When selecting your timber, the rail (A) will need to be wide enough for the lip of the tub to rest on it.
 
@@ -39,9 +39,9 @@ The formula is (number of tubs) * (tub width + 40mm)
 
 The extra 40mm ensures you have space between tubs.
 
-Once you have this length you can use it to cut the following for each rail you want to make: 
+Once you have this length you can use it to cut the following for each rail you want to make:
 - 2 of the rails (A)
-- 1 of the spacers (B) 
+- 1 of the spacers (B)
 
 ###2. Find Ceiling Position###
 
@@ -49,9 +49,9 @@ Now is a good time to work out where you will put them on the ceiling. To do thi
 
 For reference, [here is a diagram of what a trussed roof looks like](http://cdn.instructables.com/FC4/VVO7/F9N2E2HA/FC4VVO7F9N2E2HA.MEDIUM.jpg) (image source: [Industructables](http://www.instructables.com/id/How-to-build-a-garage-from-the-ground-up/step10/Rough-in-the-roof/)).
 
-If you get lucky, a stud finder will pick them up. If your house is more than 10 years old (like mine!) you will most likely discover the plaster board (gyprock) has sagged a little. This will make your stud finder about as useful as a bicycle to a fish. 
+If you get lucky, a stud finder will pick them up. If your house is more than 10 years old (like mine!) you will most likely discover the plaster board (gyprock) has sagged a little. This will make your stud finder about as useful as a bicycle to a fish.
 
-Finding the first roof truss is the hard part. One way to do it, is to look at your ceiling from an angle and make an educated guess about where the truss may be (look for divots indicating screws under the plaster). From there, drill a tiny hole with a small drill bit. Hopefully you will hit timber. If not, move along a small distance and try again. 
+Finding the first roof truss is the hard part. One way to do it, is to look at your ceiling from an angle and make an educated guess about where the truss may be (look for divots indicating screws under the plaster). From there, drill a tiny hole with a small drill bit. Hopefully you will hit timber. If not, move along a small distance and try again.
 
 Once you have found the first truss, the second one will evenly spaced. I had a look in my ceiling, and found my trusses are 600mm apart. This meant I could drill 600mm along from the first truss I found, and bingo, there is the second truss.
 
@@ -59,8 +59,8 @@ If you have a friend, get them to hold the timber (A) against the ceiling, where
 
 ###3. Assemble Rails###
 
-1. Lay (A) down. Mark the centre line (length ways) with a pencil. 
-2. Drill a pilot hole every 20cm. Repeat this for your other (A) sized timber. 
+1. Lay (A) down. Mark the centre line (length ways) with a pencil.
+2. Drill a pilot hole every 20cm. Repeat this for your other (A) sized timber.
 3. Lay down one of the (B) pieces of timber with the short edge facing upwards. Run a line of wood glue down the timber, then place one of the (A) pieces on top (centred). Get your drill, and drive the screws into the pilot holes created earlier. Repeat this process for the other side.
 4. Repeat until all rails are complete.
 
@@ -72,7 +72,7 @@ If you have a friend, get them to hold the timber (A) against the ceiling, where
 ###5. Done!###
 
 All done! If needed, you can fix a small piece of timber to the backs of the rails to act as a "stopper" so the drawers don't fall off the back of the rail if pushed too far.
-A handy tip for labelling, is to put a strip of masking tape along the bottom of the storage box. Write the contents on it with a sharpy. 
+A handy tip for labelling, is to put a strip of masking tape along the bottom of the storage box. Write the contents on it with a sharpy.
 
 I've had this storage system in place for 6 months, and it has worked great. Post a comment if you give this a try.
 

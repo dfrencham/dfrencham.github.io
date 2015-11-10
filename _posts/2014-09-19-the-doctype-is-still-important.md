@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Yes, the doc-type is still important"
-tags : [html,css,how I got burned today]
+tags : [html,css,how I got burned today,programming]
 ---
 {% include JB/setup %}
 

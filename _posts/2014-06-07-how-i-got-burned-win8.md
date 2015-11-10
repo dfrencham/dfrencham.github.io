@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "How I Got Burned Today - Windows 8 Install"
-tags : [how I got burned today,windows 8]
+tags : [how I got burned today,windows 8,tech-guide]
 ---
 {% include JB/setup %}
 

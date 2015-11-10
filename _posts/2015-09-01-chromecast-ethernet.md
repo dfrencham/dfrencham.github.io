@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Add Ethernet to your ChromeCast for 12 bucks"
-tags : [ChromeCast]
+tags : [ChromeCast,tech-guide]
 ---
 {% include JB/setup %}
 

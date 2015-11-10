@@ -4,78 +4,118 @@ layout: page
 {% include JB/setup %}
 
 <div>
-<div class="fleft">
-{% for techpost in site.categories["tech"] limit: 2 %}
-<h3 class="post-title"><a href="{{techpost.url}}">{{ techpost.title }}</a></h3>
-<p class="text-primary">{{ techpost.date | date_to_string }}
-	<span class="label label-success">Tech</span></p>
-{% if techpost.skip_title != null %}
-{{ techpost.description }}
-{% endif %}
-{% if techpost.content contains '<!--more-->' %}
-{{ techpost.content | split:'<!--more-->' | first }}
-{% else %}
-{{ techpost.content | truncatewords:200 | strip_html }}
-{% endif %}
-<a href="{{ BASE_PATH }}{{ techpost.url }}" class="btn btn-default">
-  Read More <span class="glyphicon glyphicon-arrow-right"></span>
-</a>
-{% endfor %}
-</div>
+	<div class="fleft">
+	{% for techpost in site.categories["tech"] limit: 2 %}
+	<h3 class="post-title"><a href="{{techpost.url}}">{{ techpost.title }}</a></h3>
+	<p class="text-primary">{{ techpost.date | date_to_string }}
+		<span class="label label-success">Tech</span></p>
+	{% if techpost.skip_title != null %}
+	{{ techpost.description }}
+	{% endif %}
+	{% if techpost.content contains '<!--more-->' %}
+	{{ techpost.content | split:'<!--more-->' | first }}
+	{% else %}
+	{{ techpost.content | truncatewords:200 | strip_html }}
+	{% endif %}
+	<a href="{{ BASE_PATH }}{{ techpost.url }}" class="btn btn-default">
+	  Read More <span class="glyphicon glyphicon-arrow-right"></span>
+	</a>
+	{% endfor %}
+	</div>
 
-<div class="fright">
-{% for diypost in site.categories["diy"] limit: 2 %}
-<h3 class="post-title"><a href="{{diypost.url}}" class="post-title">{{ diypost.title }}</a></h3>
-<p class="text-primary">{{ diypost.date | date_to_string }}
-<span class="label label-danger">DIY</span></p>
-{% if diypost.content contains '<!--more-->' %}
-{{ diypost.content | split:'<!--more-->' | first }}
-{% else %}
-{{ diypost.content | truncatewords:200 | strip_html }}
-{% endif %}
-<a href="{{ BASE_PATH }}{{ diypost.url }}" class="btn btn-default">
-  Read More <span class="glyphicon glyphicon-arrow-right"></span>
-</a>
-{% endfor %}
-</div>
+	<div class="fright">
+	{% for diypost in site.categories["diy"] limit: 2 %}
+	<h3 class="post-title"><a href="{{diypost.url}}" class="post-title">{{ diypost.title }}</a></h3>
+	<p class="text-primary">{{ diypost.date | date_to_string }}
+	<span class="label label-danger">DIY</span></p>
+	{% if diypost.content contains '<!--more-->' %}
+	{{ diypost.content | split:'<!--more-->' | first }}
+	{% else %}
+	{{ diypost.content | truncatewords:200 | strip_html }}
+	{% endif %}
+	<a href="{{ BASE_PATH }}{{ diypost.url }}" class="btn btn-default">
+	  Read More <span class="glyphicon glyphicon-arrow-right"></span>
+	</a>
+	{% endfor %}
+	</div>
 </div>
 <p style="clear:both;" />
 <hr style="margin-top:5px;border-top: dashed 1px; border-color:#808080;">
-## All Posts
 
 {% assign diy = 0 %}
 {% assign tech = 0 %}
 
-<div class="recentposts">
-<ul class="posts">
-  {% for post in site.posts %}
-  {% if post.categories contains 'diy' %}
-    {% assign diy = diy | plus:1 %}
-  {% endif %}
-  {% if post.categories contains 'tech' %}
-    {% assign tech = tech | plus:1 %}
-  {% endif %}
-  {% if post.categories contains 'tech' and tech > 2 %}
-    <li>
-    	<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-    	<div style="padding-left:10px;padding-bottom:10px;">
-    		<span>{{ post.date | date_to_string }}</span>
-			  <span class="label label-success">Tech</span>
-    	</div>
-    </li>
-  {% endif %}
-  {% if post.categories contains 'diy' and diy > 2 %}
-    <li>
-      <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-      <div style="padding-left:10px;padding-bottom:10px;">
-        <span>{{ post.date | date_to_string }}</span>
-        <span class="label label-danger">DIY</span>
-      </div>
-    </li>
-  {% endif %}
-  {% endfor %}
-</ul>
+<div class="row">
+	<div class="col-xs-12 col-sm-6">
+
+
+	<h3>Build It</h3>
+	{% for tag in site.tags %}
+		{% if tag[0] contains 'build-it' %}
+	  <ul>
+	    {% assign pages_list = tag[1] %}
+	    {% include JB/pages_list %}
+	  </ul>
+		{% endif %}
+	{% endfor %}
+
+	<h3>Demolish It</h3>
+	{% for tag in site.tags %}
+		{% if tag[0] contains 'demolition' %}
+	  <ul>
+	    {% assign pages_list = tag[1] %}
+	    {% include JB/pages_list %}
+	  </ul>
+		{% endif %}
+	{% endfor %}
+
+	<h3>Fix It</h3>
+	{% for tag in site.tags %}
+		{% if tag[0] contains 'fix-it' %}
+	  <a class="tag-anchor" id="{{ tag[0] }}-ref"></a>
+	  <ul>
+	    {% assign pages_list = tag[1] %}
+	    {% include JB/pages_list %}
+	  </ul>
+		{% endif %}
+	{% endfor %}
+
+	<h3>Reviews</h3>
+	{% for tag in site.tags %}
+		{% if tag[0] contains 'review' %}
+	  <ul>
+	    {% assign pages_list = tag[1] %}
+	    {% include JB/pages_list %}
+	  </ul>
+		{% endif %}
+	{% endfor %}
+
+	</div>
+	<div class="col-xs-12 col-sm-6">
+
+	<h3>Programming</h3>
+	{% for tag in site.tags %}
+		{% if tag[0] contains 'programming' %}
+	  <ul>
+	    {% assign pages_list = tag[1] %}
+	    {% include JB/pages_list %}
+	  </ul>
+		{% endif %}
+	{% endfor %}
+
+	<h3>Tech Guides</h3>
+	{% for tag in site.tags %}
+		{% if tag[0] contains 'tech-guide' %}
+	  <ul>
+	    {% assign pages_list = tag[1] %}
+	    {% include JB/pages_list %}
+	  </ul>
+		{% endif %}
+	{% endfor %}
+
+	</div>
 </div>
+
 <hr style="margin-top:5px;border-top: dashed 1px; border-color:#808080;">
 <div class="row">
 	<div class="col-md-6 col-xs-12">

@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Mount a network cabinet"
-tags : [networking,diy]
+tags : [networking,build-it]
 ---
 {% include JB/setup %}
 

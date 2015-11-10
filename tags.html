@@ -1,21 +1,15 @@
 ---
 layout: page
-title: Tags
 header: Posts By Tag
 group: navigation
 ---
 {% include JB/setup %}
 
-<ul class="tag_box inline">
-  {% assign tags_list = site.tags %}
-  {% include JB/tags_list %}
-</ul>
-
-<h2> Pages By Tag </h2>
+<h1> Pages By Tag </h1>
 
 {% for tag in site.tags %}
   <a class="tag-anchor" id="{{ tag[0] }}-ref"></a>
-  <h3>{{ tag[0] }}</h3>
+  <h3 class="tag_box">{{ tag[0] }} <a><span>{{ tag[0].size }}</span></a></h3>
   <ul>
     {% assign pages_list = tag[1] %}
     {% include JB/pages_list %}

@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Floating Floors"
-tags : [diy,flooring]
+tags : [build-it,flooring]
 shoppinglist: [[Floating floor boards,''],['Tapping block',''],['Hammer',''],['Spacers',''],['Underlay',''],['Drop Saw',''],['Circular/Jig Saw',''],['Multitool','']]
 ---
 {% include JB/setup %}

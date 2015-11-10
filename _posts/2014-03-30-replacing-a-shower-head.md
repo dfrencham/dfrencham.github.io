@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Replacing a shower head"
-tags : [plumbing,diy]
+tags : [plumbing,fix-it]
 ---
 {% include JB/setup %}
 

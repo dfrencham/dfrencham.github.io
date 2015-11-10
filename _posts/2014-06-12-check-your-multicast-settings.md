@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Chromecast issues? Check your Multicast settings"
-tags : [networking,chromecast]
+tags : [networking,chromecast,tech-guide]
 ---
 {% include JB/setup %}
 
@@ -36,13 +36,13 @@ As far as your router is concerned, broadcasts and multicasts are very similar. 
 
 ##The symptoms of broken Multicasting##
 
-In my case, I had two issues that indicated multicasts were not configured properly. 
+In my case, I had two issues that indicated multicasts were not configured properly.
 
 The first issue was my Belkin WeMo light switch and power socket. These are network aware IP devices that can be switched on or off with my phone. I could control them via 3g, but not over my LAN. This seemed odd, but makes sense when you learn how the WeMo devices work.
 
 <div class="img-thumbnail inline textwrap-left" style="margin-right:30px;"><img src="{{ site.url }}/assets/images/cloud.jpg" alt="Broadcast" /><br /><i>Discovery Protocol in action</i></div>
 
-When away from your home network, WeMo devices register through Belkin's cloud service. They then accept push messages. So, your phone sends a "light on" command to the WeMo cloud, the WeMo cloud then sends a push message to the switch. 
+When away from your home network, WeMo devices register through Belkin's cloud service. They then accept push messages. So, your phone sends a "light on" command to the WeMo cloud, the WeMo cloud then sends a push message to the switch.
 
 On your home network, the cloud is not used - uPnP kicks in. Your phone sends a multicast discovery message along the lines of **"HEY! any WeMo devices out there?"**. The WeMo devices pick that up,  kick off a handshake with your phone, and away you go.
 
@@ -54,7 +54,7 @@ If the initial Multicast packet is not being sent/received, the ChromeCast will 
 
 My router had some multicasting options configured poorly, however uPnP was turned on. This resulted in intermittent discovery of the ChromeCast.
 
-As an interesting side note, the DIAL protocol was co-developed by Netflix and YouTube (with help from Sony and Samsung). My buddy Jase did something similar with discoverable sound hardware a few years back - but he didn't give it a cool name, so no one heard about it. 
+As an interesting side note, the DIAL protocol was co-developed by Netflix and YouTube (with help from Sony and Samsung). My buddy Jase did something similar with discoverable sound hardware a few years back - but he didn't give it a cool name, so no one heard about it.
 
 ##Suggested Router Settings##
 
@@ -129,7 +129,7 @@ After the changes have been made above, you will probably need to restart your r
 ##References##
 
 - [DD-WRT page on advanced wiresless settings](http://www.dd-wrt.com/wiki/index.php/Advanced_wireless_settings)
-- [Wikipedia Broadcasting](http://en.wikipedia.org/wiki/Broadcasting_(networking)) 
+- [Wikipedia Broadcasting](http://en.wikipedia.org/wiki/Broadcasting_(networking))
 - [Wikipedia Multicasting](http://en.wikipedia.org/wiki/Multicast)
 - [Cisco Chromecast setup whitepaper](http://www.cisco.com/c/en/us/td/docs/wireless/controller/technotes/7-6/chromecastDG76/ChromecastDG76.html)
 - [How Chromecast works](http://computers-solution.com/how-chromecast-works-chromecast-protocol-described/)

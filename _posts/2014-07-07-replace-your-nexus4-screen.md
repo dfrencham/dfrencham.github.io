@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Replace your Nexus 4 screen"
-tags : [phone,repair]
+tags : [phone,fix-it]
 list_steps: [["n402","Borked phone","Find a comfy spot and a level surface."],
 ["n403","Removing the sim card","Remove the sim tray. If you can't find your sim eject tool, a paper clip will do. If you forget this step, you will break off part of the back cover."],
 ["n404","T5 torx screws","See these two small screws on the bottom of the phone? Use a T5 torx screwdriver to remove them."],

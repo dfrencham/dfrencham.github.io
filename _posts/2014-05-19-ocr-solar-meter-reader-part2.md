@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "OCR Solar Meter Reader - Part 2"
-tags : [solar,meter,ocr,raspberry pi]
+tags : [solar,meter,ocr,raspberry pi,tech-guide]
 ---
 {% include JB/setup %}
 
@@ -56,7 +56,7 @@ Essentially, the pseudo-code version goes like this:
 
 I found a handy little command line tool for taking snaps - [uvccapture](http://manpages.ubuntu.com/manpages/natty/man1/uvccapture.1.html). All it needs is a camera location and resolution and away it goes.
 
-This is a photo taken with uvccapture: 
+This is a photo taken with uvccapture:
 
 <img class="img-responsive img-thumbnail" src="{{ site.url }}/assets/images/solar-webcam.jpg" alt="Web cam photo" />
 
@@ -83,7 +83,7 @@ I emailed the stern German with a list of the changes I made, but neglected to e
 
 SSOCR is really cool. It scans the image, line by line, and attempts to identify line segments. It then uses the segment data to figure out which number was discovered.
 
-Here is some debug output from SSOCR:			
+Here is some debug output from SSOCR:
 
 <img class="img-responsive img-thumbnail" src="{{ site.url }}/assets/images/solar-output.png" alt="OCR Output" />
 
@@ -103,9 +103,9 @@ This is how easy it is to submit data:
 					"X-Pvoutput-SystemId" => $pvoutput_sysid,
 					"Content-Type" => "application/x-www-form-urlencoded");
 
-	my $pvoutput_url = "http://pvoutput.org/service/r2/addoutput.jsp";	
+	my $pvoutput_url = "http://pvoutput.org/service/r2/addoutput.jsp";
 	my $request = POST $pvoutput_url, [ d => $date, e => $export*1000), ip => ($import*1000) ];
-	
+
 	my $res = $ua->request($request);
 
 	if (! $res->is_success) {
@@ -139,7 +139,7 @@ Very nice.
 
 ##Conclusion##
 
-It has taken a long time, and lots of experimenting to get the solar meter reader working reliably. I've had a lot of fun doing it, and learned a few things. 
+It has taken a long time, and lots of experimenting to get the solar meter reader working reliably. I've had a lot of fun doing it, and learned a few things.
 
 I went up the garden path a few times. For example: when I was having trouble getting the OCR to work reliably, I wrote a Node.js based site for selecting photos from the meter and updating pvoutput. That's a future blog post.
 

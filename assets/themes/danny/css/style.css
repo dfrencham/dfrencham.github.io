@@ -759,3 +759,44 @@ ul.fa-bad li:before {
   margin:0 5px 0 -15px;
   color: #f00;
 }
+
+/* table with vert text in headers */
+table.vert-text {
+  font-family: sans-serif;
+  border-collapse: collapse;
+}
+
+table.vert-text thead th {
+   -moz-transform: rotate(-90deg);  /* FF3.5+ */
+   -o-transform: rotate(-90deg);  /* Opera 10.5 */
+   -webkit-transform: rotate(-90deg);  /* Saf3.1+, Chrome */
+   filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  /* IE6,IE7 */
+   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; /* IE8 */
+   vertical-align: top;
+   padding: 75px 0;
+}
+table.vert-text th {
+  color: #666;
+  font-weight: bold;
+}
+table.vert-text td, th {
+  padding: 10px;
+  text-align: center;
+  border: solid 1px #999;
+}
+
+.tick:before {
+  font-family: 'FontAwesome';
+  content: '\f00c';
+  color: darkgreen;
+}
+.tick2:before {
+  font-family: 'FontAwesome';
+  content: '\f00c \f00c';
+  color: darkgreen;
+}
+
+.centered
+{
+    margin: 0 auto;
+}

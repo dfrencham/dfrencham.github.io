@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Removing Floor Tiles and Thinset"
-tags : [diy,flooring]
+tags : [floor,demolition]
 ---
 {% include JB/setup %}
 

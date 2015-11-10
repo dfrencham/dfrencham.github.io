@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Child proofing my TV"
-tags : [diy,family]
+tags : [fix-it,family]
 ---
 {% include JB/setup %}
 

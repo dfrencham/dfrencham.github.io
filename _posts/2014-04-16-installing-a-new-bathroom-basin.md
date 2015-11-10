@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Installing a new bathroom basin"
-tags : [plumbing,diy]
+tags : [plumbing,fix-it]
 shoppinglist: [[Basin,''],[Bathroom silicon caulk,''],[dishwashing soap,''],[Paddlepop Stick,'']]
 ---
 {% include JB/setup %}
@@ -97,7 +97,7 @@ This is in the new trap, ain't she a beauty. If you are wondering, this is an S-
 <li>
 <a class="fancybox" rel="group" href="{{ site.url }}/assets/images/sink16.jpg"><img src="{{ site.url }}/assets/images/sm_sink16.jpg" class="img-thumbnail" alt="plumbing done" /></a>
 <h4>9</h4>
-Here is the new trap plumbed in. On the bottom left, I used a 90 degree bend with an inspection opening. The inspection opening is handy if anything gets stuck in the bend or I need to clean the pipe. I also used a straight section of pipe and joined it to the existing with a slip coupling. Anything that can't be screwed together is held in place with plumbers cement - that blue glue seen in the picture. For cutting pipes, a hacksaw works best. 
+Here is the new trap plumbed in. On the bottom left, I used a 90 degree bend with an inspection opening. The inspection opening is handy if anything gets stuck in the bend or I need to clean the pipe. I also used a straight section of pipe and joined it to the existing with a slip coupling. Anything that can't be screwed together is held in place with plumbers cement - that blue glue seen in the picture. For cutting pipes, a hacksaw works best.
 </li>
 
 <li>
@@ -110,7 +110,7 @@ Nearly done, but missing one thing - silicone! <br />
 <li>
 <a class="fancybox" rel="group" href="{{ site.url }}/assets/images/sink14.jpg"><img src="{{ site.url }}/assets/images/sm_sink14.jpg" class="img-thumbnail" alt="putting on silicone" /></a>
 <h4>11</h4>
-I used Parfix Bathroom and Kitchen silicone, with the cheap $5 caulking gun from Bunnings. Make sure the area is dry before you start. You will need more than you think - we are going to wipe the excess off and smooth it after application. You want enough to fill the gap between the basin and the bench top. After you run the initial ring around the basin, spray it with a light mist of dish washing detergent and water. 
+I used Parfix Bathroom and Kitchen silicone, with the cheap $5 caulking gun from Bunnings. Make sure the area is dry before you start. You will need more than you think - we are going to wipe the excess off and smooth it after application. You want enough to fill the gap between the basin and the bench top. After you run the initial ring around the basin, spray it with a light mist of dish washing detergent and water.
 <p />
 Use a paddle pop stick over the silicone to give it a nice smooth edge. You will need to wipe the excess off on a rag pretty frequently. This detergent stops the silicone from bonding with the paddlepop stick.
 </li>

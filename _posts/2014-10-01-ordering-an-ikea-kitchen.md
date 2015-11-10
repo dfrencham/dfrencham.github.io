@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Ordering an Ikea Kitchen is as much fun as riding a cheese grater"
-tags : [ikea,reno]
+tags : [ikea,reno,build-it]
 ---
 {% include JB/setup %}
 

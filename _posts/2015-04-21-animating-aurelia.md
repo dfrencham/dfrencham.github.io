@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Animating Aurelia"
-tags : [tech,aurelia,javascript,css]
+tags : [programming,aurelia,javascript,css]
 ---
 {% include JB/setup %}
 

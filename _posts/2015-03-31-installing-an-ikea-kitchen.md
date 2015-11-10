@@ -2,7 +2,7 @@
 layout: post
 category : diy
 title: "Ikea Kitchen Part 2: Extract and Install"
-tags : [ikea,reno]
+tags : [ikea,reno,build-it]
 ---
 {% include JB/setup %}
 

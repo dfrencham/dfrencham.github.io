@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "How to Upgrade Windows 8 to Windows 10"
-tags : [tech,windows]
+tags : [tech-guide,windows]
 ---
 {% include JB/setup %}
 

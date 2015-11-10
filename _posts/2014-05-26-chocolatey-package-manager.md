@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Chocolatey - Package Management for Windows"
-tags : [package management]
+tags : [package management,tech-guide]
 ---
 {% include JB/setup %}
 
@@ -18,7 +18,7 @@ If you've spoken to a Debian user for more than 30 seconds, you've no doubt hear
 - install your application
 - place all the app components in standard locations within your file system.
 
-Cool, huh? It gets cooler. Apt will even *upgrade your entire operating system* via the dist-upgrade command. Incredible. 
+Cool, huh? It gets cooler. Apt will even *upgrade your entire operating system* via the dist-upgrade command. Incredible.
 
 There are five reasons apt works so well:
 
@@ -37,7 +37,7 @@ Chocolatey describes itself as follows:
 >Chocolatey is a global PowerShell execution engine using the NuGet packaging infrastructure. Think of it as the ultimate automation tool for Windows.
 >think about Chocolatey as a global silent installer for applications and tools. It can also do configuration tasks and anything that you can do with PowerShell.
 
-Nice. 
+Nice.
 
 Chocolatey has 7,636 packages. It is nowhere near the number available in apt-get repositories, but it is growing fast. Like apt, it manages your dependencies, and installs everything in a standard location (c:\Chocolatey). A root c:\ install location may seem bad at first glance, but it makes sense give that it manages packages per machine (not per user), and who wants to navigate to c:\Documents and Settings\All Users\etc\etc ?
 
@@ -94,7 +94,7 @@ or:
 
 ##Summary##
 
-I'm now a huge fan of Chocolatey. It seems reliable, and makes it very quick and easy to find software. It looks to be a huge time saver for automating environment set ups. 
+I'm now a huge fan of Chocolatey. It seems reliable, and makes it very quick and easy to find software. It looks to be a huge time saver for automating environment set ups.
 
 This is applicable to both the work place, as well as open source projects. No longer will we need huge wiki pages of instructions to get a new Developer up to speed - just fire off a batch or powershell script with all your Chocolaty calls in it.
 

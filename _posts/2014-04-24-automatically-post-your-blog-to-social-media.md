@@ -2,7 +2,7 @@
 layout: post
 category : tech
 title: "Automatically post your blog to social media"
-tags : [social media,ifttt,automation]
+tags : [social media,ifttt,automation,tech-guide]
 ---
 {% include JB/setup %}
 
@@ -12,7 +12,7 @@ If-That-Then-This ([IFTTT](http://ifttt.com)) is a fantastic (free!) integration
 
 <!--more-->
 
-First, a note on google. How can a company founded, staffed, and loved by developers be so terrible at APIs? A good public API allows developers to integrate. We make tools, we automate things, we develop apps that automatically post a picture of a cat on twitter when your WiFi aware light switch is turned on or off (true story). 
+First, a note on google. How can a company founded, staffed, and loved by developers be so terrible at APIs? A good public API allows developers to integrate. We make tools, we automate things, we develop apps that automatically post a picture of a cat on twitter when your WiFi aware light switch is turned on or off (true story).
 
 So, if any Googlers read this - please, *please* open your APIs!
 
@@ -20,9 +20,9 @@ So, if any Googlers read this - please, *please* open your APIs!
 
 Go to [IFTTT](http://ifttt.com) and sign up. Before starting, you are going to need to activate the Twitter and Feed channels. When you activate a channel, you need to configure all the associated settings for the service. In the case of twitter, you need to sign in your twitter account.
 
-IFTTT organises all of your tasks into recipes. We are going to create a new recipe. 
+IFTTT organises all of your tasks into recipes. We are going to create a new recipe.
 
-1. The **IF** part of If-This-Then-That refers to a trigger condition. In our case, it is a new blog post appearing in our blog's ATOM feed. Choose the "Feed" channel. 
+1. The **IF** part of If-This-Then-That refers to a trigger condition. In our case, it is a new blog post appearing in our blog's ATOM feed. Choose the "Feed" channel.
 <img class="img-responsive img-rounded post-image-inline " src="{{ site.url }}/assets/images/ifft_02.png" alt="Feed Channel" />
 
 2. Choose "New Feed Item" as the trigger.

@@ -2,7 +2,7 @@
 layout: post
 category: diy
 title: "How to replace your exhaust fan"
-tags: [bathroom]
+tags: [bathroom,fix-it]
 ---
 {% include JB/setup %}
 
