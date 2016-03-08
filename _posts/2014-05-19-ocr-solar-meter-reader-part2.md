@@ -28,7 +28,9 @@ We also need something to tie it all together. I'd usually use my beloved DotNet
 
 I considered using shell script, but then I remembered how much I hate shell scripting. I fired up my editor and hacked up some Perl. Why Perl? Perl is tried and tested, has good library support, and is available pretty much everywhere. Also, this is valid perl code which amuses me far more than it should:
 
+<pre class="language-perl"><code class="language-perl">
 	print'````'^RPQT
+</code></pre>
 
 How can you not love a language where that is valid code? [source](http://www.perlmonks.org/?node=Obfuscated%20Code). The only language sillier than that is BrainF*ck... god help anyone trying to do something productive with that.
 
@@ -40,16 +42,16 @@ Here is an flow chart of the process.
 
 Essentially, the pseudo-code version goes like this:
 
-	At 11:45pm take 20 photos
-	For each photo
-		OCR photo
-		If (value -ve) store export
-		Else store import
-	If we don't have import/export explode, and notify admin
-	Store import/export in CSV
-	Calculate daily import/export by subtracting previous days values
-	Send daily import/export to PVI Output REST API
-
+<pre class="language-text" ><code class="language-text" style="color:white;">At 11:45pm take 20 photos
+For each photo
+	OCR photo
+	If (value -ve) store export
+	Else store import
+If we don't have import/export explode, and notify admin
+Store import/export in CSV
+Calculate daily import/export by subtracting previous days values
+Send daily import/export to PVI Output REST API
+</code></pre>
 
 
 ##Taking Photos##
@@ -97,6 +99,7 @@ PVOutput provide a handy REST API for pushing your data in. As much as REST is s
 
 This is how easy it is to submit data:
 
+<pre class="language-perl"><code class="language-perl">
 	my $ua = LWP::UserAgent->new;
 	$ua->default_header(
 					"X-Pvoutput-Apikey" => $pvoutput_apikey,
@@ -111,6 +114,7 @@ This is how easy it is to submit data:
 	if (! $res->is_success) {
 		die "Couldn't submit data to pvoutput.org:" . $res->status_line . "\n";
 	}
+</code></pre>
 
 There is another reason to love perl. If things go wrong, we don't exit, or error like lesser languages. No, we commit seppiku. "I can't fulfil this task you ask of me, so I'm going to die".
 
