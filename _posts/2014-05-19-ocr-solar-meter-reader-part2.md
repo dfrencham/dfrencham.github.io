@@ -42,7 +42,7 @@ Here is an flow chart of the process.
 
 Essentially, the pseudo-code version goes like this:
 
-<pre class="language-text" ><code class="language-text" style="color:white;">At 11:45pm take 20 photos
+<pre><code style="color:white;">At 11:45pm take 20 photos
 For each photo
 	OCR photo
 	If (value -ve) store export
