@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.40.2" />
+
+  <title>Quick mobile optimisation for your blog &middot; DIYDeveloper.io</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/bootstrap-social.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900,900i|Fira+Sans:400,400i,700,700i,900,900i|Quicksand:300,400,500,700" rel="stylesheet" />
+  <link href="/css/prism.css" rel="stylesheet" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src='/js/prism.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/stackblur-canvas/1.4.0/stackblur.min.js' type='text/javascript'></script>
+
+
+  
+  <link rel="stylesheet" href="/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <script type='text/javascript'>
+   $(document).ready(function() {
+      $(".fancybox").fancybox({
+      helpers : {
+          title: {
+              type: 'inside',
+              position: 'top'
+          }
+      },
+      nextEffect: 'fade',
+      prevEffect: 'fade'});
+   });
+  </script>
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<article id="main">
+
+<div class="header title-header">
+    <h1><a href="/">DIY Developer</a></h1>
+    <h2>Power tools, software, 3d printing</h2>
+</div>
+
+<div class="content">
+
+    <div class="page-header">
+        <h1>Quick mobile optimisation for your blog</h1>
+    </div>
+  
+  <div class="post-meta">
+
+  
+  
+
+  
+     
+      
+      
+      
+    
+  
+  <div>
+      
+      <div style="float: left">
+        <p>
+            <time>29 Jul 2014</time>
+            
+            <br />
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f07%2f29%2fmobile-optimisation-for-your-blog%2f&amp;text=Quick%20mobile%20optimisation%20for%20your%20blog&amp;via=dfrencham"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f07%2f29%2fmobile-optimisation-for-your-blog%2f&amp;t=Quick%20mobile%20optimisation%20for%20your%20blog"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f07%2f29%2fmobile-optimisation-for-your-blog%2f"><i class="fa fa-google-plus"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f07%2f29%2fmobile-optimisation-for-your-blog%2f"><i class="fa fa-linkedin"></i></a>      
+            
+        </p>
+     </div>      
+      <div style="float: right">
+          
+          <p>
+          
+          
+          
+            <span class="taxonomy-tag">             
+                <i class="fa fa-tags fa-fw"></i>            
+                <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/programming">programming</a>
+            </span>
+          
+            <span class="taxonomy-tag">             
+                <i class="fa fa-tags fa-fw"></i>            
+                <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/css">css</a>
+            </span>
+          
+          
+          </p>
+          
+      </div>
+      <div style="clear:both;"></div>
+  </div>
+
+</div>
+
+  <p>Here are some quick changes to make your blog (or other site) more readable on mobile devices. TLDR: viewport and mediaqueries.</p>
+
+<p></p>
+
+<h2 id="where-to-begin">Where to begin?</h2>
+
+<p>Here is my starting point:</p>
+
+<p><img src="/images/acc/blog_before.png" style="width:300px;height:500px;border:1px solid black;" class="pure-img" alt="Ugly mobile site" /></p>
+
+<p>Straight away, we can identify the following issues:</p>
+
+<ul>
+<li>The title is too small and hard to read</li>
+<li>There are excessive side margins</li>
+<li>The columns are too small to be readable</li>
+</ul>
+
+<p>Not a good impression for a first time visitor.</p>
+
+<h2 id="fix-the-viewport">Fix the Viewport</h2>
+
+<p>The viewport meta tag was originally introduced in Safari, by Apple. It is not part of any standards, but all major browsers now support it.</p>
+
+<p>In a nutshell, the viewport meta tag allows developers to control the size and the scale of the web site display area. Mobile browsers have long used a &ldquo;view port&rdquo; to render the visible portion of a page. On larger websites, this allowed the viewport to be larger than the actual device - enabling the user to pan and zoom. This was browser controlled, and was usually a good thing. As most websites (at the time) were designed with 1024px wide screens as a minimum - the viewport enabled the user to have a good web experience.</p>
+
+<p>Things were fine - until Apple introduced the Retina display. This upped the pixel density and other manufacturers soon followed. Websites that looked fine on mobile were suddenly one third smaller.</p>
+
+<p>To deal with this, the CSS 2.1 spec included this line&hellip;</p>
+
+<blockquote>
+<p>If the pixel density of the output device is very different from that of a typical computer display, the user agent should rescale pixel values</p>
+</blockquote>
+
+<p>In other words, if a device has a display with a high pixel density, the browser should scale the page to allow it to display correctly.</p>
+
+<p>Add this line to the HEAD section of your page:</p>
+
+<pre class="line-numbers"><code class="language-markup">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+</code></pre>
+
+<p>The line above enables caling to occur. Once we provide an initial scale, the device can scale - determined by device resolution and size (a high res phone for exampke, may have a scale of 1.75 device pixels = one &ldquo;CSS&rdquo; pixel).</p>
+
+<p>Additionally, we have given the viewport a starting width based on the device screen width.</p>
+
+<p>Please note that you should only use viewport if your site is <em>responsive</em>.</p>
+
+<p>Now that our view port is properly set up, we can use Media Queries&hellip;</p>
+
+<h2 id="media-queries-are-great">Media Queries are great</h2>
+
+<p>Media queries are very very awesome. They allow use to target our CSS according to screen size. To see how useful this is, check this out. Say we have some CSS in our main content area that adds a 50px margin to each side:</p>
+
+<pre class="line-numbers"><code class="language-css">
+.padSides {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+</code></pre>
+
+<p>Well crap, now our mobile viewers have margins that are too big. Lets fix our margins by adding a media query:</p>
+
+<pre class="line-numbers"><code class="language-css">
+@media (min-width: 800px)
+{
+  .padSides {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+</code></pre>
+
+<p>The @media part indicates a media query. It is followed by a condition. In this case, the style(s) will be overridden when the viewport is 800px wide or greater. Remember that order is important in CSS. You need to put your media-query rules <strong>after</strong> your default rules - otherwise the media query rules will never be applied!</p>
+
+<p>Media queries can have rules for:</p>
+
+<ul>
+<li>width/height</li>
+<li>device type (TV or Handheld for example)</li>
+<li>device orientation</li>
+<li>and more&hellip;!</li>
+</ul>
+
+<h2 id="the-result">The Result</h2>
+
+<p>What does my blog look like now?</p>
+
+<p><img src="/images/acc/blog_after.png" style="width:300px;height:500px;border:1px solid black;" class="pure-img" alt="Nice looking mobile site" /></p>
+
+<p>Much better, eh?</p>
+
+<div class="highlight">Note: To get the final result I fixed a few other items in my media query CSS (title sizes, columns). I have excluded the details to keep it simple.</div>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag">Mozilla Docs on the viewport meta tag.</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries">Mozilla Guide on Media Queries</a></li>
+</ul>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://diydeveloper.io/tech/2014/07/19/family-vs-tech/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://diydeveloper.io/tech/2014/07/19/family-vs-tech/">Family vs Tech</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://diydeveloper.io/diy/2014/08/08/using-wall-anchors/">How to use drywall anchors</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://diydeveloper.io/diy/2014/08/08/using-wall-anchors/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dannydotnet';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</article>
+</div>
+<script src="/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48772536-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<footer class="page-footer">
+    <div class="pure-menu">
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+            
+              <a class="icon-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+            
+              <a class="icon-link" href="/posts/"><i class='fa fa-list fa-fw'></i>Archive</a>
+            
+              <a class="icon-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+            
+            <a class="icon-link" href=""><i class="fa fa-rss fa-fw"></i>RSS</a>
+            <a class="icon-link" href="https://github.com/dfrencham" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+            <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>
+      Built with <a href="https://gohugo.io/" target="_blank">Hugo</a>
+      Hosted on <a href="https://firebase.google.com/" target="_blank">Firebase</a>
+    </small>
+  </div>
+</div>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.40.2" />
+
+  <title>SPA within a SPA? Durandal child routers &middot; DIYDeveloper.io</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/bootstrap-social.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900,900i|Fira+Sans:400,400i,700,700i,900,900i|Quicksand:300,400,500,700" rel="stylesheet" />
+  <link href="/css/prism.css" rel="stylesheet" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src='/js/prism.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/stackblur-canvas/1.4.0/stackblur.min.js' type='text/javascript'></script>
+
+
+  
+  <link rel="stylesheet" href="/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <script type='text/javascript'>
+   $(document).ready(function() {
+      $(".fancybox").fancybox({
+      helpers : {
+          title: {
+              type: 'inside',
+              position: 'top'
+          }
+      },
+      nextEffect: 'fade',
+      prevEffect: 'fade'});
+   });
+  </script>
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<article id="main">
+
+<div class="header title-header">
+    <h1><a href="/">DIY Developer</a></h1>
+    <h2>Power tools, software, 3d printing</h2>
+</div>
+
+<div class="content">
+
+    <div class="page-header">
+        <h1>SPA within a SPA? Durandal child routers</h1>
+    </div>
+  
+  <div class="post-meta">
+
+  
+  
+
+  
+     
+      
+      
+      
+    
+  
+  <div>
+      
+      <div style="float: left">
+        <p>
+            <time>15 Oct 2014</time>
+            
+            <br />
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f10%2f15%2fdurandal-child-routers%2f&amp;text=SPA%20within%20a%20SPA%3f%20Durandal%20child%20routers&amp;via=dfrencham"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f10%2f15%2fdurandal-child-routers%2f&amp;t=SPA%20within%20a%20SPA%3f%20Durandal%20child%20routers"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f10%2f15%2fdurandal-child-routers%2f"><i class="fa fa-google-plus"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f10%2f15%2fdurandal-child-routers%2f"><i class="fa fa-linkedin"></i></a>      
+            
+        </p>
+     </div>      
+      <div style="float: right">
+          
+          <p>
+          
+          
+          
+            <span class="taxonomy-tag">             
+                <i class="fa fa-tags fa-fw"></i>            
+                <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/spa">spa</a>
+            </span>
+          
+            <span class="taxonomy-tag">             
+                <i class="fa fa-tags fa-fw"></i>            
+                <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/javascript">javascript</a>
+            </span>
+          
+            <span class="taxonomy-tag">             
+                <i class="fa fa-tags fa-fw"></i>            
+                <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/programming">programming</a>
+            </span>
+          
+          
+          </p>
+          
+      </div>
+      <div style="clear:both;"></div>
+  </div>
+
+</div>
+
+  <p>My current project had an interesting requirement come through: &ldquo;We want the app to navigate to another single page app when the user clicks next on this page, but still have our widgets at the top&rdquo;. The client wanted to utilise an existing durandal SPA inside a new durandal spa.</p>
+
+<p></p>
+
+<div class="bg-info messagebox round"><strong>Note</strong><br />This post is relates to the Durandal single page app framework. If you are not working with Durandal you are probably going to find it very dull.</div>
+
+<p>This is the requirement I was given:</p>
+
+<div id="wrapper" style="width:100%; text-align:center"><img class="pure-img img-thumbnail" src="/images/durandal1.png" alt="Ez-Anchor" /></div>
+
+<p>A SPA within a SPA using Durandal. Why? well, we have some existing SPAs that the client wants to reuse, but they need to run within a new SPA - as part of a multi-step process.</p>
+
+<p>There are two ways we can achieve this:</p>
+
+<ol>
+<li>Use Compose and directly load the view in your current SPA</li>
+<li>Use a child router</li>
+</ol>
+
+<p>Using compose is easier and faster, is only useful if you only want to use a single view. If you have a bit of complexity in the 2nd SPA, child routers are going to give you far more flexibility.</p>
+
+<h3 id="child-routers">Child routers?</h3>
+
+<p>Exactly what they sound like! A router that is logically a child of another router. They allow you to include an entire navigation structure from one spa, in a second SPA. As an added bonus you can raise events from one SPA to the other.</p>
+
+<p>As I have multiple pages and some complexity to deal with, I&rsquo;ve gone with a child router (rather than trying to jam in multiple views with compose).</p>
+
+<p>Here is my folder structure:</p>
+
+<ul>
+<li>Website
+
+<ul>
+<li>Apps
+
+<ul>
+<li>SPA1</li>
+<li>Views
+
+<ul>
+<li>spa1_page1.html (spa2 host)</li>
+<li>spa1_page2.html</li>
+<li>spa1_shell.html</li>
+</ul></li>
+<li>ViewModels
+
+<ul>
+<li>spa1_shell.js (router is here)</li>
+<li>spa1_page1.js (child router is here)</li>
+<li>spa1_page2.js</li>
+</ul></li>
+<li>DataModels</li>
+<li>SPA2</li>
+<li>Views
+
+<ul>
+<li>spa2_view1.html</li>
+</ul></li>
+<li>ViewModels
+
+<ul>
+<li>spa2_view1.js</li>
+</ul></li>
+<li>DataModels</li>
+<li>Shared</li>
+<li>Services</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>Here is the sequence of events when the user loads the SPA:</p>
+
+<ol>
+<li>User navigates to app/SPA2/page1.</li>
+<li>The router notices that the route matches a splat route: /SPA2/&#42;. The splat route points to a page containing a child router. The router is intelligent enough to determine that it should hand off to the child router.</li>
+<li>The second SPA hosted on the page attempts to load its default route.</li>
+</ol>
+
+<p>Easy as that.</p>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+<li>Your child router should logically be set up as a sub folder (meaning if your site is logically under /, your child router will need routes for /derp/) - if you try to use a flat structure, you are going to see &ldquo;route not found&rdquo; a lot, even when it should work. If you do get it to work, you may find that when you try to navigate out of your child SPA you get stuck in the child SPA, ending up with nested child SPAs. It&rsquo;s like dividing by 0, and can cause the end of the world. No one wants that.</li>
+<li>SPA2 needs to be hosted within a block element in a view in SPA1.</li>
+<li>The child router can be configured to pre-append a path to all route destinations, allowing them to all be relative to a given page.</li>
+<li>You may need to update your require.js conf to allow any services needed by SPA2 to be resolved.</li>
+<li>If both SPAs rely on <strong>different</strong> libraries with the same name (for instance, both have a common.js within the SPA, with different content) you are going to have to refactor a little and give these libraries different names/Ids. Otherwise you will end up in dependency hell.</li>
+</ul>
+
+<h2 id="code-sample">Code Sample</h2>
+
+<p>Here is the code we need to make it all work.</p>
+
+<h3 id="spa1-shell-js-main-router">spa1_shell.js (Main Router)</h3>
+
+<pre class="line-numbers"><code class="language-css">
+define(function(require) {
+  "use strict";
+
+      var router = require('plugins/router');
+      var system = require("durandal/system"),
+
+      return {
+        activate: activate
+      };
+
+      function activate() {
+
+        var routes = [
+            // Default view is the one with the empty string route
+            { route: '', moduleId: 'Splash', title: 'Splash', nav: true },
+            { route: '/SPA2/*', moduleId: 'PersonalDetailsHost', title: 'PD SPA', nav: true },
+        ];
+
+        return router.map(routes)
+          .buildNavigationModel()
+            .activate();
+      }
+</code></pre>
+
+<h3 id="spa1-page1-js-child-router">spa1_page1.js (Child Router)</h3>
+
+<pre class="line-numbers"><code class="language-css">
+define(['plugins/router', 'knockout'], function (router, ko) {
+
+  var childRouter = router.createChildRouter()
+      .makeRelative({
+        moduleId: '../../../../apps/SPA2/viewmodels',
+        fromParent: true
+      }).map([
+            { route: '*SPA2', moduleId: 'spa2_view1', title: 'This is SPArta' },
+      ]).buildNavigationModel();
+  return {
+    router: childRouter, //the property on the view model should be called router
+    continueClick: continueClick // we still want to capture this event
+  };
+</code></pre>
+
+<h3 id="spa1-page1-html-second-spa-host">spa1_page1.html (Second SPA host)</h3>
+
+<pre class="line-numbers"><code class="language-css">
+<div class="underlined">
+  <h2>Heading</h2>
+</div>
+
+<h3>SPA 1</h3>
+
+<div>Look, I could be a SPA 1 widget</div>
+
+<!-- second SPA lives in here -->
+<section id="content" data-bind="router: { transition: 'entrance', cacheViews: true }">
+</section>
+
+<button type="button" role="button" class="btn btn-primary" title="Save and Continue" data-bind="click: continueClick">Save and Continue</button>
+
+</code></pre>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://diydeveloper.io/diy/2014/10/01/ordering-an-ikea-kitchen/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://diydeveloper.io/diy/2014/10/01/ordering-an-ikea-kitchen/">Ordering an Ikea Kitchen is as much fun as riding a cheese grater</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://diydeveloper.io/diy/2014/10/17/removing-stubborn-wall-tiles/">Remove wall tiles the lazy way</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://diydeveloper.io/diy/2014/10/17/removing-stubborn-wall-tiles/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dannydotnet';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</article>
+</div>
+<script src="/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48772536-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<footer class="page-footer">
+    <div class="pure-menu">
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+            
+              <a class="icon-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+            
+              <a class="icon-link" href="/posts/"><i class='fa fa-list fa-fw'></i>Archive</a>
+            
+              <a class="icon-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+            
+            <a class="icon-link" href=""><i class="fa fa-rss fa-fw"></i>RSS</a>
+            <a class="icon-link" href="https://github.com/dfrencham" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+            <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>
+      Built with <a href="https://gohugo.io/" target="_blank">Hugo</a>
+      Hosted on <a href="https://firebase.google.com/" target="_blank">Firebase</a>
+    </small>
+  </div>
+</div>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
