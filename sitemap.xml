@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://diydeveloper.io/tech/2018/06/07/12v-fan-on-24v-printer/</loc>
+    <lastmod>2018-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://diydeveloper.io/diy/2016/01/18/a-trip-to-the-wreckers/</loc>
     <lastmod>2016-01-18T00:00:00+00:00</lastmod>
   </url>
@@ -303,6 +308,12 @@
   </url>
   
   <url>
+    <loc>https://diydeveloper.io/tags/3dprinter/</loc>
+    <lastmod>2018-06-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://diydeveloper.io/about/</loc>
   </url>
   
@@ -386,7 +397,7 @@
   
   <url>
     <loc>https://diydeveloper.io/</loc>
-    <lastmod>2016-01-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -423,6 +434,12 @@
   <url>
     <loc>https://diydeveloper.io/tags/dotnet/</loc>
     <lastmod>2014-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://diydeveloper.io/tags/electronics/</loc>
+    <lastmod>2018-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -570,7 +587,7 @@
   
   <url>
     <loc>https://diydeveloper.io/post/</loc>
-    <lastmod>2016-01-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -666,7 +683,7 @@
   
   <url>
     <loc>https://diydeveloper.io/tags/</loc>
-    <lastmod>2014-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
