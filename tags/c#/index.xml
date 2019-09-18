@@ -2,13 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C# on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/c#/</link>
+    <link>https://diydeveloper.io/tags/C#/</link>
     <description>Recent content in C# on DIYDeveloper.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Thu, 06 Feb 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.io/tags/C#/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -32,9 +31,7 @@ Sometimes something small like this can be a lot more frustrating than a big iss
 
 &lt;blockquote&gt;AutoMoq is an &amp;quot;auto-mocking&amp;quot; container that creates objects for you. Just tell it what class to create and it will create it.&lt;/blockquote&gt;
 
-&lt;p&gt;Why is this useful? Consider the following scenario. We have a BananaCakeFactory class, that relies on a Banana Repository.
-
-Here is the constructor:&lt;/p&gt;</description>
+&lt;p&gt;Why is this useful? Consider the following scenario. We have a BananaCakeFactory class, that relies on a Banana Repository.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -47,8 +44,7 @@ Here is the constructor:&lt;/p&gt;</description>
 
 &lt;p&gt;&amp;nbsp;A common scenario may be that your controller needs a Lookup Manager, and that manager needs a cached query passed in.&lt;/p&gt;
 
-&lt;p&gt;In this scenario, the Unity.Mvc4 nuGet package comes into play.
-&lt;/p&gt;</description>
+&lt;p&gt;In this scenario, the Unity.Mvc4 nuGet package comes into play.&lt;/p&gt;</description>
     </item>
     
   </channel>

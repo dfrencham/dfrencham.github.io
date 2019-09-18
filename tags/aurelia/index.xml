@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aurelia on DIYDeveloper.io</title>
+    <title>aurelia on DIYDeveloper.io</title>
     <link>https://diydeveloper.io/tags/aurelia/</link>
-    <description>Recent content in Aurelia on DIYDeveloper.io</description>
+    <description>Recent content in aurelia on DIYDeveloper.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Mon, 27 Apr 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://diydeveloper.io/tags/aurelia/index.xml" rel="self" type="application/rss+xml" />
@@ -17,9 +16,7 @@
       <pubDate>Mon, 27 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tech/2015/04/27/accidental-npm/</guid>
-      <description>&lt;p&gt;Last week I created a package - an NPM. I didn&amp;rsquo;t &lt;em&gt;intend&lt;/em&gt; to. I just wanted to use the Microsoft Signal-R javascript client, and I was surprised to see it wasn&amp;rsquo;t listed in the Node package repository.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Last week I created a package - an NPM. I didn&amp;rsquo;t &lt;em&gt;intend&lt;/em&gt; to. I just wanted to use the Microsoft Signal-R javascript client, and I was surprised to see it wasn&amp;rsquo;t listed in the Node package repository.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,9 +29,7 @@
 
 &lt;p&gt;&lt;img class=&#34;pure-img blog-img &#34; src=&#34;https://diydeveloper.io/images/aurelia-logo.png&#34; alt=&#34;Aurelia&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Now let&amp;rsquo;s use this massively powerful framework to animate a few boxes.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;Now let&amp;rsquo;s use this massively powerful framework to animate a few boxes.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Plastering on DIYDeveloper.io</title>
+    <title>plastering on DIYDeveloper.io</title>
     <link>https://diydeveloper.io/tags/plastering/</link>
-    <description>Recent content in Plastering on DIYDeveloper.io</description>
+    <description>Recent content in plastering on DIYDeveloper.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Mon, 24 Nov 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://diydeveloper.io/tags/plastering/index.xml" rel="self" type="application/rss+xml" />
@@ -17,9 +16,7 @@
       <pubDate>Mon, 24 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/diy/2014/11/24/repair-drywall-surface/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;ve tried ripping anything off drywall (like Tiles for instance), you&amp;rsquo;ve probably notice a problem. It utterly destroys the surface of the drywall. It is fairly easy to fix.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;If you&amp;rsquo;ve tried ripping anything off drywall (like Tiles for instance), you&amp;rsquo;ve probably notice a problem. It utterly destroys the surface of the drywall. It is fairly easy to fix.&lt;/p&gt;</description>
     </item>
     
   </channel>

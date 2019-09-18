@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bathroom on DIYDeveloper.io</title>
+    <title>bathroom on DIYDeveloper.io</title>
     <link>https://diydeveloper.io/tags/bathroom/</link>
-    <description>Recent content in Bathroom on DIYDeveloper.io</description>
+    <description>Recent content in bathroom on DIYDeveloper.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Wed, 19 Aug 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://diydeveloper.io/tags/bathroom/index.xml" rel="self" type="application/rss+xml" />
@@ -17,9 +16,7 @@
       <pubDate>Wed, 19 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/diy/2015/08/19/replace-your-exhaust-fan/</guid>
-      <description>&lt;p&gt;Is your old exhaust fan too noisy? does it let cold air through from your ceiling cavity? Exhaust fans are easy to replace. I&amp;rsquo;ll show you how.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Is your old exhaust fan too noisy? does it let cold air through from your ceiling cavity? Exhaust fans are easy to replace. I&amp;rsquo;ll show you how.&lt;/p&gt;</description>
     </item>
     
   </channel>

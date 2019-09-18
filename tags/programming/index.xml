@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming on DIYDeveloper.io</title>
+    <title>programming on DIYDeveloper.io</title>
     <link>https://diydeveloper.io/tags/programming/</link>
-    <description>Recent content in Programming on DIYDeveloper.io</description>
+    <description>Recent content in programming on DIYDeveloper.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://diydeveloper.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Make great git diagrams</title>
+      <link>https://diydeveloper.io/post/2019-09-18-make-great-git-diagrams/</link>
+      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://diydeveloper.io/post/2019-09-18-make-great-git-diagrams/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re a developer, sooner or later you find yourself having to talk about git branching strategies. Drawing this up in a drawing tool can be very time consuming for most of us mere mortals. Luckily there is a great little javascript library that exists purely for making git branching diagrams.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Calling pcap from Swift (using a closure)</title>
@@ -17,9 +25,7 @@
       <pubDate>Fri, 27 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tech/2015/11/27/swift-pcap/</guid>
-      <description>&lt;p&gt;Swift is Apple&amp;rsquo;s clever new language. It is designed to be intuitive, modern, and read-able. Which it is, until you want to make a call to a C library - such as pcap.h.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Swift is Apple&amp;rsquo;s clever new language. It is designed to be intuitive, modern, and read-able. Which it is, until you want to make a call to a C library - such as pcap.h.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +34,7 @@
       <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tech/2015/08/10/knockout-web-components/</guid>
-      <description>&lt;p&gt;Web Components are the Next-Big-Thing&amp;trade;, the second-coming, etc etc etc. Yeah, so we&amp;rsquo;ve all been hearing about web components. How can we use them in a nestable, compatible way?&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Web Components are the Next-Big-Thing&amp;trade;, the second-coming, etc etc etc. Yeah, so we&amp;rsquo;ve all been hearing about web components. How can we use them in a nestable, compatible way?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,9 +43,7 @@
       <pubDate>Sat, 30 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tech/2015/05/30/finding-a-javascript-performance-gremlin/</guid>
-      <description>&lt;p&gt;Performance issues in a JS app can be frustrating&amp;hellip; especially when your app is convoluted soup of data-bound observables. Today I discovered a performance gremlin. I&amp;rsquo;ll walk you through the process of finding it and rectifying it.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Performance issues in a JS app can be frustrating&amp;hellip; especially when your app is convoluted soup of data-bound observables. Today I discovered a performance gremlin. I&amp;rsquo;ll walk you through the process of finding it and rectifying it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -50,9 +52,7 @@
       <pubDate>Thu, 30 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tech/2015/04/30/microsoft-code/</guid>
-      <description>&lt;p&gt;Microsoft have released a new editor. This is Microsoft&amp;rsquo;s take on Sublime/Atom. It looks nice, it feels fast, and it can run on OSX or Linux (as well as Windows). I&amp;rsquo;ve been using it for work this morning - here are my impressions.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Microsoft have released a new editor. This is Microsoft&amp;rsquo;s take on Sublime/Atom. It looks nice, it feels fast, and it can run on OSX or Linux (as well as Windows). I&amp;rsquo;ve been using it for work this morning - here are my impressions.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -61,9 +61,7 @@
       <pubDate>Mon, 27 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tech/2015/04/27/accidental-npm/</guid>
-      <description>&lt;p&gt;Last week I created a package - an NPM. I didn&amp;rsquo;t &lt;em&gt;intend&lt;/em&gt; to. I just wanted to use the Microsoft Signal-R javascript client, and I was surprised to see it wasn&amp;rsquo;t listed in the Node package repository.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Last week I created a package - an NPM. I didn&amp;rsquo;t &lt;em&gt;intend&lt;/em&gt; to. I just wanted to use the Microsoft Signal-R javascript client, and I was surprised to see it wasn&amp;rsquo;t listed in the Node package repository.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -76,9 +74,7 @@
 
 &lt;p&gt;&lt;img class=&#34;pure-img blog-img &#34; src=&#34;https://diydeveloper.io/images/aurelia-logo.png&#34; alt=&#34;Aurelia&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Now let&amp;rsquo;s use this massively powerful framework to animate a few boxes.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;Now let&amp;rsquo;s use this massively powerful framework to animate a few boxes.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -87,9 +83,7 @@
       <pubDate>Mon, 15 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tech/2014/12/15/csharp6-new-features/</guid>
-      <description>&lt;p&gt;A new version of C# is on the way. Here are 3 new features to make your life easier.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A new version of C# is on the way. Here are 3 new features to make your life easier.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -98,9 +92,7 @@
       <pubDate>Wed, 15 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tech/2014/10/15/durandal-child-routers/</guid>
-      <description>&lt;p&gt;My current project had an interesting requirement come through: &amp;ldquo;We want the app to navigate to another single page app when the user clicks next on this page, but still have our widgets at the top&amp;rdquo;. The client wanted to utilise an existing durandal SPA inside a new durandal spa.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;My current project had an interesting requirement come through: &amp;ldquo;We want the app to navigate to another single page app when the user clicks next on this page, but still have our widgets at the top&amp;rdquo;. The client wanted to utilise an existing durandal SPA inside a new durandal spa.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -109,9 +101,7 @@
       <pubDate>Fri, 19 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/diy/2014/09/19/the-doctype-is-still-important/</guid>
-      <description>&lt;p&gt;or&amp;hellip; &amp;ldquo;why don&amp;rsquo;t my before/after pseudo elements work in IE8?&amp;rdquo;. It may be 2014, but doc types still matter.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;or&amp;hellip; &amp;ldquo;why don&amp;rsquo;t my before/after pseudo elements work in IE8?&amp;rdquo;. It may be 2014, but doc types still matter.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -120,9 +110,7 @@
       <pubDate>Tue, 29 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tech/2014/07/29/mobile-optimisation-for-your-blog/</guid>
-      <description>&lt;p&gt;Here are some quick changes to make your blog (or other site) more readable on mobile devices. TLDR: viewport and mediaqueries.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Here are some quick changes to make your blog (or other site) more readable on mobile devices. TLDR: viewport and mediaqueries.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,9 +119,7 @@
       <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tech/2014/06/20/angular-in-5-minutes/</guid>
-      <description>&lt;p&gt;Want to try some &lt;a href=&#34;https://angularjs.org/&#34;&gt;Angular&lt;/a&gt; development? Need to get a dev environment set up? With a couple of automation tools, I&amp;rsquo;ll have you up and going in 5 minutes.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Want to try some &lt;a href=&#34;https://angularjs.org/&#34;&gt;Angular&lt;/a&gt; development? Need to get a dev environment set up? With a couple of automation tools, I&amp;rsquo;ll have you up and going in 5 minutes.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -146,9 +132,7 @@
 
 &lt;p&gt;You are going to pull out your IDE, make a few tweaks to the app, and the screen reader will happily read your web application out to appreciative users.&lt;/p&gt;
 
-&lt;p&gt;After adding a few ARIA tags, you fire up a screen reader&amp;hellip;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;After adding a few ARIA tags, you fire up a screen reader&amp;hellip;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -159,9 +143,7 @@
       <guid>https://diydeveloper.io/diy/2014/04/04/every-developer-should-learn-regex/</guid>
       <description>&lt;p&gt;Being able to write Regex (otherwise known as Regular Expressions) is a skill every developer should learn. You can use Regex to find very specific text strings, to reformat files, and to do very specific replacements.&lt;/p&gt;
 
-&lt;p&gt;When combined with a good text editor, &lt;a class=&#34;fancybox&#34; href=&#34;http://imgs.xkcd.com/comics/regular_expressions.png&#34;&gt;you are unstoppable&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;When combined with a good text editor, &lt;a class=&#34;fancybox&#34; href=&#34;http://imgs.xkcd.com/comics/regular_expressions.png&#34;&gt;you are unstoppable&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -172,9 +154,7 @@
       <guid>https://diydeveloper.io/tech/2014/03/09/create-a-tag-cloud-in-jekyll/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently switched from Blogger to Github pages, and I&amp;rsquo;m using the very cool Jekyll app to manage my blog posts. For those that don&amp;rsquo;t know, Jekyll allows you to end your blog pages locally using Markup syntax, then it translates your post to HTML. From there, you commit it to a git repository.&lt;/p&gt;
 
-&lt;p&gt;One feature missing from Jekyll is Word Clouds. I will show you how to add one.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;One feature missing from Jekyll is Word Clouds. I will show you how to add one.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -208,8 +188,7 @@ In a SPA, either all necessary code – HTML, JavaScript, and CSS – is retriev
 
 &lt;p&gt;The high responsiveness alone makes SPAs worth of investigating. Responsive web apps == happy users!&lt;/p&gt;
 
-&lt;p&gt;Now I&amp;rsquo;m going to show you how to build one.
-&lt;/p&gt;</description>
+&lt;p&gt;Now I&amp;rsquo;m going to show you how to build one.&lt;/p&gt;</description>
     </item>
     
     <item>

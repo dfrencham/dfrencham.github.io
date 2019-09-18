@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Electronics on DIYDeveloper.io</title>
+    <title>electronics on DIYDeveloper.io</title>
     <link>https://diydeveloper.io/tags/electronics/</link>
-    <description>Recent content in Electronics on DIYDeveloper.io</description>
+    <description>Recent content in electronics on DIYDeveloper.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Thu, 07 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://diydeveloper.io/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
@@ -20,7 +19,16 @@
       <description>&lt;p&gt;More and more 3d printers are coming with 24 volt fans&amp;hellip; which can be a problem
 because 24v fans can be hard to find. Here is how you can attach a 12 volt Noctua fan.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;If you want a great, quiet hot-end fan&amp;hellip; look no further than the &lt;a target=&#34;_blank&#34; href=&#34;https://www.amazon.com/gp/product/B009NQLT0M/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B009NQLT0M&amp;linkCode=as2&amp;tag=dide00-20&amp;linkId=1d6e2ba2aa4b6fdb8ae5a887fe5121fd&#34;&gt;Noctua (NF-A4x10 FLX)&lt;/a&gt;&lt;img src=&#34;//ir-na.amazon-adsystem.com/e/ir?t=dide00-20&amp;l=am2&amp;o=1&amp;a=B009NQLT0M&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;. It is 12volt, practically silent, and comes with some handy adaptors.&lt;/p&gt;
+
+&lt;p&gt;The OmniJoin adaptor is the black connector in the first photo with 2 wires attached. You&amp;rsquo;ll also need:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a cheap buck converter&lt;/li&gt;
+&lt;li&gt;a 2 pin JST plug (for the printer end)&lt;/li&gt;
+&lt;li&gt;soldering iron&lt;/li&gt;
+&lt;li&gt;multi meter&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>
