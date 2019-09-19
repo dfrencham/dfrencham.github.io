@@ -3,23 +3,13 @@
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.58.2" />
 
   <title>visual studio &middot; DIYDeveloper.io</title>
 
   
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css">
-
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-old-ie-min.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
-  <!--<![endif]-->
-
   <link rel="stylesheet" href="/css/bootstrap-social.css">
   <link rel="stylesheet" href="/css/blog.css">
 
@@ -73,11 +63,8 @@
 
 
 <body>
-<div id="layout" class="pure-g">
 
-  
-<div id="main" class="pure-u-sm-1">
-<header>
+<header id="page-header">
     <div class="header title-header">
         <h1><a href="/">DIY Developer</a></h1>
         <h2>Power tools, software, 3d printing</h2>
@@ -92,12 +79,11 @@
       </div>
     </div>
     
-    <div class="pure-u-1">
     <article class="blog-post">
-        <div class="post-header">
-            <h2><a href="/tech/2014/02/06/fix-visual-studio-taking-a-long-time-to-load-debug-symbols/">Fix Visual Studio taking a long time to load debug symbols</a></h2>
-        </div>
-        <div class="post-meta">
+    <div class="post-header">
+        <h2><a href="/tech/2014/02/06/fix-visual-studio-taking-a-long-time-to-load-debug-symbols/">Fix Visual Studio taking a long time to load debug symbols</a></h2>
+    </div>
+    <div class="post-meta">
 
   
   
@@ -111,68 +97,62 @@
   
   <div class="article-meta">
       
-      <div class="">
-        <p>           
+      <div class="social-buttons"> 
             <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f02%2f06%2ffix-visual-studio-taking-a-long-time-to-load-debug-symbols%2f&amp;text=Fix%20Visual%20Studio%20taking%20a%20long%20time%20to%20load%20debug%20symbols&amp;via=dfrencham"><i class="fa fa-twitter"></i></a>
             <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f02%2f06%2ffix-visual-studio-taking-a-long-time-to-load-debug-symbols%2f&amp;t=Fix%20Visual%20Studio%20taking%20a%20long%20time%20to%20load%20debug%20symbols"><i class="fa fa-facebook"></i></a>
             <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f02%2f06%2ffix-visual-studio-taking-a-long-time-to-load-debug-symbols%2f"><i class="fa fa-linkedin"></i></a>  
             <a class="btn btn-social-icon btn-reddit" href="https://reddit.com/submit?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2014%2f02%2f06%2ffix-visual-studio-taking-a-long-time-to-load-debug-symbols%2f&title=Fix%20Visual%20Studio%20taking%20a%20long%20time%20to%20load%20debug%20symbols"><i class="fa fa-reddit"></i></a>      
-          </p>
      </div>
-     <div class="">
-          <p>
-          <span class="taxonomy-tag">             
+     <div class="tags">
+          <div class="taxonomy-tag">             
               <i class="fa fa-calendar fa-fw"></i>            
               <time>06 Feb 2014</time> 
-          </span>
+          </div>
           
             
             
               
-                <span class="taxonomy-tag">             
+                <div class="taxonomy-tag">             
                     <i class="fa fa-tags fa-fw"></i>            
                     <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/programming">programming</a>
-                </span>
+                </div>
               
-                <span class="taxonomy-tag">             
+                <div class="taxonomy-tag">             
                     <i class="fa fa-tags fa-fw"></i>            
                     <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/visual-studio">visual studio</a>
-                </span>
+                </div>
               
-                <span class="taxonomy-tag">             
+                <div class="taxonomy-tag">             
                     <i class="fa fa-tags fa-fw"></i>            
                     <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/argh">argh</a>
-                </span>
+                </div>
               
-                <span class="taxonomy-tag">             
+                <div class="taxonomy-tag">             
                     <i class="fa fa-tags fa-fw"></i>            
                     <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/C">C#</a>
-                </span>
+                </div>
               
             
           
-          </p>
       </div>
       
   </div>
 
 </div>
-        <p>I lost a good couple of hours tracking this one down. If Visual Studio is taking a very long time to load debug symbols when debugging (think 5 minutes to 30 minutes), try this&hellip;</p>
+    <p>I lost a good couple of hours tracking this one down. If Visual Studio is taking a very long time to load debug symbols when debugging (think 5 minutes to 30 minutes), try this&hellip;</p>
 
 <p><strong>Delete all break points</strong> (Debug - &gt; Delete All Break Points).</p>
 
 <p>Sometimes something small like this can be a lot more frustrating than a big issue. Hopefully this saves someone from going crazy.</p>
 
-        /eof
-    </article>
-</div>
+    <p>/eof</p>
+</article>
     
-    <div class="pure-u-1">
     <article class="blog-post">
-        <div class="post-header">
-            <h2><a href="/tech/2013/10/13/vs2013-web-essentials-zen-coding-is-a-huge-time-saver-for-web-developers/">VS2013 Web Essentials   Zen Coding is a huge time saver for web developers</a></h2>
-        </div>
-        <div class="post-meta">
+    <div class="post-header">
+        <h2><a href="/tech/2013/10/13/vs2013-web-essentials-zen-coding-is-a-huge-time-saver-for-web-developers/">VS2013 Web Essentials   Zen Coding is a huge time saver for web developers</a></h2>
+    </div>
+    <div class="post-meta">
 
   
   
@@ -186,53 +166,49 @@
   
   <div class="article-meta">
       
-      <div class="">
-        <p>           
+      <div class="social-buttons"> 
             <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2013%2f10%2f13%2fvs2013-web-essentials-zen-coding-is-a-huge-time-saver-for-web-developers%2f&amp;text=VS2013%20Web%20Essentials%20%20%20Zen%20Coding%20is%20a%20huge%20time%20saver%20for%20web%20developers&amp;via=dfrencham"><i class="fa fa-twitter"></i></a>
             <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdiydeveloper.io%2ftech%2f2013%2f10%2f13%2fvs2013-web-essentials-zen-coding-is-a-huge-time-saver-for-web-developers%2f&amp;t=VS2013%20Web%20Essentials%20%20%20Zen%20Coding%20is%20a%20huge%20time%20saver%20for%20web%20developers"><i class="fa fa-facebook"></i></a>
             <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2013%2f10%2f13%2fvs2013-web-essentials-zen-coding-is-a-huge-time-saver-for-web-developers%2f"><i class="fa fa-linkedin"></i></a>  
             <a class="btn btn-social-icon btn-reddit" href="https://reddit.com/submit?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2013%2f10%2f13%2fvs2013-web-essentials-zen-coding-is-a-huge-time-saver-for-web-developers%2f&title=VS2013%20Web%20Essentials%20%20%20Zen%20Coding%20is%20a%20huge%20time%20saver%20for%20web%20developers"><i class="fa fa-reddit"></i></a>      
-          </p>
      </div>
-     <div class="">
-          <p>
-          <span class="taxonomy-tag">             
+     <div class="tags">
+          <div class="taxonomy-tag">             
               <i class="fa fa-calendar fa-fw"></i>            
               <time>13 Oct 2013</time> 
-          </span>
+          </div>
           
             
             
               
-                <span class="taxonomy-tag">             
+                <div class="taxonomy-tag">             
                     <i class="fa fa-tags fa-fw"></i>            
                     <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/development">development</a>
-                </span>
+                </div>
               
-                <span class="taxonomy-tag">             
+                <div class="taxonomy-tag">             
                     <i class="fa fa-tags fa-fw"></i>            
                     <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/html">html</a>
-                </span>
+                </div>
               
-                <span class="taxonomy-tag">             
+                <div class="taxonomy-tag">             
                     <i class="fa fa-tags fa-fw"></i>            
                     <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/visual-studio">visual studio</a>
-                </span>
+                </div>
               
-                <span class="taxonomy-tag">             
+                <div class="taxonomy-tag">             
                     <i class="fa fa-tags fa-fw"></i>            
                     <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/javascript">javascript</a>
-                </span>
+                </div>
               
             
           
-          </p>
       </div>
       
   </div>
 
 </div>
-        <p>As a web developer, I have regularly found myself needing to type a large amount of HTML layout code. Your page starts to grow, and your eyes begin to glaze over as you type DIV after DIV.</p>
+    <p>As a web developer, I have regularly found myself needing to type a large amount of HTML layout code. Your page starts to grow, and your eyes begin to glaze over as you type DIV after DIV.</p>
 
 <p>Enter <a href="https://code.google.com/p/zen-coding/">Zen Coding</a>. In a nutshell, ZenCoding is a set of editor extensions, allowing a developer to use shorthand for common tasks. Microsoft have incorporated these extensions into <a href="http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361">Web Essentials</a> for Visual Studio 2013.</p>
 
@@ -303,16 +279,11 @@ table>tr*3>td*2
 </code></pre>
 
 <p>If you find it isn&rsquo;t working after installing Web Extensions, make sure you are using the release copy of Visual Studio 2013 (the latest version of Web Extensions doesn&rsquo;t work with VS2013 pre-release). Let me know if you find more handy short cuts.<br /></p>
-        /eof
-    </article>
-</div>
+    <p>/eof</p>
+</article>
     
   </div>
 </div>
-
-</article>
-</div>
-<script src="/js/ui.js"></script>
 
 
 <script>
