@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://diydeveloper.io/tags/diagram/</loc>
-    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
+    <loc>https://diydeveloper.io/tags/bathroom/</loc>
+    <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://diydeveloper.io/post/2019-11-11-bathroom-vanity-ikea-hack/</loc>
+    <lastmod>2019-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://diydeveloper.io/</loc>
+    <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://diydeveloper.io/tags/ikea/</loc>
+    <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://diydeveloper.io/post/</loc>
+    <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://diydeveloper.io/tags/</loc>
+    <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://diydeveloper.io/tags/diagram/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -23,17 +48,7 @@
   </url>
   
   <url>
-    <loc>https://diydeveloper.io/post/</loc>
-    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://diydeveloper.io/tags/programming/</loc>
-    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://diydeveloper.io/tags/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -90,11 +105,6 @@
   <url>
     <loc>https://diydeveloper.io/tags/tech-guide/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://diydeveloper.io/tags/bathroom/</loc>
-    <lastmod>2015-08-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -204,11 +214,6 @@
   
   <url>
     <loc>https://diydeveloper.io/tags/build-it/</loc>
-    <lastmod>2015-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://diydeveloper.io/tags/ikea/</loc>
     <lastmod>2015-03-31T00:00:00+00:00</lastmod>
   </url>
   

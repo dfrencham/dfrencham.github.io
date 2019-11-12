@@ -26,9 +26,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900,900i|Fira+Sans:400,400i,700,700i,900,900i|Quicksand:300,400,500,700" rel="stylesheet" />
   <link href="/css/prism.css" rel="stylesheet" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
   <script src='/js/prism.js' type='text/javascript'></script>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/stackblur-canvas/1.4.0/stackblur.min.js' type='text/javascript'></script>
+  <script src='/js/stackblur.min.js' type='text/javascript'></script>
 
 
   
@@ -82,6 +82,176 @@
 
 
     <div class="post-index">
+      
+      <article class="blog-post">
+    <div class="post-header">
+        <h2><a href="/tech/2015/08/10/knockout-web-components/">Nestable knockout web components</a></h2>
+    </div>
+    <div class="post-meta">
+
+  
+  
+
+  
+     
+      
+      
+      
+    
+  
+  <div class="article-meta">
+      
+      <div class="social-buttons"> 
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2015%2f08%2f10%2fknockout-web-components%2f&amp;text=Nestable%20knockout%20web%20components&amp;via=dfrencham"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdiydeveloper.io%2ftech%2f2015%2f08%2f10%2fknockout-web-components%2f&amp;t=Nestable%20knockout%20web%20components"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2015%2f08%2f10%2fknockout-web-components%2f"><i class="fa fa-linkedin"></i></a>  
+            <a class="btn btn-social-icon btn-reddit" href="https://reddit.com/submit?url=https%3a%2f%2fdiydeveloper.io%2ftech%2f2015%2f08%2f10%2fknockout-web-components%2f&title=Nestable%20knockout%20web%20components"><i class="fa fa-reddit"></i></a>      
+     </div>
+     <div class="tags">
+          <div class="taxonomy-tag">             
+              <i class="fa fa-calendar fa-fw"></i>            
+              <time>10 Aug 2015</time> 
+          </div>
+          
+            
+            
+              
+                <div class="taxonomy-tag">             
+                    <i class="fa fa-tags fa-fw"></i>            
+                    <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/javascript">javascript</a>
+                </div>
+              
+                <div class="taxonomy-tag">             
+                    <i class="fa fa-tags fa-fw"></i>            
+                    <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/knockout">knockout</a>
+                </div>
+              
+                <div class="taxonomy-tag">             
+                    <i class="fa fa-tags fa-fw"></i>            
+                    <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/programming">programming</a>
+                </div>
+              
+            
+          
+      </div>
+      
+  </div>
+
+</div>
+    <p>Web Components are the Next-Big-Thing&trade;, the second-coming, etc etc etc. Yeah, so we&rsquo;ve all been hearing about web components. How can we use them in a nestable, compatible way?</p>
+
+<h2 id="background">Background</h2>
+
+<p>A few years back the Javascript community discovered databinding. KnockoutJS (a pretty great data binding library) was the in thing. Then AngularJS came onto the scene and I stopped hearing about Knockout. Recently, people have been talking about web components. Web Components are a great way to make your code modular, more readable, and solve all your problems. Unfortunately Chrome is the only browser with a native implementation.</p>
+
+<p>A search for &ldquo;Web Components&rdquo; takes you to Google&rsquo;s Polymer framework, which isn&rsquo;t a framework - but does give you Web Components. Unfortunately you need IE10 or better. Those of us working for large corporations or government departments generally have to support IE9. What to do?</p>
+
+<p>Well, good news! Knockout implements Web Components - but we can&rsquo;t call them web components, they are &ldquo;web component inspired&rdquo; components that happen to behave indistinguishably from web components, and they also happen to work in IE9. Great!</p>
+
+<h2 id="why-do-i-want-web-components">Why do I want web components?</h2>
+
+<p>Simply put, you can write code that looks like this:</p>
+
+<pre><code class="language-markup">
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;todo-list params="color: green;"&gt;
+      &lt;checkable-item&gt;Write blog post&lt;/checkable-item&gt;
+      &lt;checkable-item&gt;De-clutter house&lt;/checkable-item&gt;
+    &lt;/todo-list&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Nice, readable code - with nestable custom HTML elements.</p>
+
+<h2 id="how-to-do-it">How to do it</h2>
+
+<h3 id="checkable-item-web-component">checkable-item web component</h3>
+
+<p>This is the view for our checkable list web-component, which will be displayed in our to-do list web component.</p>
+
+<pre><code class="language-markup">
+&lt;!-- checkable-item-view.html --&gt;
+&lt;div style="border:1px solid blue; margin: 5px; padding: 5px;"&gt;
+  &lt;label data-bind="text: labelText"&gt;&lt;/label&gt;
+  &lt;input data-bind="checked: checkbox" type="checkbox" /&gt;
+  &lt;input data-bind="value: textField" type="text" /&gt;
+&lt;/div&gt;
+</code>
+<code class="language-javascript">
+// checkable-item-viewmodel.js
+define(['knockout'], function(ko) {
+    function CheckableItemViewModel(params) {
+        this.labelText = params.labelText;
+        this.textField = ko.observable();
+        this.checkbox = ko.observable();
+    }
+    return CheckableItemViewModel;
+});
+</code></pre>
+
+<h3 id="todo-list-web-component">todo-list web component</h3>
+
+<p>Here is our &lsquo;container&rsquo; web component. Notice that knockout template binding in the viewmodel? That allows us to pass through HTML elements. It allows for the nesting of HTML within components. The $componentTemplateNodes contains the DOM nodes nested in the markup.</p>
+
+<pre><code class="language-markup">
+&lt;!-- todo-list-view.html --&gt;
+&lt;div style="border:1px solid red; margin: 5px; padding: 5px;"&gt;
+  &lt;strong&gt;
+    &lt;div data-bind="text: componentText"&gt;
+    &lt;/div&gt;
+  &lt;/strong&gt;
+  &lt;!-- The line below this is where the magic happens --&gt;
+  &lt;!-- ko template: { nodes: $componentTemplateNodes } --&gt;&lt;!-- /ko --&gt;
+&lt;/div&gt;
+</code>
+<code class="language-javascript">
+// todo-list-viewmodel.js
+define(['knockout'], function(ko) {
+    function ToDoListViewModel(params) {
+        this.componentText = params.componentText;
+    }
+    return ToDoListViewModel;
+});
+</code></pre>
+
+<h3 id="host-page">Host Page</h3>
+
+<p>Here is our HTML page. Note that for it to work, it depends on requireJS, textJS, and KnockoutJS. I&rsquo;ve placed my web components under a &ldquo;/Components/&rdquo; folder. I&rsquo;ve omitted the dependencies and requireJS configuration from the example below, to keep things brief.</p>
+
+<p>The important part is the component registration.</p>
+
+<pre><code class="language-markup">
+&lt;html&gt;
+  &lt;body&gt;
+
+    &lt;h1&gt;How to create knockout nested components&lt;/h1&gt;
+
+    &lt;checkable-item params='labelText:"component that isnt nested"'&gt;&lt;/checkable-item&gt;
+
+    &lt;todo-list params='componentText:"text passed to component"'&gt;
+      &lt;checkable-item params='labelText:"nested component"'&gt;&lt;/checkable-item&gt;
+    &lt;/todo-list&gt;
+
+    &lt;script&gt;
+    // this is how we register components
+    ko.components.register('todo-list', {
+      viewModel: { require: 'components/todo-list/viewmodel' },
+      template: { require: 'text!components/todo-list/view.html' }
+    });
+    ko.components.register('checkable-item', {
+      viewModel: { require: 'components/checkable-item/viewmodel' },
+      template: { require: 'text!components/checkable-item/view.html' }
+    });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>There you have it. Go forth and create Web Components.</p>
+    <p>/eof</p>
+</article>
       
       <article class="blog-post">
     <div class="post-header">
@@ -533,99 +703,6 @@ if (!this.zIndex) {
     <p>/eof</p>
 </article>
       
-      <article class="blog-post">
-    <div class="post-header">
-        <h2><a href="/diy/2015/05/26/how-to-replace-glass-door-rollers/">How to replace glass door rollers</a></h2>
-    </div>
-    <div class="post-meta">
-
-  
-  
-
-  
-    
-      
-      
-      
-    
-  
-  <div class="article-meta">
-      
-      <div class="social-buttons"> 
-            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=https%3a%2f%2fdiydeveloper.io%2fdiy%2f2015%2f05%2f26%2fhow-to-replace-glass-door-rollers%2f&amp;text=How%20to%20replace%20glass%20door%20rollers&amp;via=dfrencham"><i class="fa fa-twitter"></i></a>
-            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdiydeveloper.io%2fdiy%2f2015%2f05%2f26%2fhow-to-replace-glass-door-rollers%2f&amp;t=How%20to%20replace%20glass%20door%20rollers"><i class="fa fa-facebook"></i></a>
-            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdiydeveloper.io%2fdiy%2f2015%2f05%2f26%2fhow-to-replace-glass-door-rollers%2f"><i class="fa fa-linkedin"></i></a>  
-            <a class="btn btn-social-icon btn-reddit" href="https://reddit.com/submit?url=https%3a%2f%2fdiydeveloper.io%2fdiy%2f2015%2f05%2f26%2fhow-to-replace-glass-door-rollers%2f&title=How%20to%20replace%20glass%20door%20rollers"><i class="fa fa-reddit"></i></a>      
-     </div>
-     <div class="tags">
-          <div class="taxonomy-tag">             
-              <i class="fa fa-calendar fa-fw"></i>            
-              <time>26 May 2015</time> 
-          </div>
-          
-            
-            
-              
-                <div class="taxonomy-tag">             
-                    <i class="fa fa-tags fa-fw"></i>            
-                    <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/door">door</a>
-                </div>
-              
-                <div class="taxonomy-tag">             
-                    <i class="fa fa-tags fa-fw"></i>            
-                    <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/window">window</a>
-                </div>
-              
-                <div class="taxonomy-tag">             
-                    <i class="fa fa-tags fa-fw"></i>            
-                    <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/fix-it">fix-it</a>
-                </div>
-              
-            
-          
-      </div>
-      
-  </div>
-
-</div>
-    <p>Don&rsquo;t let a scraping, dragging door ruin your day. Let&rsquo;s replace the rollers!</p>
-
-<p>Before you start, clean the track your door runs on. Your door may be scraping or dragging due to being caught on something. Have a good look at the raised &lsquo;rail&rsquo; the door roller sits on. If this is worn down too low, you&rsquo;ll need a whole new door track, not just a replacement roller.</p>
-
-<h3 id="removing-the-door">Removing the Door</h3>
-
-<p>Assuming the problem <em>is</em> your door roller - the first order of business is to remove the door. If it is a large glass door, it will weigh approximately 1 metric-shit-tonne. If you have help, use it.</p>
-
-<p>Before removing the door, clear a space for it. It sucks to remove the door <em>then</em> realise you have nowhere to put the door down. It&rsquo;s not a bad idea to put down a blanket to protect your floors. Metal framed doors can have sharp edges, and will happy scratch a deep groove into a timber or bamboo floor.</p>
-
-<p>The actual removal process is fairly easy. Simply lift the door up into the frame - then (while keeping the door suspended in the air), bring the base of the door in towards you, as in the diagram below.</p>
-
-<p><img class="pure-img blog-img " src="/images/diy/door_removal_101.png" alt="removing the door" /></p>
-
-<p>Once you have it out, lay the door on the long side. You&rsquo;ll find a screw. This screw will either be attached directly to the roller assembly, or pulling the door frame tight and clamping the roller assembly in place.</p>
-
-<p><img class="pure-img blog-img " src="/images/diy/door_rollers2.jpg" alt="door rollers" /></p>
-
-<p>Once you remove the screw, the roller assembly should slide out. Examine the roller wheel for wear and dirt. It may be worn down (you will need a new one). After cleaning any dirt out, it should spin freely. If not, you need a new one. If it does spin freely, it may have been sitting too high in the door.</p>
-
-<p><img class="pure-img blog-img " src="/images/diy/door_rollers6.jpg" alt="old and new door rollers" /></p>
-
-<p>If you need a new roller assembly, take the old one to a hardware store, and find the matching replacement part. Keep in mind that <em>your house is missing a door</em>, which will make it pretty easy for thieves - so hurry.</p>
-
-<h3 id="replacing-the-roller-assembly">Replacing the roller assembly</h3>
-
-<p>Putting the new roller assembly in simply reverses the process. Pay careful attention to how high the roller is sitting <strong>before</strong> you put the screw back in and tighten.</p>
-
-<p><img class="pure-img blog-img " src="/images/diy/door_rollers4.jpg" alt="new door roller" /></p>
-
-<p>The roller needs to be sticking out the door enough that the door will move freely without scraping. Too high and you won&rsquo;t be able to get the door back in the frame. In my case, having the rollers protrude 3mm worked perfectly.</p>
-
-<h3 id="what-about-windows">What about windows?</h3>
-
-<p>Window rollers are replaced exactly the same way - assuming you have modern sliding windows. The only difference is that a window weighs less than a door, so it is easier to lift out.</p>
-    <p>/eof</p>
-</article>
-      
     </div>
   
   
@@ -751,43 +828,7 @@ Danny Frencham is a software developer, based in Brisbane Australia.
        
         
           
-          <a href="/tags/single-page-app" class="tag-cloud-0" data-count=2>single-page-app</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/family" class="tag-cloud-0" data-count=2>family</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/tech-guide" class="tag-cloud-2" data-count=8>tech-guide</a>
-        
-      
-    
-      
-      
-       
-        
-          
           <a href="/tags/javascript" class="tag-cloud-2" data-count=10>javascript</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/css" class="tag-cloud-1" data-count=5>css</a>
         
       
     
@@ -805,205 +846,7 @@ Danny Frencham is a software developer, based in Brisbane Australia.
        
         
           
-          <a href="/tags/plumbing" class="tag-cloud-1" data-count=3>plumbing</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/demolition" class="tag-cloud-1" data-count=3>demolition</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/flooring" class="tag-cloud-0" data-count=2>flooring</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/networking" class="tag-cloud-0" data-count=2>networking</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/visual-studio" class="tag-cloud-0" data-count=2>visual-studio</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/how-I-got-burned-today" class="tag-cloud-0" data-count=2>how-I-got-burned-today</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/argh" class="tag-cloud-0" data-count=2>argh</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/reno" class="tag-cloud-0" data-count=2>reno</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/door" class="tag-cloud-0" data-count=2>door</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/phone" class="tag-cloud-1" data-count=3>phone</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/html" class="tag-cloud-0" data-count=2>html</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/development" class="tag-cloud-2" data-count=7>development</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/review" class="tag-cloud-1" data-count=5>review</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/ikea" class="tag-cloud-0" data-count=2>ikea</a>
-        
-      
-    
-      
-      
-       
-        
-          
           <a href="/tags/meter" class="tag-cloud-0" data-count=2>meter</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/raspberry-pi" class="tag-cloud-0" data-count=2>raspberry-pi</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/aurelia" class="tag-cloud-0" data-count=2>aurelia</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/programming" class="tag-cloud-4" data-count=17>programming</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/solar" class="tag-cloud-0" data-count=2>solar</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/tools" class="tag-cloud-0" data-count=2>tools</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/C#" class="tag-cloud-1" data-count=3>C#</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/fix-it" class="tag-cloud-2" data-count=10>fix-it</a>
-        
-      
-    
-      
-      
-       
-        
-          
-          <a href="/tags/dotnet" class="tag-cloud-1" data-count=3>dotnet</a>
         
       
     
@@ -1021,6 +864,33 @@ Danny Frencham is a software developer, based in Brisbane Australia.
        
         
           
+          <a href="/tags/tech-guide" class="tag-cloud-2" data-count=8>tech-guide</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/programming" class="tag-cloud-4" data-count=17>programming</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/networking" class="tag-cloud-0" data-count=2>networking</a>
+        
+      
+    
+      
+      
+       
+        
+          
           <a href="/tags/ocr" class="tag-cloud-0" data-count=2>ocr</a>
         
       
@@ -1030,7 +900,223 @@ Danny Frencham is a software developer, based in Brisbane Australia.
        
         
           
+          <a href="/tags/html" class="tag-cloud-0" data-count=2>html</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/flooring" class="tag-cloud-0" data-count=2>flooring</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/fix-it" class="tag-cloud-2" data-count=10>fix-it</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/bathroom" class="tag-cloud-0" data-count=2>bathroom</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/visual-studio" class="tag-cloud-0" data-count=2>visual-studio</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/family" class="tag-cloud-0" data-count=2>family</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/development" class="tag-cloud-2" data-count=7>development</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/argh" class="tag-cloud-0" data-count=2>argh</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/ikea" class="tag-cloud-1" data-count=3>ikea</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/solar" class="tag-cloud-0" data-count=2>solar</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/door" class="tag-cloud-0" data-count=2>door</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/tools" class="tag-cloud-0" data-count=2>tools</a>
+        
+      
+    
+      
+      
+       
+        
+          
           <a href="/tags/blogging" class="tag-cloud-1" data-count=4>blogging</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/how-I-got-burned-today" class="tag-cloud-0" data-count=2>how-I-got-burned-today</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/demolition" class="tag-cloud-1" data-count=3>demolition</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/raspberry-pi" class="tag-cloud-0" data-count=2>raspberry-pi</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/plumbing" class="tag-cloud-1" data-count=3>plumbing</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/aurelia" class="tag-cloud-0" data-count=2>aurelia</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/phone" class="tag-cloud-1" data-count=3>phone</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/C#" class="tag-cloud-1" data-count=3>C#</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/dotnet" class="tag-cloud-1" data-count=3>dotnet</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/css" class="tag-cloud-1" data-count=5>css</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/single-page-app" class="tag-cloud-0" data-count=2>single-page-app</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/review" class="tag-cloud-1" data-count=5>review</a>
+        
+      
+    
+      
+      
+       
+        
+          
+          <a href="/tags/reno" class="tag-cloud-0" data-count=2>reno</a>
         
       
     

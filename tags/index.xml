@@ -5,10 +5,28 @@
     <link>https://diydeveloper.io/tags/</link>
     <description>Recent content in Tags on DIYDeveloper.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://diydeveloper.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bathroom</title>
+      <link>https://diydeveloper.io/tags/bathroom/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://diydeveloper.io/tags/bathroom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ikea</title>
+      <link>https://diydeveloper.io/tags/ikea/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://diydeveloper.io/tags/ikea/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>diagram</title>
@@ -88,15 +106,6 @@
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tags/tech-guide/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bathroom</title>
-      <link>https://diydeveloper.io/tags/bathroom/</link>
-      <pubDate>Wed, 19 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://diydeveloper.io/tags/bathroom/</guid>
       <description></description>
     </item>
     
@@ -205,15 +214,6 @@
       <pubDate>Tue, 31 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tags/build-it/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ikea</title>
-      <link>https://diydeveloper.io/tags/ikea/</link>
-      <pubDate>Tue, 31 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://diydeveloper.io/tags/ikea/</guid>
       <description></description>
     </item>
     
