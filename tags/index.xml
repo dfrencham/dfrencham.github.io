@@ -5,15 +5,33 @@
     <link>https://diydeveloper.io/tags/</link>
     <description>Recent content in Tags on DIYDeveloper.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 06:00:52 +1000</lastBuildDate>
     
 	<atom:link href="https://diydeveloper.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>linux</title>
+      <link>https://diydeveloper.io/tags/linux/</link>
+      <pubDate>Tue, 03 Dec 2019 06:00:52 +1000</pubDate>
+      
+      <guid>https://diydeveloper.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>solar</title>
+      <link>https://diydeveloper.io/tags/solar/</link>
+      <pubDate>Tue, 03 Dec 2019 06:00:52 +1000</pubDate>
+      
+      <guid>https://diydeveloper.io/tags/solar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>bathroom</title>
       <link>https://diydeveloper.io/tags/bathroom/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tags/bathroom/</guid>
       <description></description>
@@ -22,7 +40,7 @@
     <item>
       <title>ikea</title>
       <link>https://diydeveloper.io/tags/ikea/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tags/ikea/</guid>
       <description></description>
@@ -403,15 +421,6 @@
       <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>solar</title>
-      <link>https://diydeveloper.io/tags/solar/</link>
-      <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://diydeveloper.io/tags/solar/</guid>
       <description></description>
     </item>
     

@@ -5,15 +5,25 @@
     <link>https://diydeveloper.io/</link>
     <description>Recent content on DIYDeveloper.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 06:00:52 +1000</lastBuildDate>
     
 	<atom:link href="https://diydeveloper.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Aurora Inverter Monitoring Done Quick</title>
+      <link>https://diydeveloper.io/post/2019-12-2-aurora-inverter/</link>
+      <pubDate>Tue, 03 Dec 2019 06:00:52 +1000</pubDate>
+      
+      <guid>https://diydeveloper.io/post/2019-12-2-aurora-inverter/</guid>
+      <description>Last time I set up inverter monitoring for my Aurora solar inverter, it had a lot of moving parts. I had a RaspberryPi ModelB hosting utilities writing to CSV files, which were periodically scooped up by a monitoring service. The monitoring service had a bit of setup and a few issues, but in the end it would get the data up to PVOutput.org.
+This time around I decided to cut out all the bullshit and write to the PVOutput API with as little fuss as possible.</description>
+    </item>
+    
+    <item>
       <title>Bathroom Vanity Ikea Hack</title>
       <link>https://diydeveloper.io/post/2019-11-11-bathroom-vanity-ikea-hack/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/post/2019-11-11-bathroom-vanity-ikea-hack/</guid>
       <description>2 weeks ago I decided my pink 80&#39;s vanity had to go. It occupies a 1680mm space in the &amp;quot;powder room&amp;quot;, which is not exactly a standard size for a vanity unit.
@@ -729,7 +739,7 @@ Likes:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://diydeveloper.io/archive/</guid>
-      <description>2019   2019-11-12 - Bathroom Vanity Ikea Hack   2019-09-18 - Make great git diagrams   2018   2018-06-07 - Put a 12v fan on a 24v 3d printer   2016   2016-01-18 - How to find spare parts at the wreckers   2015   2015-11-27 - Calling pcap from Swift (using a closure)   2015-11-10 - Different Types of power drills explained   2015-09-01 - Add Ethernet to your ChromeCast for 12 bucks   2015-08-19 - How to replace your exhaust fan   2015-08-10 - Nestable knockout web components   2015-07-31 - Review - Macbook Pro 13&amp;#34; (with ForceTouch)   2015-07-12 - How to plane a door   2015-05-30 - Finding a javascript performance gremlin   2015-05-26 - How to replace glass door rollers   2015-05-13 - How to Upgrade Windows 8 to Windows 10   2015-04-30 - My first few hours with Visual Studio Code   2015-04-27 - Accidental NPM Packaging (and JSPM!</description>
+      <description>2019   2019-12-03 - Aurora Inverter Monitoring Done Quick   2019-11-11 - Bathroom Vanity Ikea Hack   2019-09-18 - Make great git diagrams   2018   2018-06-07 - Put a 12v fan on a 24v 3d printer   2016   2016-01-18 - How to find spare parts at the wreckers   2015   2015-11-27 - Calling pcap from Swift (using a closure)   2015-11-10 - Different Types of power drills explained   2015-09-01 - Add Ethernet to your ChromeCast for 12 bucks   2015-08-19 - How to replace your exhaust fan   2015-08-10 - Nestable knockout web components   2015-07-31 - Review - Macbook Pro 13&amp;#34; (with ForceTouch)   2015-07-12 - How to plane a door   2015-05-30 - Finding a javascript performance gremlin   2015-05-26 - How to replace glass door rollers   2015-05-13 - How to Upgrade Windows 8 to Windows 10   2015-04-30 - My first few hours with Visual Studio Code   2015-04-27 - Accidental NPM Packaging (and JSPM!</description>
     </item>
     
   </channel>

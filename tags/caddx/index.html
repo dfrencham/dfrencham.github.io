@@ -26,9 +26,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900,900i|Fira+Sans:400,400i,700,700i,900,900i|Quicksand:300,400,500,700" rel="stylesheet" />
   <link href="/css/prism.css" rel="stylesheet" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
   <script src='/js/prism.js' type='text/javascript'></script>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/stackblur-canvas/1.4.0/stackblur.min.js' type='text/javascript'></script>
+  <script src='/js/stackblur.min.js' type='text/javascript'></script>
 
 
   
@@ -70,7 +70,7 @@
     
     <article class="blog-post">
     <div class="post-header">
-        <h2><a href="/post/2019-09-23-alarm-hacking/">Unlocking a Caddx Alarm</a></h2>
+        <h2><a href="/draft/2019-11-30-alarm-hacking/">Unlocking a Caddx Alarm</a></h2>
     </div>
     <div class="post-meta">
 
@@ -87,15 +87,15 @@
   <div class="article-meta">
       
       <div class="social-buttons"> 
-            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=https%3a%2f%2fdiydeveloper.io%2fpost%2f2019-09-23-alarm-hacking%2f&amp;text=Unlocking%20a%20Caddx%20Alarm&amp;via=dfrencham"><i class="fa fa-twitter"></i></a>
-            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdiydeveloper.io%2fpost%2f2019-09-23-alarm-hacking%2f&amp;t=Unlocking%20a%20Caddx%20Alarm"><i class="fa fa-facebook"></i></a>
-            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdiydeveloper.io%2fpost%2f2019-09-23-alarm-hacking%2f"><i class="fa fa-linkedin"></i></a>  
-            <a class="btn btn-social-icon btn-reddit" href="https://reddit.com/submit?url=https%3a%2f%2fdiydeveloper.io%2fpost%2f2019-09-23-alarm-hacking%2f&title=Unlocking%20a%20Caddx%20Alarm"><i class="fa fa-reddit"></i></a>      
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=https%3a%2f%2fdiydeveloper.io%2fdraft%2f2019-11-30-alarm-hacking%2f&amp;text=Unlocking%20a%20Caddx%20Alarm&amp;via=dfrencham"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdiydeveloper.io%2fdraft%2f2019-11-30-alarm-hacking%2f&amp;t=Unlocking%20a%20Caddx%20Alarm"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdiydeveloper.io%2fdraft%2f2019-11-30-alarm-hacking%2f"><i class="fa fa-linkedin"></i></a>  
+            <a class="btn btn-social-icon btn-reddit" href="https://reddit.com/submit?url=https%3a%2f%2fdiydeveloper.io%2fdraft%2f2019-11-30-alarm-hacking%2f&title=Unlocking%20a%20Caddx%20Alarm"><i class="fa fa-reddit"></i></a>      
      </div>
      <div class="tags">
           <div class="taxonomy-tag">             
               <i class="fa fa-calendar fa-fw"></i>            
-              <time>23 Sep 2019</time> 
+              <time>30 Nov 2019</time> 
           </div>
           
             
@@ -118,72 +118,310 @@
   </div>
 
 </div>
-    <p>I woke up one day with the thought &ldquo;Gee, it would be nice to have my house alarm send notifications&rdquo;&hellip;. which seems like a simple enough idea in theory. Unfortunately the Alarm industry has other ideas.</p>
+    
+
+<p>I woke up one day with the thought &ldquo;Gee, it would be nice to have my house alarm send notifications&rdquo;&hellip;. which seems like a simple enough idea in theory. Unfortunately the Alarm industry has other ideas.</p>
+
+<p>It&rsquo;s 2019. I have wifi enabled light bulbs I can control with my phone&hellip; yet my home alarm system still doesn&rsquo;t have TCP/IP connectivity. Surely newer models are better? maybe with a nice REST api?</p>
+
+<p>Nope, still useless. Bosch and Hills systems have TCP/IP add on cards - but those only give us have terrible web interfaces and half baked, buggy apps. I did try a Hills Comnav, but after a year it stopped working when a couple of components overheated and de-soldered themselves from the PCB.</p>
+
+<h2 id="konnected-the-false-messiah">Konnected, the false messiah</h2>
+
+<p>A new product called Konnected seemed like a good idea - it replaces your alarm panel and you wire your sensors into it.</p>
+
+<p><img class="pure-img blog-img " src="/images/konnected.webp" alt="Konnected alarm derp" /></p>
+
+<p>I started digging into how it works. Konnected sends messages to a SmartThings hub <strong>over the cloud</strong> with the status of your sensors. Cloud issues? no alarm. The cherry on top of this shit sandwich is needing to buy a separate siren driver, because of course it doesn&rsquo;t have one.</p>
 
 <p>My original alarm was a Hills NetworX NX-4, which is actually a Caddx NX-8. It was also sold as a GE NX-8. It has an IP enabling add on card available (and I use &ldquo;add-on card&rdquo; <em>very</em> loosely) called a &ldquo;ComNav&rdquo; module. I purchased one of these for $250, and had it up and running after much pain and suffering. While it has a web server, it does not have an API, or any sensible integration options other than email.</p>
 
 <p>After a couple of years of receiving basic email alerts, the ComNav decided to cook a couple of capacitors and spontaneously self destruct.</p>
 
-<p>Maybe there were better options than a ComNav? Some investigation revealed:</p>
+<p>I discovered there was a model of the NX-8 that included a serial port for home automation and programming - the NX8-E. Sadly this was not available in Australia, but there was one listed on EBay in the US with <em>priority</em> international shipping. 2 months later, it arrived. I soon discovered that:</p>
 
 <ul>
-<li>the Caddx Home Automation module NX-584E</li>
+<li>no installer code was provided, and the seller had no idea what it could be</li>
+<li>unlike Australian NX models, you cannot use a keypad code to default the panel</li>
+<li>I dialled into the panel with a modem (after trying 8 modems, I discovered a US Robotics V.Everything business modem works), but the dial in programming code had also been changed.</li>
 </ul>
 
-<table>
-<thead>
-<tr>
-<th>Direction</th>
-<th>Message</th>
-<th>Len</th>
-<th>Description</th>
-</tr>
-</thead>
+<p>There was only one option left - connect directly to the alarm bus.</p>
 
-<tbody>
-<tr>
-<td>Send</td>
-<td>7E 01 21 22 23</td>
-<td>1</td>
-<td>Interface configuration request</td>
-</tr>
+<h2 id="caddx-bus-connection">Caddx Bus Connection</h2>
 
-<tr>
-<td>Recv</td>
-<td>7E 0B 01 32 2E 31 36 00 00 72 01 03 E0 2B DD</td>
-<td>11</td>
-<td>Interface configuration messsage</td>
-</tr>
+<p>To connect to the bus you need a <a href="https://www.amazon.com/Interlogix-NetworX-Quiklink-Connect-NX-586E/dp/B00171FTIY">QuikLink Direct Connect module</a>. I was able to borrow one by posting on a local facebook community page and offering a 6 pack of beer in return for borrowing one.</p>
 
-<tr>
-<td>Recv</td>
-<td>7E 01 1D 1E 1F</td>
-<td>1</td>
-<td>Positive Ack</td>
-</tr>
+<p><img src="images/alarm-serial.gif" alt="alarm serial connection" /></p>
 
-<tr>
-<td>Send</td>
-<td>7E 04 30 08 80 53 10 41</td>
-<td>4</td>
-<td>Program data request</td>
-</tr>
+<p>Once the jumper wires are connected to the alarm bus (using the positive, negative, and data terminals), you communicate with the alarm using either Kermit or PuTTY in serial communication mode.</p>
 
-<tr>
-<td>Send</td>
-<td>7E 01 28 29 2A</td>
-<td>1</td>
-<td>System status request</td>
-</tr>
+<p>Note that for PuTTY you probably want to force local echo and local line ending on.</p>
 
-<tr>
-<td>Send</td>
-<td>7E 0D 31 08 A0 53 08 88 88 00 00 08 40 EE EE 79 B4</td>
-<td>13</td>
-<td>Program data command</td>
-</tr>
-</tbody>
+<style>
+    .table-req-res {
+        border: 1px solid black;
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: separate;
+    }
+    .table-req-res thead td {
+        font-weight: bold;
+        background-color: #F9E79F;
+    }
+    .table-req-res td {
+        background-color: #f7f0f0;
+        font-family: sans-serif;
+        font-size: 16px;
+        padding: 0 4px;
+    }
+    .table-req-res tr.send td {
+        background-color: #AED6F1;
+    }
+    .table-req-res tr.recv td {
+        background-color: #bdfbbd;
+    }
+    .table-req-res .byte td {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        width: 40px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #AED6F1;
+    }
+    .table-req-res .byte td:last-child {
+        border-right: 0;
+    }
+    .table-req-res .yel td {
+        background-color: yellow;
+        font-size: 20px;
+        padding: 6px;
+    }
+</style>
+
+<h2 id="networx-messaging-format">Networx Messaging Format</h2>
+
+<p>Networx messages are transmitted in 2 byte hex words, which may be in either ASCII or binary format.</p>
+
+<p>All messages start with a 7E message start flag, followed by a length value. The length value is the number of words following, excluding the checksum. The checksum is a 2 word <a href="https://en.wikipedia.org/wiki/Fletcher%27s_checksum">Fletcher&rsquo;s checksum</a>.</p>
+
+<table class="table-req-res">
+    <thead>
+        <tr>
+            <td colspan="5">NX Message Format</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="byte yel">
+            <td>7e</td>
+            <td>01</td>
+            <td>28</td>
+            <td>29</td>
+            <td>2a</td>
+        </tr>
+        <tr class="byte">
+            <td>Message start delimiter</td>
+            <td>Message length (0)</td>
+            <td>Message type (Positive acknowledge)</td>
+            <td colspan="2">Checksum</td>
+        </tr>
+    </tbody>
 </table>
+
+<p>You can find the complete protocol specification <a href="https://www.drivehq.com/folder/p9084843/1816086207.aspx">here</a>.</p>
+
+<h2 id="resetting-the-panel">Resetting the panel</h2>
+
+<p>Using PuTTY you can send the messages below to unlock the panel, and the expected responses.</p>
+
+<p>What is happening is:</p>
+
+<pre><code class="language-text">-----
+ user &gt; hello, how are you configured?
+alarm &gt; I have these flags set (flags)
+ user &gt; what is your status?
+alarm &gt; this is my status (status)
+ user &gt; program this data
+alarm &gt; ok, done it
+ user &gt; please send me the programmed data
+ -----
+</code></pre>
+
+<table class="table-req-res">
+    <thead>
+        <tr>
+            <td>Direction</td>
+            <td>Message</td>
+            <td>Type</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="send">
+            <td>Message</td>
+            <td>7e 01 21 22 23</td>
+            <td>Interface configuration request</td>
+        </tr>
+        <tr class="recv">
+            <td>Response</td>
+            <td>7e 0b 01 32 2e 31 36 00 00 72 01 03 e0 2b dd</td>
+            <td>Interface configuration message</td>
+        </tr>
+        <tr class="send">
+            <td>Message</td>
+            <td>7e 01 28 29 2a</td>
+            <td>System status request</td>
+        </tr>
+        <tr class="recv">
+            <td>Response</td>
+            <td>7e 0c 08 04 00 00 00 00 02 00 00 00 01 ad c8 e4</td>
+            <td>System status message</td>
+        </tr>
+        <tr class="send">
+            <td>Message</td>
+            <td>7e 0d 31 08 a0 53 08 88 88 00 00 08 40 ee ee 79 b4</td>
+            <td>Program data command</td>
+        </tr>
+        <tr class="recv">
+            <td>Response</td>
+            <td>7e 01 1d 1e 1f</td>
+            <td>Positive Ack</td>
+        </tr>
+        <tr class="send">
+            <td>Message</td>
+            <td>7e 04 30 08 80 53 10 41</td>
+            <td>Program data request</td>
+        </tr>
+        <tr class="recv">
+            <td>Response</td>
+            <td>7e 0d 10 08 80 53 0b 88 88 00 00 08 40 ee ee 3b bf</td>
+            <td>Program Data Reply</td>
+        </tr>
+    </tbody>
+</table>
+
+    <p>/eof</p>
+</article>
+    
+    <article class="blog-post">
+    <div class="post-header">
+        <h2><a href="/draft/2019-11-23-alarm-notifications/">Hills alarm notifications are a trip to hell</a></h2>
+    </div>
+    <div class="post-meta">
+
+  
+  
+
+  
+     
+      
+      
+      
+    
+  
+  <div class="article-meta">
+      
+      <div class="social-buttons"> 
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=https%3a%2f%2fdiydeveloper.io%2fdraft%2f2019-11-23-alarm-notifications%2f&amp;text=Hills%20alarm%20notifications%20are%20a%20trip%20to%20hell&amp;via=dfrencham"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdiydeveloper.io%2fdraft%2f2019-11-23-alarm-notifications%2f&amp;t=Hills%20alarm%20notifications%20are%20a%20trip%20to%20hell"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdiydeveloper.io%2fdraft%2f2019-11-23-alarm-notifications%2f"><i class="fa fa-linkedin"></i></a>  
+            <a class="btn btn-social-icon btn-reddit" href="https://reddit.com/submit?url=https%3a%2f%2fdiydeveloper.io%2fdraft%2f2019-11-23-alarm-notifications%2f&title=Hills%20alarm%20notifications%20are%20a%20trip%20to%20hell"><i class="fa fa-reddit"></i></a>      
+     </div>
+     <div class="tags">
+          <div class="taxonomy-tag">             
+              <i class="fa fa-calendar fa-fw"></i>            
+              <time>23 Nov 2019</time> 
+          </div>
+          
+            
+            
+              
+                <div class="taxonomy-tag">             
+                    <i class="fa fa-tags fa-fw"></i>            
+                    <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/alarm">alarm</a>
+                </div>
+              
+                <div class="taxonomy-tag">             
+                    <i class="fa fa-tags fa-fw"></i>            
+                    <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/caddx">caddx</a>
+                </div>
+              
+            
+          
+      </div>
+      
+  </div>
+
+</div>
+    
+
+<p>TLDR; I have alarm notifications set up on a linux box.</p>
+
+<p>My home alarm is from a time when an alert meant &ldquo;dial a security company&rdquo;. Having email alerts instead makes sense&hellip;. at least to me. Unfortunately the Alarm industry has other ideas.</p>
+
+<p>IoT has exploded. I have wifi enabled light bulbs I can control with my phone&hellip; yet my home alarm system still doesn&rsquo;t have TCP/IP connectivity. Surely newer models include a web interface? maybe with a nice REST api?</p>
+
+<p>Nope, still useless. Bosch and Hills systems have TCP/IP add on cards - but those only give us have terrible web interfaces and half baked, buggy apps. I did try a Hills Comnav, but after a year it stopped working when a couple of components overheated and de-soldered themselves from the PCB.</p>
+
+<h2 id="konnected-the-false-messiah">Konnected, the false messiah</h2>
+
+<p>A new product called Konnected seemed like a good idea - it replaces your alarm panel and you wire your sensors into it.</p>
+
+<p><img class="pure-img blog-img " src="/images/konnected.webp" alt="Konnected alarm derp" /></p>
+
+<p>I started digging into how it works. Konnected sends messages to a SmartThings hub <strong>over the cloud</strong> with the status of your sensors. Cloud issues? no alarm. The cherry on top of this shit sandwich is needing to buy a separate siren driver, because of course it doesn&rsquo;t have one.</p>
+
+<p>Last time I looked it didn&rsquo;t have a sensible way to trigger the alarm, you had to set up a series of SmartThings workflow rules to make it act like an alarm system. Every workflow system I&rsquo;ve dared to touch ends up being less fun than sitting through a meeting full of UX people with a fetish for sliding panels.</p>
+
+<h2 id="hills-comnav">Hills ComNav</h2>
+
+<p>My original alarm panel was a Hills NX-8, which has an add-on for IP communication called the &ldquo;ComNav&rdquo;. I purchased one of these for $250, and had it up and running after much pain and suffering. While it has a web server, it does not have an API, or any sensible integration options other than email.</p>
+
+<p>After a couple of years of receiving basic email alerts, the ComNav decided to cook a couple of capacitors and spontaneously self destruct.</p>
+
+<h2 id="same-model-now-with-serial-port">Same model, now with serial port</h2>
+
+<p>I discovered there was a variant of the NX-8 that included a serial port for home automation and programming - the NX-8E. Sadly this was not available in Australia, but there was one listed on EBay in the US with <em>priority</em> international shipping. 2 months later, it arrived.</p>
+
+<p>After going through hell and back to get the serial port enabled, I needed a cable. The board uses an IDC connector for serial output, presumably because some engineer was smoking crack at design time and decided a standard DB9 port would be too easy.</p>
+
+<p>You have two options here:</p>
+
+<ol>
+<li>The easy way. Search for &ldquo;interlogix networx serial cable&rdquo; and buy one for $25 US from Ebay.</li>
+<li>Make your own.</li>
+</ol>
+
+<p>I chose to make my own. <a href="http://www.increa.com/reverse/nx-8e/index.html">This wonderful guide</a> has all the details on making a cable.</p>
+
+<p>Once you have the created a cable, you need a USB to serial converter. Go for something with an FTDI chipset (more reliable than the knock off version). I use a version built into a cable.</p>
+
+<p><img src="images/alarm-serial-cable.jpg" alt="FTDI cable" /></p>
+
+<h2 id="home-server-connection">Home Server Connection</h2>
+
+<p><a href="https://github.com/kk7ds/pynx584">pynx584</a> is a handy little library for communicating with NX series alarms.</p>
+
+<p>You can install it via Docker, or install as a linux service.</p>
+
+<p>Once you have it installed, you can start the server like this:</p>
+
+<pre><code>nx584_server --serial /dev/ttyUSB0 --baud 38400
+</code></pre>
+
+<p>If you see failures, check the following items:</p>
+
+<ol>
+<li>Your serial port is /dev/ttyUSS0 You can check this by comparing <code>lsusb</code> output.</li>
+<li>Your baud rate is connect. Some standard rates you can try are: 4800, 9600, 14400, 19200, 38400, 57600, 115200</li>
+<li>Your alarm serial port is connected and the alarm is turned on.</li>
+</ol>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li><a href="http://konnected.io">Konnected&rsquo;s shitty solution</a></li>
+<li><a href="http://www.increa.com/reverse/nx-8e/index.html">Making a serial cable for the NX series alarm</a></li>
+</ul>
 
     <p>/eof</p>
 </article>

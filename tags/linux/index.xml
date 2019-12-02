@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on DIYDeveloper.io</title>
+    <link>https://diydeveloper.io/tags/linux/</link>
+    <description>Recent content in linux on DIYDeveloper.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 03 Dec 2019 06:00:52 +1000</lastBuildDate>
+    
+	<atom:link href="https://diydeveloper.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aurora Inverter Monitoring Done Quick</title>
+      <link>https://diydeveloper.io/post/2019-12-2-aurora-inverter/</link>
+      <pubDate>Tue, 03 Dec 2019 06:00:52 +1000</pubDate>
+      
+      <guid>https://diydeveloper.io/post/2019-12-2-aurora-inverter/</guid>
+      <description>Last time I set up inverter monitoring for my Aurora solar inverter, it had a lot of moving parts. I had a RaspberryPi ModelB hosting utilities writing to CSV files, which were periodically scooped up by a monitoring service. The monitoring service had a bit of setup and a few issues, but in the end it would get the data up to PVOutput.org.
+This time around I decided to cut out all the bullshit and write to the PVOutput API with as little fuss as possible.</description>
+    </item>
+    
+  </channel>
+</rss>

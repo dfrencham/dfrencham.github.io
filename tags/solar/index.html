@@ -70,6 +70,146 @@
     
     <article class="blog-post">
     <div class="post-header">
+        <h2><a href="/post/2019-12-2-aurora-inverter/">Aurora Inverter Monitoring Done Quick</a></h2>
+    </div>
+    <div class="post-meta">
+
+  
+  
+  
+  
+  
+
+  
+    
+    
+    
+  
+  <div class="article-meta">
+      
+      <div class="social-buttons"> 
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/share?url=https%3a%2f%2fdiydeveloper.io%2fpost%2f2019-12-2-aurora-inverter%2f&amp;text=Aurora%20Inverter%20Monitoring%20Done%20Quick&amp;via=dfrencham"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdiydeveloper.io%2fpost%2f2019-12-2-aurora-inverter%2f&amp;t=Aurora%20Inverter%20Monitoring%20Done%20Quick"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdiydeveloper.io%2fpost%2f2019-12-2-aurora-inverter%2f"><i class="fa fa-linkedin"></i></a>  
+            <a class="btn btn-social-icon btn-reddit" href="https://reddit.com/submit?url=https%3a%2f%2fdiydeveloper.io%2fpost%2f2019-12-2-aurora-inverter%2f&title=Aurora%20Inverter%20Monitoring%20Done%20Quick"><i class="fa fa-reddit"></i></a>      
+     </div>
+     <div class="tags">
+          <div class="taxonomy-tag">             
+              <i class="fa fa-calendar fa-fw"></i>            
+              <time>03 Dec 2019</time> 
+          </div>
+          
+            
+            
+              
+                <div class="taxonomy-tag">             
+                    <i class="fa fa-tags fa-fw"></i>            
+                    <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/solar">solar</a>
+                </div>
+              
+                <div class="taxonomy-tag">             
+                    <i class="fa fa-tags fa-fw"></i>            
+                    <a class="post-taxonomy-tag" href="https://diydeveloper.iotags/linux">linux</a>
+                </div>
+              
+            
+          
+      </div>
+      
+  </div>
+
+</div>
+    
+
+<p>Last time I set up inverter monitoring for my Aurora solar inverter, it had a lot of moving parts. I had a RaspberryPi ModelB hosting utilities writing to CSV files, which were periodically scooped up by a monitoring service. The monitoring service had a bit of setup and a few issues, but in the end it would get the data up to <a href="http://pvoutput.org">PVOutput.org</a>.</p>
+
+<p>This time around I decided to cut out all the bullshit and write to the PVOutput API with as little fuss as possible.</p>
+
+<p>Note that to set all this up you will require a free account on PVOutput, and you will need to set up an API Key. You will also need to add your solar details which will give you a system Id.</p>
+
+<h2 id="curtronics-aurora">Curtronics Aurora</h2>
+
+<p>Grab this great little utility - <a href="http://www.curtronics.com/Solar/AuroraData.html">Curtronics Aurora</a>. Download, unzip, and install:</p>
+
+<pre><code class="language-bash">wget http://www.curtronics.com/Solar/ftp/aurora-1.9.3.tar.gz
+tar -xf aurora-1.9.3.tar.gz
+cd aurora-1.9.3
+make
+sudo make install
+</code></pre>
+
+<p>At this point you should try a query and see if you can contact the inverter (keep in mind if it is dark outside the inverter is probably powered down).</p>
+
+<p>Try the following command:</p>
+
+<pre><code class="language-text">/usr/local/bin/aurora -a 2 /dev/ttyUSB0 -Y15 -e
+</code></pre>
+
+<p>If you are not having any luck, check if /dev/ttyUSB0 is correct (this is your usb-to-serial device). You should be able confirm it by reading through your start up messages with <code>dmesg</code>.</p>
+
+<h2 id="solar-logger-sh">solar-logger.sh</h2>
+
+<p>Save this script in your home folder as solar-logger.sh.</p>
+
+<p>If you are using the default <code>pi</code> user, the path will be <code>/home/pi/solar-logger.sh</code></p>
+
+<p>Make sure you set execute permission: <code>chmod 755 solar-logger.sh</code></p>
+
+<pre><code class="language-bash">#!/bin/bash
+
+# configuration
+apikey=&quot;your api key here&quot;
+system=&quot;your system Id here&quot;
+
+rd=$(date +%Y%m%d)
+rt1=$(date +%H)
+rt2=$(date +%M)
+rt=&quot;${rt1}%3A${rt2}&quot;
+solarout=`/usr/local/bin/aurora -a 2 /dev/ttyUSB0 -Y15 -e -c | awk '{printf $1}'`
+solarwatts=`echo ${solarout} | sed -e &quot;s/\.//&quot;`
+url=&quot;https://pvoutput.org/service/r2/addstatus.jsp?d=${rd}&amp;t=${rt}&amp;v1=${solarwatts}&quot;
+
+# only make the request if we have a value from the inverter
+if [[ ! -z $solarwatts  ]]; then
+    result=`curl -H &quot;X-Rate-Limit: 1&quot; -H &quot;X-Pvoutput-Apikey: ${apikey}&quot; -H &quot;X-Pvoutput-SystemId: ${system}&quot; ${url}`
+    if [[ $result == *&quot;OK&quot;* ]]; then
+        echo &quot;${rd} $(date +%H:%M) : API call successful, power output: ${solarout}&quot;
+    else
+        echo &quot;${rd} $(date +%H:%M) : API call failed, ${result}&quot;
+    fi
+else
+    echo &quot;${rd} $(date +%H:%M) : Inverter communication failure&quot;
+fi
+</code></pre>
+
+<h2 id="cron-job">Cron Job</h2>
+
+<p>Edit your crontab (using <code>crontab -e</code>) and add the following record:</p>
+
+<pre><code class="language-text">*/5 5-18 * * * /home/pi/solar-logger.sh &gt;&gt; /home/pi/solar-log.txt
+</code></pre>
+
+<p>This cron task will run the solar logger every 5 minutes between the hours of 5am and 6pm. You may want to adjust those times depending on your latitude.</p>
+
+<p>This will give you a solar-log.txt file with entries like this:</p>
+
+<pre><code class="language-text">20191201 18:25 : API call successful, power output: 20.373
+20191201 18:30 : API call successful, power output: 20.373
+</code></pre>
+
+<p>Once you start seeing successful API calls you should be able to see your shiny new chart on PVOutput.</p>
+
+<p><img class="pure-img blog-img " src="/images/solar-mon.jpg" alt="pvoutput live output chart" /></p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>If you are having issues, check the permissions on the <code>aurora</code> binary (755 should work).</p>
+
+    <p>/eof</p>
+</article>
+    
+    <article class="blog-post">
+    <div class="post-header">
         <h2><a href="/tech/2014/05/19/ocr-solar-meter-reader-part1/">OCR Solar Meter Reader - Part 1</a></h2>
     </div>
     <div class="post-meta">
