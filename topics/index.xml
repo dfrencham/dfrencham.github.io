@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Topics on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/topics/</link>
-    <description>Recent content in Topics on DIYDeveloper.io</description>
+    <title>Topics on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/topics/</link>
+    <description>Recent content in Topics on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://diydeveloper.io/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

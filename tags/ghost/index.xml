@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ghost on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/ghost/</link>
-    <description>Recent content in ghost on DIYDeveloper.io</description>
+    <title>ghost on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/ghost/</link>
+    <description>Recent content in ghost on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 30 Jan 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Don&#39;t switch to Ghost blogging platform (yet)</title>
-      <link>https://diydeveloper.io/tech/2014/01/30/dont-switch-to-ghost-blogging-platform-yet/</link>
+      <link>https://diydeveloper.dev/tech/2014/01/30/dont-switch-to-ghost-blogging-platform-yet/</link>
       <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/01/30/dont-switch-to-ghost-blogging-platform-yet/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/01/30/dont-switch-to-ghost-blogging-platform-yet/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a typical developer. I often can&amp;rsquo;t resist the urge to try different platforms. My current blogging platform (blogger) has numerous limitations. I started looking for alternatives, and Ghost appeared on the radar.&lt;/p&gt;
 
 &lt;p&gt;Ghost is a ground up blogging platform, being developed under the premise that other platforms (such as word press) are becoming overly complex.&lt;/p&gt;

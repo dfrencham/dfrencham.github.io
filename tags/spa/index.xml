@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>spa on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/spa/</link>
-    <description>Recent content in spa on DIYDeveloper.io</description>
+    <title>spa on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/spa/</link>
+    <description>Recent content in spa on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 15 Oct 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/spa/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/spa/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SPA within a SPA? Durandal child routers</title>
-      <link>https://diydeveloper.io/tech/2014/10/15/durandal-child-routers/</link>
+      <link>https://diydeveloper.dev/tech/2014/10/15/durandal-child-routers/</link>
       <pubDate>Wed, 15 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/10/15/durandal-child-routers/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/10/15/durandal-child-routers/</guid>
       <description>&lt;p&gt;My current project had an interesting requirement come through: &amp;ldquo;We want the app to navigate to another single page app when the user clicks next on this page, but still have our widgets at the top&amp;rdquo;. The client wanted to utilise an existing durandal SPA inside a new durandal spa.&lt;/p&gt;</description>
     </item>
     

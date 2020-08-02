@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>belkin on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/belkin/</link>
-    <description>Recent content in belkin on DIYDeveloper.io</description>
+    <title>belkin on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/belkin/</link>
+    <description>Recent content in belkin on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 06 Jan 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/belkin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/belkin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Belkin WeMo Light Switch Review</title>
-      <link>https://diydeveloper.io/diy/2014/01/06/belkin-wemo-light-switch-review/</link>
+      <link>https://diydeveloper.dev/diy/2014/01/06/belkin-wemo-light-switch-review/</link>
       <pubDate>Mon, 06 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/diy/2014/01/06/belkin-wemo-light-switch-review/</guid>
+      <guid>https://diydeveloper.dev/diy/2014/01/06/belkin-wemo-light-switch-review/</guid>
       <description>&lt;p&gt;I recently purchased a Belkin WeMo light switch. I&amp;rsquo;ve been eyeing these off for a while. The general premise is pretty cool. It is a IP enabled light switch, with Iphone/Android control.&lt;/p&gt;
 
 &lt;p&gt;Install was pretty easy. It was simply a matter of cutting a hole in the gyprock (plaster board), and running some wires to my existing switch. Belkin provided some twist-on electrical connectors, which made the job very easy. Note that this &lt;em&gt;will not&lt;/em&gt; use any sort of standard Australian wall plate - so it is not going to look like your Clipsal switches. It does fit into a standard plasterboard C-Clip, so that is nice.&lt;/p&gt;

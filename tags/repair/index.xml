@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>repair on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/repair/</link>
-    <description>Recent content in repair on DIYDeveloper.io</description>
+    <title>repair on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/repair/</link>
+    <description>Recent content in repair on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 19 Jul 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/repair/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/repair/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Family vs Tech</title>
-      <link>https://diydeveloper.io/tech/2014/07/19/family-vs-tech/</link>
+      <link>https://diydeveloper.dev/tech/2014/07/19/family-vs-tech/</link>
       <pubDate>Sat, 19 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/07/19/family-vs-tech/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/07/19/family-vs-tech/</guid>
       <description></description>
     </item>
     

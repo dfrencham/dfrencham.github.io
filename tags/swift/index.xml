@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>swift on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/swift/</link>
-    <description>Recent content in swift on DIYDeveloper.io</description>
+    <title>swift on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/swift/</link>
+    <description>Recent content in swift on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 27 Nov 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Calling pcap from Swift (using a closure)</title>
-      <link>https://diydeveloper.io/tech/2015/11/27/swift-pcap/</link>
+      <link>https://diydeveloper.dev/tech/2015/11/27/swift-pcap/</link>
       <pubDate>Fri, 27 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2015/11/27/swift-pcap/</guid>
+      <guid>https://diydeveloper.dev/tech/2015/11/27/swift-pcap/</guid>
       <description>&lt;p&gt;Swift is Apple&amp;rsquo;s clever new language. It is designed to be intuitive, modern, and read-able. Which it is, until you want to make a call to a C library - such as pcap.h.&lt;/p&gt;</description>
     </item>
     

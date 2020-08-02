@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ChromeCast on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/ChromeCast/</link>
-    <description>Recent content in ChromeCast on DIYDeveloper.io</description>
+    <title>ChromeCast on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/ChromeCast/</link>
+    <description>Recent content in ChromeCast on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/ChromeCast/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/ChromeCast/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Add Ethernet to your ChromeCast for 12 bucks</title>
-      <link>https://diydeveloper.io/tech/2015/09/01/chromecast-ethernet/</link>
+      <link>https://diydeveloper.dev/tech/2015/09/01/chromecast-ethernet/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2015/09/01/chromecast-ethernet/</guid>
+      <guid>https://diydeveloper.dev/tech/2015/09/01/chromecast-ethernet/</guid>
       <description>&lt;p&gt;ChromeCast&amp;rsquo;s are great&amp;hellip; as long as your wifi is. I upgraded my router firmware, and my ChromeCast started dropping out. Rather than fixing &lt;em&gt;that&lt;/em&gt; problem, I figured &amp;ldquo;why not just hardwire the damn thing?&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     

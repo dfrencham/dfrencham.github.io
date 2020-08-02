@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>reno on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/reno/</link>
-    <description>Recent content in reno on DIYDeveloper.io</description>
+    <title>reno on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/reno/</link>
+    <description>Recent content in reno on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 31 Mar 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/reno/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/reno/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ikea Kitchen Part 2: Extract and Install</title>
-      <link>https://diydeveloper.io/diy/2015/03/31/installing-an-ikea-kitchen/</link>
+      <link>https://diydeveloper.dev/diy/2015/03/31/installing-an-ikea-kitchen/</link>
       <pubDate>Tue, 31 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/diy/2015/03/31/installing-an-ikea-kitchen/</guid>
+      <guid>https://diydeveloper.dev/diy/2015/03/31/installing-an-ikea-kitchen/</guid>
       <description>&lt;p&gt;Last year I installed an Ikea Kitchen. I posted about the joy of the Ikea ordering process, installed the kitchen, and forgot to post the installation process. Well, here it is. If you&amp;rsquo;ve ever wondered how to install your own kitchen, wonder no more. I&amp;rsquo;ll walk you through installing an Ikea kitchen.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Ordering an Ikea Kitchen is as much fun as riding a cheese grater</title>
-      <link>https://diydeveloper.io/diy/2014/10/01/ordering-an-ikea-kitchen/</link>
+      <link>https://diydeveloper.dev/diy/2014/10/01/ordering-an-ikea-kitchen/</link>
       <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/diy/2014/10/01/ordering-an-ikea-kitchen/</guid>
+      <guid>https://diydeveloper.dev/diy/2014/10/01/ordering-an-ikea-kitchen/</guid>
       <description>&lt;p&gt;Look at your tired old kitchen. Do you need to replace it? Look at all those happy people with new Ikea kitchens on the Internet.&lt;/p&gt;</description>
     </item>
     

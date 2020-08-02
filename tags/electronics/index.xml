@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>electronics on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/electronics/</link>
-    <description>Recent content in electronics on DIYDeveloper.io</description>
+    <title>electronics on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/electronics/</link>
+    <description>Recent content in electronics on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 07 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Put a 12v fan on a 24v 3d printer</title>
-      <link>https://diydeveloper.io/tech/2018/06/07/12v-fan-on-24v-printer/</link>
+      <link>https://diydeveloper.dev/tech/2018/06/07/12v-fan-on-24v-printer/</link>
       <pubDate>Thu, 07 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2018/06/07/12v-fan-on-24v-printer/</guid>
+      <guid>https://diydeveloper.dev/tech/2018/06/07/12v-fan-on-24v-printer/</guid>
       <description>&lt;p&gt;More and more 3d printers are coming with 24 volt fans&amp;hellip; which can be a problem
 because 24v fans can be hard to find. Here is how you can attach a 12 volt Noctua fan.&lt;/p&gt;
 

@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>solar on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/solar/</link>
-    <description>Recent content in solar on DIYDeveloper.io</description>
+    <title>solar on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/solar/</link>
+    <description>Recent content in solar on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 03 Dec 2019 06:00:52 +1000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/solar/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/solar/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Aurora Inverter Monitoring Done Quick</title>
-      <link>https://diydeveloper.io/post/2019-12-2-aurora-inverter/</link>
+      <link>https://diydeveloper.dev/post/2019-12-2-aurora-inverter/</link>
       <pubDate>Tue, 03 Dec 2019 06:00:52 +1000</pubDate>
       
-      <guid>https://diydeveloper.io/post/2019-12-2-aurora-inverter/</guid>
+      <guid>https://diydeveloper.dev/post/2019-12-2-aurora-inverter/</guid>
       <description>Last time I set up inverter monitoring for my Aurora solar inverter, it had a lot of moving parts. I had a RaspberryPi ModelB hosting utilities writing to CSV files, which were periodically scooped up by a monitoring service. The monitoring service had a bit of setup and a few issues, but in the end it would get the data up to PVOutput.org.
 This time around I decided to cut out all the bullshit and write to the PVOutput API with as little fuss as possible.</description>
     </item>
     
     <item>
       <title>OCR Solar Meter Reader - Part 1</title>
-      <link>https://diydeveloper.io/tech/2014/05/19/ocr-solar-meter-reader-part1/</link>
+      <link>https://diydeveloper.dev/tech/2014/05/19/ocr-solar-meter-reader-part1/</link>
       <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/05/19/ocr-solar-meter-reader-part1/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/05/19/ocr-solar-meter-reader-part1/</guid>
       <description>&lt;p&gt;I had some solar panels installed last year. I wanted to read my inverter statistics, but I also wanted to log exactly how much power I import/export. Challenge - I can&amp;rsquo;t physically plug anything into the meter (power company regulations). What to do?&lt;/p&gt;
 
 &lt;p&gt;How about a web cam, raspberry pi, and OCR?&lt;/p&gt;</description>
@@ -33,10 +33,10 @@ This time around I decided to cut out all the bullshit and write to the PVOutput
     
     <item>
       <title>OCR Solar Meter Reader - Part 2</title>
-      <link>https://diydeveloper.io/tech/2014/05/19/ocr-solar-meter-reader-part2/</link>
+      <link>https://diydeveloper.dev/tech/2014/05/19/ocr-solar-meter-reader-part2/</link>
       <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/05/19/ocr-solar-meter-reader-part2/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/05/19/ocr-solar-meter-reader-part2/</guid>
       <description>&lt;p&gt;Continuation of Raspberry Pi Solar Data Logger article. In this part I detail the software side of the OCR solar data logger. Perl, APIs, C. Hooray!&lt;/p&gt;</description>
     </item>
     

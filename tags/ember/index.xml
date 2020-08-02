@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ember on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/ember/</link>
-    <description>Recent content in ember on DIYDeveloper.io</description>
+    <title>ember on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/ember/</link>
+    <description>Recent content in ember on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 04 Mar 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/ember/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/ember/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Create a Single Page App in 2 Minutes using Ember App Kit</title>
-      <link>https://diydeveloper.io/tech/2014/03/04/create-a-single-page-app-in-2-minutes-using-ember-app-kit/</link>
+      <link>https://diydeveloper.dev/tech/2014/03/04/create-a-single-page-app-in-2-minutes-using-ember-app-kit/</link>
       <pubDate>Tue, 04 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/03/04/create-a-single-page-app-in-2-minutes-using-ember-app-kit/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/03/04/create-a-single-page-app-in-2-minutes-using-ember-app-kit/</guid>
       <description>&lt;p&gt;Single Pages Apps (SPAs) are the current flavour of the month. They have seemingly appeared from nowhere, but now it seems like every developer is talking about them. Wikipedia describes this pattern as follows:&lt;/p&gt;
 
 &lt;blockquote&gt;

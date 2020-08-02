@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>networking on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/networking/</link>
-    <description>Recent content in networking on DIYDeveloper.io</description>
+    <title>networking on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/networking/</link>
+    <description>Recent content in networking on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 30 Jun 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mount a network cabinet</title>
-      <link>https://diydeveloper.io/diy/2014/06/30/mount-a-network-cabinet/</link>
+      <link>https://diydeveloper.dev/diy/2014/06/30/mount-a-network-cabinet/</link>
       <pubDate>Mon, 30 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/diy/2014/06/30/mount-a-network-cabinet/</guid>
+      <guid>https://diydeveloper.dev/diy/2014/06/30/mount-a-network-cabinet/</guid>
       <description>&lt;p&gt;My home network is a little&amp;hellip; disorganised. I have 2 or 3 switches residing around the house, PoE, WiFi, and various cobbled together partially wired sections. Time to get organised. Time to get a rack!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Chromecast issues? Check your Multicast settings</title>
-      <link>https://diydeveloper.io/tech/2014/06/12/check-your-multicast-settings/</link>
+      <link>https://diydeveloper.dev/tech/2014/06/12/check-your-multicast-settings/</link>
       <pubDate>Thu, 12 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/06/12/check-your-multicast-settings/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/06/12/check-your-multicast-settings/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve had network gremlins for a few months now. Sometimes my WeMo switches are visible, sometimes not. Chromecast is the same. My devices were screaming for attention, but my router wasn&amp;rsquo;t listening. Lets look at Multicasting (and Broadcasting).&lt;/p&gt;</description>
     </item>
     

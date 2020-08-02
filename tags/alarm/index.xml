@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>alarm on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/alarm/</link>
-    <description>Recent content in alarm on DIYDeveloper.io</description>
+    <title>alarm on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/alarm/</link>
+    <description>Recent content in alarm on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 30 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/alarm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/alarm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Unlocking a Caddx Alarm</title>
-      <link>https://diydeveloper.io/draft/2019-11-30-alarm-hacking/</link>
+      <link>https://diydeveloper.dev/draft/2019-11-30-alarm-hacking/</link>
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/draft/2019-11-30-alarm-hacking/</guid>
+      <guid>https://diydeveloper.dev/draft/2019-11-30-alarm-hacking/</guid>
       <description>I woke up one day with the thought &amp;ldquo;Gee, it would be nice to have my house alarm send notifications&amp;rdquo;&amp;hellip;. which seems like a simple enough idea in theory. Unfortunately the Alarm industry has other ideas.
 It&amp;rsquo;s 2019. I have wifi enabled light bulbs I can control with my phone&amp;hellip; yet my home alarm system still doesn&amp;rsquo;t have TCP/IP connectivity. Surely newer models are better? maybe with a nice REST api?</description>
     </item>
     
     <item>
       <title>Hills alarm notifications are a trip to hell</title>
-      <link>https://diydeveloper.io/draft/2019-11-23-alarm-notifications/</link>
+      <link>https://diydeveloper.dev/draft/2019-11-23-alarm-notifications/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/draft/2019-11-23-alarm-notifications/</guid>
+      <guid>https://diydeveloper.dev/draft/2019-11-23-alarm-notifications/</guid>
       <description>TLDR; I have alarm notifications set up on a linux box.
 My home alarm is from a time when an alert meant &amp;ldquo;dial a security company&amp;rdquo;. Having email alerts instead makes sense&amp;hellip;. at least to me. Unfortunately the Alarm industry has other ideas.
 IoT has exploded. I have wifi enabled light bulbs I can control with my phone&amp;hellip; yet my home alarm system still doesn&amp;rsquo;t have TCP/IP connectivity. Surely newer models include a web interface?</description>

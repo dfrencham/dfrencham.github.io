@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blogging on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/blogging/</link>
-    <description>Recent content in blogging on DIYDeveloper.io</description>
+    <title>blogging on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/blogging/</link>
+    <description>Recent content in blogging on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 09 Mar 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Create a tag cloud using Jekyll</title>
-      <link>https://diydeveloper.io/tech/2014/03/09/create-a-tag-cloud-in-jekyll/</link>
+      <link>https://diydeveloper.dev/tech/2014/03/09/create-a-tag-cloud-in-jekyll/</link>
       <pubDate>Sun, 09 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/03/09/create-a-tag-cloud-in-jekyll/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/03/09/create-a-tag-cloud-in-jekyll/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently switched from Blogger to Github pages, and I&amp;rsquo;m using the very cool Jekyll app to manage my blog posts. For those that don&amp;rsquo;t know, Jekyll allows you to end your blog pages locally using Markup syntax, then it translates your post to HTML. From there, you commit it to a git repository.&lt;/p&gt;
 
 &lt;p&gt;One feature missing from Jekyll is Word Clouds. I will show you how to add one.&lt;/p&gt;</description>
@@ -23,10 +23,10 @@
     
     <item>
       <title>Don&#39;t switch to Ghost blogging platform (yet)</title>
-      <link>https://diydeveloper.io/tech/2014/01/30/dont-switch-to-ghost-blogging-platform-yet/</link>
+      <link>https://diydeveloper.dev/tech/2014/01/30/dont-switch-to-ghost-blogging-platform-yet/</link>
       <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/01/30/dont-switch-to-ghost-blogging-platform-yet/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/01/30/dont-switch-to-ghost-blogging-platform-yet/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a typical developer. I often can&amp;rsquo;t resist the urge to try different platforms. My current blogging platform (blogger) has numerous limitations. I started looking for alternatives, and Ghost appeared on the radar.&lt;/p&gt;
 
 &lt;p&gt;Ghost is a ground up blogging platform, being developed under the premise that other platforms (such as word press) are becoming overly complex.&lt;/p&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>Linking to Google Drive images from your Blog</title>
-      <link>https://diydeveloper.io/tech/2014/01/22/linking-to-google-drive-images-from-your-blog/</link>
+      <link>https://diydeveloper.dev/tech/2014/01/22/linking-to-google-drive-images-from-your-blog/</link>
       <pubDate>Wed, 22 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/01/22/linking-to-google-drive-images-from-your-blog/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/01/22/linking-to-google-drive-images-from-your-blog/</guid>
       <description>&lt;p&gt;A good number of us have content stored on google drive. Wouldn&amp;rsquo;t it be handy if we could reference that content in our blog posts? Good news, you can!&lt;/p&gt;
 
 &lt;h2&gt;Steps&lt;/h2&gt;
@@ -55,10 +55,10 @@
     
     <item>
       <title>Setting up SyntaxHighligher on Blogger</title>
-      <link>https://diydeveloper.io/tech/2013/12/16/setting-up-syntaxhighligher-on-blogger/</link>
+      <link>https://diydeveloper.dev/tech/2013/12/16/setting-up-syntaxhighligher-on-blogger/</link>
       <pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2013/12/16/setting-up-syntaxhighligher-on-blogger/</guid>
+      <guid>https://diydeveloper.dev/tech/2013/12/16/setting-up-syntaxhighligher-on-blogger/</guid>
       <description>&lt;p&gt;As a technical blogger, one of my first questions was: &lt;blockquote&gt;how do I add syntax highlighting to my blog?&lt;/blockquote&gt; I discovered  &lt;a href=&#34;http://alexgorbatchev.com/SyntaxHighlighter/&#34;&gt;Syntax Highlighter&lt;/a&gt;.
 Syntax Highlighter is a fantastic tool. It looks good, it is easy to set up, and it supports a large number of languages.&lt;/p&gt;</description>
     </item>

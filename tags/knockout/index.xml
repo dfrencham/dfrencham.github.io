@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>knockout on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/knockout/</link>
-    <description>Recent content in knockout on DIYDeveloper.io</description>
+    <title>knockout on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/knockout/</link>
+    <description>Recent content in knockout on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 10 Aug 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/knockout/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/knockout/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Nestable knockout web components</title>
-      <link>https://diydeveloper.io/tech/2015/08/10/knockout-web-components/</link>
+      <link>https://diydeveloper.dev/tech/2015/08/10/knockout-web-components/</link>
       <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2015/08/10/knockout-web-components/</guid>
+      <guid>https://diydeveloper.dev/tech/2015/08/10/knockout-web-components/</guid>
       <description>&lt;p&gt;Web Components are the Next-Big-Thing&amp;trade;, the second-coming, etc etc etc. Yeah, so we&amp;rsquo;ve all been hearing about web components. How can we use them in a nestable, compatible way?&lt;/p&gt;</description>
     </item>
     

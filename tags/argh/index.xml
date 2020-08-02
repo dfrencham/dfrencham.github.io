@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>argh on DIYDeveloper.io</title>
-    <link>https://diydeveloper.io/tags/argh/</link>
-    <description>Recent content in argh on DIYDeveloper.io</description>
+    <title>argh on diydeveloper.dev</title>
+    <link>https://diydeveloper.dev/tags/argh/</link>
+    <description>Recent content in argh on diydeveloper.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 22 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://diydeveloper.io/tags/argh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://diydeveloper.dev/tags/argh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Replacing a toilet cistern</title>
-      <link>https://diydeveloper.io/diy/2014/04/22/replacing-a-toilet-cistern/</link>
+      <link>https://diydeveloper.dev/diy/2014/04/22/replacing-a-toilet-cistern/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/diy/2014/04/22/replacing-a-toilet-cistern/</guid>
+      <guid>https://diydeveloper.dev/diy/2014/04/22/replacing-a-toilet-cistern/</guid>
       <description>&lt;p&gt;Have you ever seen just how curious a 4 year old can be? My 4 year old wondered what was under the impossible-to-replace vitreous china Cistern lid. As a result, I needed a new cistern lid (my 4 year old survived unscathed).&lt;/p&gt;
 
 &lt;p&gt;Turns out that you can&amp;rsquo;t buy a Cistern lid in Brisbane, so read on and learn how to replace the entire toilet cistern&amp;hellip;&lt;/p&gt;</description>
@@ -23,10 +23,10 @@
     
     <item>
       <title>Fix Visual Studio taking a long time to load debug symbols</title>
-      <link>https://diydeveloper.io/tech/2014/02/06/fix-visual-studio-taking-a-long-time-to-load-debug-symbols/</link>
+      <link>https://diydeveloper.dev/tech/2014/02/06/fix-visual-studio-taking-a-long-time-to-load-debug-symbols/</link>
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://diydeveloper.io/tech/2014/02/06/fix-visual-studio-taking-a-long-time-to-load-debug-symbols/</guid>
+      <guid>https://diydeveloper.dev/tech/2014/02/06/fix-visual-studio-taking-a-long-time-to-load-debug-symbols/</guid>
       <description>I lost a good couple of hours tracking this one down. If Visual Studio is taking a very long time to load debug symbols when debugging (think 5 minutes to 30 minutes), try this&amp;hellip;
 Delete all break points (Debug - &amp;gt; Delete All Break Points).
 Sometimes something small like this can be a lot more frustrating than a big issue. Hopefully this saves someone from going crazy.</description>
